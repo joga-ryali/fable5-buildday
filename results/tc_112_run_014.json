@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_112",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:06:05+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "The constitutional guarantees require, we think, a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with 'actual malice'\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+  "caveat_preserved": false,
+  "notes": "The claim contains multiple errors: (1) the case was decided in 1964, not 1971; (2) the majority opinion was authored by Justice Brennan, not Justice Frankfurter (who had retired in 1962 and died in 1965). While the source text does establish the actual malice standard, the attribution to Frankfurter and the year 1971 are both factually wrong.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}

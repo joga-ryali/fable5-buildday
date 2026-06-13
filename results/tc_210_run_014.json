@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_210",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:07:27+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "The labor force participation rate held at 61.8 percent in May, and the employment-population ratio changed little at 59.2 percent. These measures showed little change over the year, after accounting for annual population control adjustments.",
+  "caveat_preserved": true,
+  "notes": "The claim accurately states the labor force participation rate of 61.8 percent in May 2026 and correctly characterizes it as essentially unchanged over the year, consistent with the source's 'little change over the year' language. The caveat about minimal year-over-year change is preserved.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "gov_stats"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_108",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:05:31+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "scope_expansion",
+  "confidence": "high",
+  "source_excerpt": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+  "caveat_preserved": false,
+  "notes": "The source says 'any person haled into court' in the adversary system of criminal justice, which is broader than the claim's 'indigent defendant in a criminal case' \u2014 though in context the difference is minor. More importantly, the claim omits the source's qualifier 'in our adversary system of criminal justice,' which is a meaningful framing condition. Additionally, the claim characterizes this as what 'Gideon held,' which is a fair characterization of the case's holding, but the specific language used slightly narrows/reframes the source's broader formulation.",
+  "ground_truth_verdict": "supported",
+  "pass": false,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "legal"
+}

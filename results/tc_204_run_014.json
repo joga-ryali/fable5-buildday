@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_204",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:06:46+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+  "caveat_preserved": true,
+  "notes": "The figure (4.2%) and caveat ('before seasonal adjustment') match the source text, but the resolved source is the May 2026 CPI Summary, not a January 2026 report. The claim attributes the 12-month period as ending January 2026, which contradicts the resolved filing period (May 2026), constituting a wrong attribution/period mismatch.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "wrong_attribution",
+  "domain": "gov_stats"
+}

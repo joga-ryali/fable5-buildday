@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_036",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:41:12+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "scope_expansion",
+  "confidence": "high",
+  "source_excerpt": "Unit case volume in EMEA increased 3%, which included 2% growth in Trademark Coca-Cola, 3% growth in sparkling flavors, 2% growth in water, sports, coffee and tea as well as growth in energy drinks.",
+  "caveat_preserved": false,
+  "notes": "The source text states that unit case volume in EMEA (a regional segment) increased 3%, not total companywide unit case volume. The claim generalizes a regional figure to the entire company, which is a scope expansion error.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "scope_expansion",
+  "domain": "corporate_filings"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_035",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:02:52+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "We currently expect 2026 capital expenditures to be approximately $2.2 billion.",
+  "caveat_preserved": false,
+  "notes": "The source uses forward-looking, hedged language ('currently expect') whereas the claim states this as a confirmed fact, stripping the caveat. The numeric figure ($2.2 billion) and the fiscal year (2026) match the source exactly, but the modality is overstated.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "overstated_confidence",
+  "domain": "corporate_filings"
+}

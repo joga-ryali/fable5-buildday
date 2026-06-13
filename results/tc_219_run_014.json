@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_219",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:09:58+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+  "caveat_preserved": true,
+  "notes": "The claim's 4.2 percent figure for the 12 months ended May 2026 matches the source exactly. The word 'settled' is a mild characterization but does not materially overstate or contradict the source's factual figure.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v7",
+  "hallucination_type": "overstatement",
+  "domain": "gov_stats"
+}

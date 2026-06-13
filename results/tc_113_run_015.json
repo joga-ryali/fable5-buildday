@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_113",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:42:53+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+  "caveat_preserved": false,
+  "notes": "The claim directly contradicts the source. Mapp v. Ohio held that unconstitutionally obtained evidence is INADMISSIBLE in state courts and that the exclusionary rule DOES bind the states \u2014 the exact opposite of what the claim asserts.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "legal"
+}

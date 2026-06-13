@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_206",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:43:37+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026",
+  "caveat_preserved": true,
+  "notes": "The claim matches the source exactly: 1.6 percent annualized growth in Q1 2026 per the BEA second estimate. All figures, period, and attribution align perfectly.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "gov_stats"
+}

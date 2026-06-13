@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_015",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T21:57:49+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "Sales increased 12% in 2025, compared to the prior year. Changes in foreign exchange rates increased net sales by $4.4 billion in 2025.",
+  "caveat_preserved": false,
+  "notes": "The claim states net sales increased 17% in fiscal 2025, but the source clearly states sales increased 12%. The $4.4 billion foreign exchange figure matches, but the 17% vs. 12% discrepancy is a material numeric mismatch that renders the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "quantitative_fabrication",
+  "domain": "corporate_filings"
+}

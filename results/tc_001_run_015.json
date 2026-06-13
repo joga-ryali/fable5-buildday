@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_001",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:38:11+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "The Company's total net sales decreased 3% or $11.0 billion during 2023 compared to 2022.",
+  "caveat_preserved": false,
+  "notes": "The claim states total net sales moved 'about 3% higher' in fiscal 2023, but the source explicitly states net sales decreased 3% \u2014 the direction is directly contradicted. This is a reversal of the actual trend, not merely a magnitude mismatch.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "corporate_filings"
+}

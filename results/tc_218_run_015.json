@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_218",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:47:49+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "unsupported_addition",
+  "confidence": "high",
+  "source_excerpt": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent.",
+  "caveat_preserved": true,
+  "notes": "The 172,000 payroll gain in May 2026 is directly supported by the source. However, the claim that gains were 'spread across essentially every major industry' is not present in the provided source text, making that sub-assertion unsupported.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "scope_expansion",
+  "domain": "gov_stats"
+}

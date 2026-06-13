@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_215",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:47:32+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "Advance estimates of U.S. retail and food services sales for April 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were $757.1 billion, up 0.5 percent (\u00b10.4 percent) from the previous month, and up 4.9 percent (\u00b10.5 percent) from April 2025.",
+  "caveat_preserved": false,
+  "notes": "The claim states sales 'declined 0.5 percent month-over-month,' but the source explicitly states sales were 'up 0.5 percent' from the previous month. The direction is directly contradicted \u2014 the source shows an increase, not a decrease.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "gov_stats"
+}

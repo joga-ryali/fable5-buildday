@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_208",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:07:12+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent. Job gains occurred in leisure and hospitality, local government, and health care.",
+  "caveat_preserved": false,
+  "notes": "The source explicitly states that job gains occurred in multiple sectors \u2014 leisure and hospitality, local government, AND health care \u2014 directly contradicting the claim that all 172,000 gains came solely from leisure and hospitality.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "scope_expansion",
+  "domain": "gov_stats"
+}

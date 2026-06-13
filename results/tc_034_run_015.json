@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_034",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:41:02+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "Operating income was $13,762 million in 2025, compared to $9,992 million in 2024, an increase of $3,770 million, or 38%.",
+  "caveat_preserved": false,
+  "notes": "The claim states operating income declined year over year in 2025, but the source explicitly states it increased by $3,770 million (38%), from $9,992 million in 2024 to $13,762 million in 2025. This is a direct contradiction.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "corporate_filings"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_032",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:40:57+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "In 2025, worldwide sales increased 6.0% to $94.2 billion as compared to an increase of 4.3% in 2024.",
+  "caveat_preserved": false,
+  "notes": "The source attributes the 6.0% increase to $94.2 billion in worldwide sales to fiscal year 2025, not fiscal 2023 as the claim states. This is a clear attribution mismatch \u2014 the figures belong to a different fiscal year than claimed.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "partial_citation_corruption",
+  "domain": "corporate_filings"
+}

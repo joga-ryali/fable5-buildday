@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_003",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:38:22+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "Political uncertainty surrounding trade and other international disputes could also have a negative effect on consumer confidence and spending, which could adversely affect the Company's business.",
+  "caveat_preserved": false,
+  "notes": "The source uses hedged, forward-looking language ('could also have a negative effect,' 'could adversely affect'), framing this as a risk or possibility. The claim asserts it as an actual, ongoing, present fact ('is reducing,' 'is adversely affecting'), stripping the conditional modality entirely.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "stripped_caveat",
+  "domain": "corporate_filings"
+}

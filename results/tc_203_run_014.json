@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_203",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:06:40+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+  "caveat_preserved": true,
+  "notes": "The claim states 3.8 percent but the source clearly states 4.2 percent for the 12-month all items CPI-U increase before seasonal adjustment. This is a material numeric mismatch that renders the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "numeric_mismatch",
+  "domain": "gov_stats"
+}

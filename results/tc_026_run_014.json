@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_026",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:02:04+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "These values are preliminary and based on the best estimate of management, which is subject to change within the measurement period.",
+  "caveat_preserved": false,
+  "notes": "The claim asserts the values are 'final and confirmed' and 'will not change during the measurement period,' which is the direct opposite of the source's statement that the values are 'preliminary' and 'subject to change within the measurement period.' This is a clear contradiction, not merely a stripped caveat.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "overstated_confidence",
+  "domain": "corporate_filings"
+}

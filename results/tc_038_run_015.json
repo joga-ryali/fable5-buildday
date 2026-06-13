@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_038",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:41:27+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "Total net sales were $383,285 million in fiscal 2023, compared to $394,328 million in fiscal 2022.",
+  "caveat_preserved": true,
+  "notes": "Computed decline: (383,285 \u2212 394,328) / 394,328 = \u221211,043 / 394,328 \u2248 \u22122.80%, which matches the claimed ~2.8% decline. Both the direction and magnitude are fully supported by the source figures.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "corporate_filings"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_013",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T21:57:43+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "Microsoft Cloud revenue increased 23% to $168.9 billion.",
+  "caveat_preserved": false,
+  "notes": "The source attributes the $168.9 billion / 23% growth figure to Microsoft Cloud revenue, not total revenue. The claim incorrectly states this as Microsoft's total revenue, which is a direct misattribution of the metric.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "scope_expansion",
+  "domain": "corporate_filings"
+}

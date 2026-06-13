@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_102",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:03:16+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "blocked",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+  "caveat_preserved": false,
+  "notes": "The claim contains two material errors: (1) the year is wrong \u2014 Obergefell was decided in 2015, not 2013; (2) Chief Justice Roberts did not author the majority opinion \u2014 he dissented. Justice Kennedy wrote the majority opinion. The holding itself is accurately described, but the authorship and date contradictions render the claim unsupported. [Source host restricted automated retrieval (status: blocked); verified against the provided source text. In production the analyst can upload the source.]",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_205",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:06:52+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026",
+  "caveat_preserved": false,
+  "notes": "The claim states real GDP 'fell' at an annualized rate of 1.6 percent, but the source explicitly states GDP 'increased' at that rate \u2014 a direct directional contradiction. The figure of 1.6 percent matches, but the direction is reversed.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "gov_stats"
+}

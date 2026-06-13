@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_115",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:06:22+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "malformed",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "It is emphatically the province and duty of the judicial department to say what the law is.",
+  "caveat_preserved": false,
+  "notes": "The quote itself appears in the source, but the claim attributes it to Chief Justice Roger Taney in 1819, when in fact the resolved source is Marbury v. Madison, 5 U.S. 137 (1803), authored by Chief Justice John Marshall. Both the author and the year are materially wrong. [Source host restricted automated retrieval (status: malformed); verified against the provided source text. In production the analyst can upload the source.]",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_114",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:06:16+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+  "caveat_preserved": true,
+  "notes": "The claim accurately reflects the holding in Mapp v. Ohio as stated in the source text. The claim's characterization of this as 'applying the exclusionary rule to the states' is a fair and accurate legal description of what the quoted holding accomplishes.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "legal"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_107",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:05:23+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "scope_expansion",
+  "confidence": "high",
+  "source_excerpt": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+  "caveat_preserved": false,
+  "notes": "The source text limits the right to counsel to criminal justice proceedings, whereas the claim expands the holding to 'any legal proceeding,' which would include civil matters. Gideon's holding is confined to felony criminal cases, and the source excerpt explicitly references 'our adversary system of criminal justice,' not legal proceedings generally.",
+  "ground_truth_verdict": "unsupported",
+  "pass": false,
+  "prompt_version": "v7",
+  "hallucination_type": "scope_expansion",
+  "domain": "legal"
+}

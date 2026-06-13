@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_207",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:45:14+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent.",
+  "caveat_preserved": false,
+  "notes": "The claim states nonfarm payroll employment rose by 192,000, but the source clearly states the increase was 172,000 \u2014 a material numeric mismatch of 20,000 jobs.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "numeric_mismatch",
+  "domain": "gov_stats"
+}

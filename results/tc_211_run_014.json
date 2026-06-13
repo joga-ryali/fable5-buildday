@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_211",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:09:06+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "Effective April 30, 2026, the Federal Open Market Committee directs the Desk to: Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-1/2 to 3-3/4 percent.",
+  "caveat_preserved": false,
+  "notes": "The source is an April 29, 2026 FOMC Implementation Note (effective April 30, 2026), not a January 2026 meeting decision. While the upper bound of 3.75 percent (3-3/4) does match the source, the claim attributes this rate decision to the January 2026 meeting, which directly contradicts the resolved source's April 2026 date \u2014 a clear attribution/period mismatch.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "wrong_attribution",
+  "domain": "gov_stats"
+}

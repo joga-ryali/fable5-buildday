@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_214",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:09:25+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "Median household income was $83,730 in 2024, not statistically different from the 2023 estimate of $82,690.",
+  "caveat_preserved": false,
+  "notes": "The figures ($83,730 and $82,690) and the 'statistically unchanged' characterization all match the source. However, the claim specifies 'real' (inflation-adjusted) median household income, while the source text does not use the word 'real' \u2014 it is unclear from the excerpt whether the figure is inflation-adjusted or nominal, so the qualifier 'real' is an addition not confirmed by the provided source text.",
+  "ground_truth_verdict": "supported",
+  "pass": false,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "gov_stats"
+}

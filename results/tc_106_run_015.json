@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_106",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:42:10+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+  "caveat_preserved": false,
+  "notes": "The majority opinion in Miranda v. Arizona was authored by Chief Justice Earl Warren, not Justice William J. Brennan. The source text does not attribute authorship to Brennan, and this is a well-established historical fact directly contradicted by the claim. The source excerpt provided does not support the attribution claim at all.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}

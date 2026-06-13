@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_201",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:43:10+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "the unemployment rate was unchanged at 4.3 percent",
+  "caveat_preserved": false,
+  "notes": "The source clearly states the U-3 unemployment rate was 4.3 percent in May 2026, not 4.6 percent as claimed. This is a direct numeric mismatch on the central figure of the claim.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "numeric_mismatch",
+  "domain": "gov_stats"
+}

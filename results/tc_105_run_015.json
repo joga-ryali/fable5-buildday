@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_105",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:42:03+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+  "caveat_preserved": false,
+  "notes": "The claim asserts that Miranda-violating statements are 'categorically and absolutely inadmissible for every purpose in any criminal proceeding,' but the source only bars use by the prosecution in its case-in-chief; subsequent case law (e.g., Harris v. New York) permits use for impeachment purposes, and the source itself does not say 'every purpose.' Additionally, the claim overstates the rule as absolute and categorical when the source frames it conditionally ('unless it demonstrates the use of procedural safeguards'), not as a blanket prohibition for all purposes.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "overstatement",
+  "domain": "legal"
+}

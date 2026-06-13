@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_037",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:41:19+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "Net operating revenues were $47,941 million in 2025, compared to $47,061 million in 2024, an increase of $880 million, or 2%.",
+  "caveat_preserved": true,
+  "notes": "All figures in the claim match the source exactly: $47,941 million in 2025, $880 million increase, and 2% growth rate. The computed change (47,941 \u2212 47,061 = 880) and percentage (880/47,061 \u2248 1.87%, rounds to 2%) are consistent with the source.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": null,
+  "domain": "corporate_filings"
+}

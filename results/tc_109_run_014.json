@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_109",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:05:37+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "The Court returns to the principle established in Buckley and Bellotti that the Government may not suppress political speech based on the speaker's corporate identity.",
+  "caveat_preserved": false,
+  "notes": "The claim directly contradicts the source. The source states the government MAY NOT suppress political speech based on corporate identity, meaning limits on independent corporate expenditures were struck down \u2014 the exact opposite of what the claim asserts.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "legal"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_101",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:03:09+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "blocked",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+  "caveat_preserved": false,
+  "notes": "The claim directly contradicts the source. The Court held that the Fourteenth Amendment DOES require states to license and recognize same-sex marriages, whereas the claim asserts the opposite \u2014 that it does NOT require such licensing or recognition. [Source host restricted automated retrieval (status: blocked); verified against the provided source text. In production the analyst can upload the source.]",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "contradiction",
+  "domain": "legal"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_019",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:39:42+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "Certain provisions decreased cash taxes paid in fiscal 2026 and may change the timing of cash tax payments in future periods.",
+  "caveat_preserved": false,
+  "notes": "The claim drops two hedges: 'Certain' (qualifying which provisions) and 'may' (indicating possibility) are both replaced with more definitive language ('These provisions' and 'will'). The future-period timing effect is stated as certain in the claim but only as a possibility in the source.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "stripped_caveat",
+  "domain": "corporate_filings"
+}

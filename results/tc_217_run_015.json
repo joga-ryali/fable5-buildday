@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_217",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:47:44+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "contradiction",
+  "confidence": "high",
+  "source_excerpt": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026 (second estimate).",
+  "caveat_preserved": false,
+  "notes": "The source explicitly labels this the 'second estimate,' not the 'final figures.' The claim asserts these are 'final figures,' which directly contradicts the source's characterization as a preliminary second estimate subject to further revision.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v7",
+  "hallucination_type": "overstatement",
+  "domain": "gov_stats"
+}

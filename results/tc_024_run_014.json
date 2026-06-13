@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_024",
+  "run_id": "run_014",
+  "timestamp": "2026-06-13T22:01:51+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "404",
+  "citation_match_verdict": "cannot_determine",
+  "verdict": "cannot_verify",
+  "defect_type": "fabricated_citation",
+  "confidence": "high",
+  "source_excerpt": "",
+  "caveat_preserved": false,
+  "notes": "Citation could not be resolved (status: 404) and no source text is available to verify against.",
+  "ground_truth_verdict": "cannot_verify",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "total_citation_fabrication",
+  "domain": "corporate_filings"
+}

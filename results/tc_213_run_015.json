@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_213",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:47:22+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "scope_expansion",
+  "confidence": "high",
+  "source_excerpt": "Median household income was $83,730 in 2024, not statistically different from the 2023 estimate of $82,690. Between 2023 and 2024, median income increased by 5.1 percent for Asian households and 5.5 percent for Hispanic households, while it declined by 3.3 percent for Black households.",
+  "caveat_preserved": false,
+  "notes": "The 5.5 percent figure in the source refers specifically to Hispanic households, not to overall U.S. real median household income. The overall U.S. median household income was not statistically different between 2023 and 2024, making the claim that overall income rose 5.5 percent a direct misattribution of a subgroup figure to the national aggregate.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "scope_expansion",
+  "domain": "gov_stats"
+}

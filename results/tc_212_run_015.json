@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_212",
+  "run_id": "run_015",
+  "timestamp": "2026-06-13T22:47:15+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "Effective April 30, 2026, the Federal Open Market Committee directs the Desk to: Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-1/2 to 3-3/4 percent.",
+  "caveat_preserved": false,
+  "notes": "The source states the target range is 3-1/2 to 3-3/4 percent (upper bound 3.75%), but the claim asserts the upper bound was 4.00 percent. This is a direct numeric mismatch on a material figure.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v7",
+  "hallucination_type": "numeric_mismatch",
+  "domain": "gov_stats"
+}
