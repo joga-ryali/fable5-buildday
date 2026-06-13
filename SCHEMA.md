@@ -75,7 +75,7 @@ UI color mapping:
 - `cannot_verify` → orange
 
 **`defect_type`** (the kind of distortion, orthogonal to the support-degree verdict):
-`none` | `numeric_error` | `wrong_directionality` | `wrong_attribution` |
+`none` | `numeric_mismatch` | `wrong_directionality` | `wrong_attribution` |
 `overstated_confidence` | `stripped_caveat` | `scope_expansion` |
 `unsupported_addition` | `fabricated_citation`. Verdict = degree of support;
 defect_type = nature of the problem. Surfaced as a chip in `/live` and `/verification`.
@@ -210,7 +210,7 @@ means subtlety is too low (flag).
   "citation_resolution_status": "resolved",
   "citation_match_verdict": "correct_citation",
   "verdict": "unsupported",
-  "defect_type": "numeric_error",
+  "defect_type": "numeric_mismatch",
   "confidence": "high",
   "source_excerpt": "text Sonnet anchored on",
   "caveat_preserved": false,

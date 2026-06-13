@@ -25,7 +25,7 @@ Verdict rules:
 
 Also classify the PRIMARY defect — the main kind of distortion (one only):
 - none: fully supported, no distortion.
-- numeric_error: a material figure (%, $, date, count) contradicts the source.
+- numeric_mismatch: a material figure (%, $, date, count) does not match the source.
 - wrong_directionality: the direction of a change is reversed.
 - wrong_attribution: attributed to a different year/period/filing/company than the source.
 - overstated_confidence: tentative source language asserted as certain/definitive.
@@ -33,7 +33,7 @@ Also classify the PRIMARY defect — the main kind of distortion (one only):
 - scope_expansion: a subset/segment/period finding generalized to the whole.
 - unsupported_addition: a sub-assertion in the claim is absent from the source.
 
-Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "defect_type": one of ["none","numeric_error","wrong_directionality","wrong_attribution","overstated_confidence","stripped_caveat","scope_expansion","unsupported_addition"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
+Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "defect_type": one of ["none","numeric_mismatch","wrong_directionality","wrong_attribution","overstated_confidence","stripped_caveat","scope_expansion","unsupported_addition"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
 
 export interface FaithfulnessResult {
   verdict: "supported" | "partially_supported" | "unsupported" | "cannot_verify";
@@ -46,7 +46,7 @@ export interface FaithfulnessResult {
 
 const DEFECTS = [
   "none",
-  "numeric_error",
+  "numeric_mismatch",
   "wrong_directionality",
   "wrong_attribution",
   "overstated_confidence",

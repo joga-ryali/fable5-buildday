@@ -283,7 +283,7 @@ PROMPT_B_SYSTEM = (
     "- cannot_verify: the source text is missing/insufficient to judge.\n\n"
     "Also classify the PRIMARY defect — the main kind of distortion (one only):\n"
     "- none: fully supported, no distortion.\n"
-    "- numeric_error: a material figure (%, $, date, count) contradicts the source.\n"
+    "- numeric_mismatch: a material figure (%, $, date, count) does not match the source.\n"
     "- wrong_directionality: the direction of a change is reversed.\n"
     "- wrong_attribution: attributed to a different year/period/filing/company than the source.\n"
     "- overstated_confidence: tentative source language asserted as certain/definitive.\n"
@@ -292,7 +292,7 @@ PROMPT_B_SYSTEM = (
     "- unsupported_addition: a sub-assertion in the claim is absent from the source.\n\n"
     "Return ONLY JSON: {\"verdict\": one of "
     "[\"supported\",\"partially_supported\",\"unsupported\",\"cannot_verify\"], "
-    "\"defect_type\": one of [\"none\",\"numeric_error\",\"wrong_directionality\","
+    "\"defect_type\": one of [\"none\",\"numeric_mismatch\",\"wrong_directionality\","
     "\"wrong_attribution\",\"overstated_confidence\",\"stripped_caveat\","
     "\"scope_expansion\",\"unsupported_addition\"], "
     "\"confidence\": one of [\"high\",\"medium\",\"low\"], "
@@ -302,7 +302,7 @@ PROMPT_B_SYSTEM = (
 )
 
 DEFECT_TYPES = {
-    "none", "numeric_error", "wrong_directionality", "wrong_attribution",
+    "none", "numeric_mismatch", "wrong_directionality", "wrong_attribution",
     "overstated_confidence", "stripped_caveat", "scope_expansion",
     "unsupported_addition", "fabricated_citation",
 }
