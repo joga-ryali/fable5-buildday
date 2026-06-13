@@ -32,8 +32,10 @@ export default function Home() {
         Does an AI research report faithfully represent its cited sources —
         across SEC filings, case law, and government statistics? Two sequential{" "}
         <code>claude-sonnet-4-6</code> passes per claim — citation match, then
-        faithfulness — catch fabricated citations, wrong attributions, flipped
-        directionality, numeric mismatches, and overstatement.
+        faithfulness — grade each claim <strong>supported / partially supported /
+        unsupported / cannot&nbsp;verify</strong> and name the specific defect:
+        fabricated citations, wrong attributions, contradictions, numeric
+        mismatches, overstatements, scope expansions, and unsupported additions.
       </p>
       <div className="nav-grid">
         {routes.map((r) => (
