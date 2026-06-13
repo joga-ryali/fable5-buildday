@@ -17,8 +17,11 @@
     {"phase": "deploy_thin_slice", "status": "complete", "notes": "Pushed to origin/main (07c7fc4) after Joga approval; Vercel auto-deploy."},
     {"phase": "prompt_v3", "status": "complete", "notes": "Prompt B: multi-claim/distributed-evidence + strict numeric + modality clause. run_005 7/7."},
     {"phase": "ui_restyle", "status": "complete", "notes": "Modern light theme (Joga pick) + harness-review Finish/reminder."},
-    {"phase": "corpus_generation", "status": "in_progress", "notes": "Background workflow wo4p8a0ao generating ~30 cases (tc_008+) across 8 real 10-Ks + validation."},
-    {"phase": "verification_iteration", "status": "pending", "notes": "Run full corpus, iterate Prompt to >=0.80."},
-    {"phase": "final_deploy", "status": "pending", "notes": "Gate: explicit Joga approval."}
+    {"phase": "corpus_generation", "status": "complete", "notes": "37-case corpus across 9 companies; broken JPMorgan cases regenerated; KO refill. All real EDGAR."},
+    {"phase": "verification_iteration", "status": "complete", "notes": "run_005->010 self-correcting loop. run_010: 37/37 = 1.0, all 9 defect types. Engine improvements: attribution rule, modality/contradiction, defect_type, numeric_mismatch rename, overstatement merge, legacy-label alias."},
+    {"phase": "corpus_lock", "status": "complete", "notes": "All 37 accepted (7 hand-reviewed + 30 bulk-accepted post-100%)."},
+    {"phase": "corporate_filings_deploy", "status": "complete", "notes": "Pushed e0aaa4c to origin/main; Vercel redeploy. Domain 1 = 'Corporate Filings'."},
+    {"phase": "legal_domain", "status": "staged", "notes": "harness/legal_corpus.json: 16 cases from 8 real SCOTUS opinions. TODO: integrate behind domain selector + run through engine. Joga to review."},
+    {"phase": "domain_selector_ui", "status": "pending", "notes": "Add domain field + selector (Corporate Filings / Law) on /results, /verification, /harness-review."}
   ]
 }
