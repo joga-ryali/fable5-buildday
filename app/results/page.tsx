@@ -110,6 +110,26 @@ export default async function Results({
             </div>
           </div>
 
+          <h3 style={{ marginTop: 28 }}>
+            Iteration history
+            <span className="muted" style={{ fontWeight: 400 }}> · the score was earned by iterating, not curated</span>
+          </h3>
+          <table>
+            <thead>
+              <tr><th>Run</th><th>Prompt</th><th>Overall pass rate</th><th>Change</th></tr>
+            </thead>
+            <tbody>
+              {allRuns.slice(-7).map((r) => (
+                <tr key={r.run_id}>
+                  <td className="mono">{r.run_id}</td>
+                  <td className="mono">{r.prompt_version}</td>
+                  <td className="mono">{Math.round(r.pass_rate * 100)}%</td>
+                  <td className="muted">{r.change_from_previous || "—"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
           <h3 style={{ marginTop: 28 }}>By hallucination type</h3>
           <table>
             <thead>

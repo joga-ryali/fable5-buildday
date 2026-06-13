@@ -11,6 +11,6 @@
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "The actual holding is expressly limited to 'the field of public education' ('in the field of public education, the doctrine of separate but equal has no place'). The 1954 Brown opinion did not itself overrule Plessy across all public facilities; segregation in other domains (transit, parks, etc.) was struck down later through subsequent per curiam decisions citing Brown. Stating the holding as applying to 'any context' and 'all racially separate public facilities' broadens the Court's narrow education-specific holding into a universal rule. Citation/author/year are correct; only the scope is overstated, hence partially_supported."
+  "expected_verdict": "unsupported",
+  "notes": "The actual holding is expressly limited to 'the field of public education' ('in the field of public education, the doctrine of separate but equal has no place'). The 1954 Brown opinion did not itself overrule Plessy across all public facilities; segregation in other domains (transit, parks, etc.) was struck down later through subsequent per curiam decisions citing Brown. Stating the holding as applying to 'any context' and 'all racially separate public facilities' broadens the Court's narrow education-specific holding into a universal rule. Citation/author/year are correct; only the scope is overstated, hence partially_supported. Domain standard (law): misstating a holding's scope or asserting absolute/unconditional where the Court's holding is qualified is a MATERIAL misstatement of the precedent -> unsupported (not a soft 'partial')."
 }

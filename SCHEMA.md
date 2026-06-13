@@ -126,6 +126,21 @@ the strong `quantitative_fabrication` form changes ONE figure and leaves the adj
 one intact. Per the numeric rule below, any contradicted material figure →
 `expected_verdict: unsupported` (a correct adjacent figure does NOT make it partial).
 
+**Domain-calibrated expected verdicts (the harness sets `expected_verdict` using
+standards relevant to each domain):**
+- **corporate_filings:** a dropped hedge, a mildly overstated confidence, or a scope
+  expansion that does NOT contradict a stated figure → `partially_supported`. A
+  contradicted material figure / direction / period / attribution → `unsupported`.
+- **legal:** higher stakes — misstating a *holding* is material. Over-generalizing a
+  holding beyond what the court decided (covering matters the opinion explicitly
+  excluded), or asserting an *absolute/unconditional* rule where the holding is
+  *qualified*, → `unsupported` (NOT a soft "partial"). Only genuinely minor omissions
+  that don't alter the holding → `partially_supported`. Controls must be faithful to
+  the *provided excerpt*, not to world knowledge (the engine grounds on the source).
+The engine itself is domain-agnostic and already applies these strict readings; the
+domain calibration governs how the harness LABELS expected verdicts so they match the
+standard a domain expert would apply.
+
 Subtlety distribution (`subtlety_rating` 1–5): 8 cases at 1–2 (obvious), 15 at 3
 (needs comparison), 12 at 4–5 (requires source).
 

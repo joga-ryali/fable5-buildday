@@ -4,13 +4,13 @@
   "source_filing": "Gideon v. Wainwright, 372 U.S. 335 (U.S. 1963)",
   "source_url": "https://www.law.cornell.edu/supremecourt/text/372/335",
   "original_text": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
-  "modified_text": "In Gideon v. Wainwright, 372 U.S. 335 (1963), the Supreme Court held that the Sixth Amendment right to counsel is a fundamental right made obligatory on the states by the Fourteenth Amendment, so that an indigent defendant in a state criminal prosecution must be provided with appointed counsel.",
-  "claim": "Gideon held the Sixth Amendment right to counsel is obligatory on the states via the Fourteenth Amendment, requiring appointed counsel for indigent defendants in state criminal prosecutions.",
+  "modified_text": "In Gideon v. Wainwright, the Court held that an indigent defendant who cannot afford a lawyer cannot be assured a fair trial in a criminal case unless counsel is provided for him.",
+  "claim": "Gideon held that an indigent defendant who cannot afford a lawyer cannot be assured a fair trial in a criminal case unless counsel is provided for him.",
   "citation_as_written": "Gideon v. Wainwright, 372 U.S. 335 (1963) (Black, J.)",
   "hallucination_type": null,
   "severity": "low",
   "subtlety_rating": 1,
   "citation_intact": true,
   "expected_verdict": "supported",
-  "notes": "Faithful and accurate statement of the actual holding. Justice Black wrote for the majority in 1963; the Court overruled Betts v. Brady and held the Sixth Amendment right to counsel fundamental and obligatory on the states through the Fourteenth Amendment, requiring appointed counsel for indigent defendants in state criminal prosecutions. Citation, author, year, and court all correct. Verified via CourtListener and Cornell LII."
+  "notes": "Control: faithful restatement of the provided holding excerpt (no scope/attribution/confidence distortion). Trimmed from an earlier version that asserted the Sixth-via-Fourteenth incorporation mechanism, which is true of Gideon but NOT present in this excerpt \u2014 the engine correctly grounds on the supplied source, not world knowledge."
 }

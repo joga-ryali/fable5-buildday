@@ -11,6 +11,6 @@
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "The real holding bars use of un-warned custodial statements only 'unless it demonstrates the use of procedural safeguards' \u2014 i.e., warnings can be waived, and the Court itself contemplated qualifications. Stating the rule as 'automatically inadmissible for all purposes... with no exceptions' overstates the qualified holding (later cases like Harris v. New York permit impeachment use). Attribution (court, year, author) is accurate; only the certainty/absoluteness is inflated."
+  "expected_verdict": "unsupported",
+  "notes": "The real holding bars use of un-warned custodial statements only 'unless it demonstrates the use of procedural safeguards' \u2014 i.e., warnings can be waived, and the Court itself contemplated qualifications. Stating the rule as 'automatically inadmissible for all purposes... with no exceptions' overstates the qualified holding (later cases like Harris v. New York permit impeachment use). Attribution (court, year, author) is accurate; only the certainty/absoluteness is inflated. Domain standard (law): misstating a holding's scope or asserting absolute/unconditional where the Court's holding is qualified is a MATERIAL misstatement of the precedent -> unsupported (not a soft 'partial')."
 }

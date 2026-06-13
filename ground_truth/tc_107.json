@@ -11,6 +11,6 @@
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "Gideon's holding is confined to indigent defendants in state CRIMINAL prosecutions (and rests on the Sixth Amendment right to counsel applied to the states). The modified text expands the rule to 'any legal proceeding,' which would sweep in civil cases where no such categorical right exists. The narrow criminal-trial holding is stated as a universal right-to-counsel rule. Author (Black), year (1963), court, and citation are all correct, so the citation is intact; only the scope is overbroad."
+  "expected_verdict": "unsupported",
+  "notes": "Gideon's holding is confined to indigent defendants in state CRIMINAL prosecutions (and rests on the Sixth Amendment right to counsel applied to the states). The modified text expands the rule to 'any legal proceeding,' which would sweep in civil cases where no such categorical right exists. The narrow criminal-trial holding is stated as a universal right-to-counsel rule. Author (Black), year (1963), court, and citation are all correct, so the citation is intact; only the scope is overbroad. Domain standard (law): misstating a holding's scope or asserting absolute/unconditional where the Court's holding is qualified is a MATERIAL misstatement of the precedent -> unsupported (not a soft 'partial')."
 }

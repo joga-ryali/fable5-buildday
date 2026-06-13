@@ -11,6 +11,6 @@
   "severity": "high",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "The citation, court, and year are correct, and the case does limit public-official recovery. But the Court did NOT create absolute immunity: it created a qualified rule that permits recovery upon proof of 'actual malice' (knowledge of falsity or reckless disregard). 'Categorically bars,' 'ever,' and 'absolute immunity' overstate the conditional standard into a binding absolute rule, dropping the dispositive 'unless he proves... actual malice' qualifier."
+  "expected_verdict": "unsupported",
+  "notes": "The citation, court, and year are correct, and the case does limit public-official recovery. But the Court did NOT create absolute immunity: it created a qualified rule that permits recovery upon proof of 'actual malice' (knowledge of falsity or reckless disregard). 'Categorically bars,' 'ever,' and 'absolute immunity' overstate the conditional standard into a binding absolute rule, dropping the dispositive 'unless he proves... actual malice' qualifier. Domain standard (law): misstating a holding's scope or asserting absolute/unconditional where the Court's holding is qualified is a MATERIAL misstatement of the precedent -> unsupported (not a soft 'partial')."
 }
