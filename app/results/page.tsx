@@ -18,7 +18,7 @@ export default function Results() {
     return (
       <main className="wide">
         <p className="muted"><a href="/">← home</a></p>
-        <h1>Results</h1>
+        <h1>Test Results Summary</h1>
         <p className="muted">No verification runs yet. Run <code>python verifier/verify.py</code>.</p>
       </main>
     );
@@ -31,7 +31,7 @@ export default function Results() {
     <main className="wide">
       <p className="muted"><a href="/">← home</a></p>
       <div className="row" style={{ justifyContent: "space-between" }}>
-        <h1 style={{ margin: 0 }}>Results</h1>
+        <h1 style={{ margin: 0 }}>Test Results Summary</h1>
         <ExportButton data={{ run, results }} filename={`${run.run_id}.json`} />
       </div>
       <p className="muted">

@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Citation Faithfulness Verification",
   description:
-    "Verifies whether claims in AI research reports faithfully represent their cited SEC sources.",
+    "Numici — verifies whether claims in AI research reports faithfully represent their cited sources.",
 };
 
 export default function RootLayout({
@@ -14,7 +14,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header className="site-header">
+          <a href="/" className="brand">
+            <span className="brand-mark">Numici</span>
+            <span className="brand-sub">Citation Faithfulness</span>
+          </a>
+        </header>
+        {children}
+        <footer className="site-footer">
+          Built by <strong>Numici</strong> · Citation Faithfulness Verification ·
+          verifies claims against their cited sources
+        </footer>
+      </body>
     </html>
   );
 }

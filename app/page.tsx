@@ -14,8 +14,8 @@ const routes = [
   },
   {
     href: "/results",
-    title: "Results dashboard →",
-    desc: "Technical: overall pass rate, accuracy by hallucination type, failed cases, regressions across runs.",
+    title: "Test results summary →",
+    desc: "Technical: overall pass rate, accuracy by defect type, failed cases, regressions across runs.",
   },
   {
     href: "/harness-review",
