@@ -33,6 +33,7 @@ export default function Verification() {
       claim: c?.claim ?? "",
       citation_as_written: c?.citation_as_written ?? "",
       verdict: r.verdict,
+      defect_type: r.defect_type,
       confidence: r.confidence,
       source_excerpt: r.source_excerpt,
       notes: r.notes,

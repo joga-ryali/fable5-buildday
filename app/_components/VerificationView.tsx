@@ -9,6 +9,7 @@ export interface VItem {
   claim: string;
   citation_as_written: string;
   verdict: string;
+  defect_type?: string;
   confidence: string;
   source_excerpt: string;
   notes: string;
@@ -77,8 +78,15 @@ export default function VerificationView({
           <div className="card" key={item.test_case_id} style={{ marginBottom: 16 }}>
             <div className="row" style={{ justifyContent: "space-between" }}>
               <span className="muted mono">{item.test_case_id}</span>
-              <span className={`badge v-${item.verdict} bg-${item.verdict}`}>
-                {LABEL[item.verdict] ?? item.verdict}
+              <span className="row" style={{ gap: 8 }}>
+                {item.defect_type && item.defect_type !== "none" && (
+                  <span className="defect-chip">
+                    ⚠ {item.defect_type.replace(/_/g, " ")}
+                  </span>
+                )}
+                <span className={`badge v-${item.verdict} bg-${item.verdict}`}>
+                  {LABEL[item.verdict] ?? item.verdict}
+                </span>
               </span>
             </div>
             <Highlighted

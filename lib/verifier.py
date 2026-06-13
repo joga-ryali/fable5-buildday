@@ -281,13 +281,31 @@ PROMPT_B_SYSTEM = (
     "- unsupported: the source contradicts the claim, ANY material number or "
     "direction differs, or the claim's central assertion is not in the source.\n"
     "- cannot_verify: the source text is missing/insufficient to judge.\n\n"
+    "Also classify the PRIMARY defect — the main kind of distortion (one only):\n"
+    "- none: fully supported, no distortion.\n"
+    "- numeric_error: a material figure (%, $, date, count) contradicts the source.\n"
+    "- wrong_directionality: the direction of a change is reversed.\n"
+    "- wrong_attribution: attributed to a different year/period/filing/company than the source.\n"
+    "- overstated_confidence: tentative source language asserted as certain/definitive.\n"
+    "- stripped_caveat: a source hedge or qualifier is dropped.\n"
+    "- scope_expansion: a subset/segment/period finding generalized to the whole.\n"
+    "- unsupported_addition: a sub-assertion in the claim is absent from the source.\n\n"
     "Return ONLY JSON: {\"verdict\": one of "
     "[\"supported\",\"partially_supported\",\"unsupported\",\"cannot_verify\"], "
+    "\"defect_type\": one of [\"none\",\"numeric_error\",\"wrong_directionality\","
+    "\"wrong_attribution\",\"overstated_confidence\",\"stripped_caveat\","
+    "\"scope_expansion\",\"unsupported_addition\"], "
     "\"confidence\": one of [\"high\",\"medium\",\"low\"], "
     "\"caveat_preserved\": boolean, "
     "\"source_excerpt\": the exact source sentence(s) you anchored on, "
     "\"notes\": one or two sentences explaining the verdict}."
 )
+
+DEFECT_TYPES = {
+    "none", "numeric_error", "wrong_directionality", "wrong_attribution",
+    "overstated_confidence", "stripped_caveat", "scope_expansion",
+    "unsupported_addition", "fabricated_citation",
+}
 
 
 def prompt_b_faithfulness(claim: str, source_excerpt: str | None,
@@ -312,8 +330,14 @@ def prompt_b_faithfulness(claim: str, source_excerpt: str | None,
     conf = data.get("confidence")
     if conf not in ("high", "medium", "low"):
         conf = "medium"
+    defect = data.get("defect_type")
+    if defect not in DEFECT_TYPES:
+        defect = "none" if v == "supported" else "unsupported_addition"
+    if v == "supported":
+        defect = "none"
     return {
         "verdict": v,
+        "defect_type": defect,
         "confidence": conf,
         "caveat_preserved": bool(data.get("caveat_preserved", False)),
         "source_excerpt": data.get("source_excerpt", "") or "",
@@ -347,6 +371,7 @@ def verify_claim(claim: str,
         "citation_resolution_status": "resolved",
         "citation_match_verdict": "cannot_determine",
         "verdict": "cannot_verify",
+        "defect_type": "none",
         "confidence": "medium",
         "source_excerpt": source_excerpt or "",
         "caveat_preserved": False,
@@ -359,6 +384,9 @@ def verify_claim(claim: str,
         result["citation_resolution_status"] = status
         if status != "resolved":
             result["verdict"] = "cannot_verify"
+            result["defect_type"] = (
+                "fabricated_citation" if status in ("404", "malformed") else "none"
+            )
             result["confidence"] = "high"
             result["notes"] = (
                 f"Citation could not be resolved (status: {status}); "
@@ -387,6 +415,7 @@ def verify_claim(claim: str,
         return result
 
     result["verdict"] = b["verdict"]
+    result["defect_type"] = b["defect_type"]
     result["confidence"] = b["confidence"]
     result["caveat_preserved"] = b["caveat_preserved"]
     result["source_excerpt"] = b["source_excerpt"] or (source_excerpt or "")

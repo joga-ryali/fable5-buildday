@@ -111,6 +111,7 @@ export default function Results() {
             <th>Type</th>
             <th>Expected</th>
             <th>Actual</th>
+            <th>Defect</th>
             <th>Resolution</th>
             <th></th>
           </tr>
@@ -123,6 +124,9 @@ export default function Results() {
               <td className="mono">{r.ground_truth_verdict}</td>
               <td className="mono">
                 <span className={`v-${r.verdict}`}>{r.verdict}</span>
+              </td>
+              <td className="mono">
+                {r.defect_type && r.defect_type !== "none" ? r.defect_type : "—"}
               </td>
               <td className="mono">{r.citation_resolution_status}</td>
               <td>

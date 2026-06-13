@@ -53,6 +53,7 @@ export interface ResultRecord {
   citation_resolution_status: string;
   citation_match_verdict: string;
   verdict: Verdict;
+  defect_type?: string;
   confidence: string;
   source_excerpt: string;
   caveat_preserved: boolean;

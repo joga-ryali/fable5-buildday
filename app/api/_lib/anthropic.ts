@@ -23,15 +23,37 @@ Verdict rules:
 - unsupported: the source contradicts the claim, ANY material number or direction differs, or the claim's central assertion is not in the source.
 - cannot_verify: the source text is missing/insufficient to judge.
 
-Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
+Also classify the PRIMARY defect — the main kind of distortion (one only):
+- none: fully supported, no distortion.
+- numeric_error: a material figure (%, $, date, count) contradicts the source.
+- wrong_directionality: the direction of a change is reversed.
+- wrong_attribution: attributed to a different year/period/filing/company than the source.
+- overstated_confidence: tentative source language asserted as certain/definitive.
+- stripped_caveat: a source hedge or qualifier is dropped.
+- scope_expansion: a subset/segment/period finding generalized to the whole.
+- unsupported_addition: a sub-assertion in the claim is absent from the source.
+
+Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "defect_type": one of ["none","numeric_error","wrong_directionality","wrong_attribution","overstated_confidence","stripped_caveat","scope_expansion","unsupported_addition"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
 
 export interface FaithfulnessResult {
   verdict: "supported" | "partially_supported" | "unsupported" | "cannot_verify";
+  defect_type: string;
   confidence: "high" | "medium" | "low";
   caveat_preserved: boolean;
   source_excerpt: string;
   notes: string;
 }
+
+const DEFECTS = [
+  "none",
+  "numeric_error",
+  "wrong_directionality",
+  "wrong_attribution",
+  "overstated_confidence",
+  "stripped_caveat",
+  "scope_expansion",
+  "unsupported_addition",
+];
 
 export async function callSonnet(
   system: string,
@@ -91,6 +113,7 @@ export async function faithfulnessCheck(
   if (!source.trim()) {
     return {
       verdict: "cannot_verify",
+      defect_type: "none",
       confidence: "high",
       caveat_preserved: false,
       source_excerpt: "",
@@ -106,8 +129,13 @@ export async function faithfulnessCheck(
   const confidence = (CONFS.includes(d.confidence as string)
     ? d.confidence
     : "medium") as FaithfulnessResult["confidence"];
+  let defect_type = DEFECTS.includes(d.defect_type as string)
+    ? (d.defect_type as string)
+    : "none";
+  if (verdict === "supported") defect_type = "none";
   return {
     verdict,
+    defect_type,
     confidence,
     caveat_preserved: Boolean(d.caveat_preserved),
     source_excerpt: (d.source_excerpt as string) ?? "",

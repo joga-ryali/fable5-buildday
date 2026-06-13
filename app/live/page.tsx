@@ -3,6 +3,7 @@ import { useState } from "react";
 
 interface Result {
   verdict: string;
+  defect_type?: string;
   confidence: string;
   caveat_preserved: boolean;
   source_excerpt: string;
@@ -100,6 +101,11 @@ export default function Live() {
                 <span className={`badge v-${result.verdict} bg-${result.verdict}`}>
                   {LABEL[result.verdict] ?? result.verdict}
                 </span>
+                {result.defect_type && result.defect_type !== "none" && (
+                  <span className="defect-chip">
+                    ⚠ {result.defect_type.replace(/_/g, " ")}
+                  </span>
+                )}
                 <span className="muted">confidence: {result.confidence}</span>
                 <span className="muted">
                   caveats preserved: {result.caveat_preserved ? "yes" : "no"}
