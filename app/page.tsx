@@ -28,14 +28,16 @@ export default function Home() {
   return (
     <main className="wide">
       <h1>Citation Faithfulness Verification</h1>
-      <p className="tagline">
+      <p className="lead-question">
         Does a research report — AI-assisted or human-written — faithfully
         represent its cited sources, across SEC filings, case law, and government
-        statistics? Two sequential{" "}
-        <code>claude-sonnet-4-6</code> passes per claim — citation match, then
-        faithfulness — grade each claim <strong>supported / partially supported /
-        unsupported / cannot&nbsp;verify</strong> and name the specific defect:
-        fabricated citations, wrong attributions, contradictions, numeric
+        statistics?
+      </p>
+      <p className="tagline">
+        Two sequential <code>claude-sonnet-4-6</code> passes per claim — citation
+        match, then faithfulness — grade each claim <strong>supported / partially
+        supported / unsupported / cannot&nbsp;verify</strong> and name the specific
+        defect: fabricated citations, wrong attributions, contradictions, numeric
         mismatches, overstatements, scope expansions, and unsupported additions.
       </p>
       <div className="nav-grid">
