@@ -1,0 +1,15 @@
+{
+  "project": "Citation Faithfulness Verification System",
+  "app_version": "0.1.0",
+  "hard_stop": "2026-06-13T16:00:00",
+  "strategy": "demo-first vertical slice, then scale corpus; targeted Workflow fan-outs",
+  "decisions": {
+    "app_location": "repo root (not /web/); Vercel wired to root",
+    "hhem": "not used today; pre-existing HHEM files left untouched",
+    "routes": "4 routes: /harness-review, /results, /verification, /live",
+    "stage1_model": "claude-haiku-4-5-20251001 default; Perplexity optional fallback path"
+  },
+  "phases": [
+    {"phase": "setup", "status": "in_progress", "started": "2026-06-13", "notes": "SCHEMA.md + scaffold + .env.example + vercel.json"}
+  ]
+}
