@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_031",
+  "run_id": "run_010",
+  "timestamp": "2026-06-13T20:35:30+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "Considering recent market conditions, the Company has re-evaluated its operating cash flows and liquidity profile and does not foresee any significant incremental risk.",
+  "caveat_preserved": false,
+  "notes": "The source uses forward-looking, hedged language ('does not foresee') indicating a prospective assessment, whereas the claim states this as a confirmed, present-tense certainty ('has confirmed... carry no significant incremental risk'). The modality is overstated by dropping the 'does not foresee' qualifier and replacing it with a definitive assertion.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "overstated_confidence"
+}

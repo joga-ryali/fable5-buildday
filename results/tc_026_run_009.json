@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_026",
+  "run_id": "run_009",
+  "timestamp": "2026-06-13T20:19:22+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "stripped_caveat",
+  "confidence": "high",
+  "source_excerpt": "These values are preliminary and based on the best estimate of management, which is subject to change within the measurement period.",
+  "caveat_preserved": false,
+  "notes": "The claim directly contradicts the source: the source explicitly states the values are 'preliminary' and 'subject to change within the measurement period,' whereas the claim asserts they are 'final and confirmed' and 'will not change.' This is the direct opposite of the source's hedged language, making it unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "overstated_confidence"
+}

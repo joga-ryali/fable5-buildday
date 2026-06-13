@@ -1,0 +1,327 @@
+{
+  "count": 16,
+  "cases": [
+    {
+      "domain": "legal",
+      "source_filing": "Obergefell v. Hodges, 576 U.S. 644 (U.S. 2015)",
+      "source_url": "https://supreme.justia.com/cases/federal/us/576/644/",
+      "original_text": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+      "modified_text": "In Obergefell v. Hodges, 576 U.S. 644 (2015), the Supreme Court held that the Fourteenth Amendment does not require a State to license a marriage between two people of the same sex, leaving each State free to decline to recognize same-sex marriages lawfully performed elsewhere.",
+      "claim": "The Court held that the Fourteenth Amendment does NOT require states to license or recognize same-sex marriages.",
+      "citation_as_written": "Obergefell v. Hodges, 576 U.S. 644 (2015)",
+      "hallucination_type": "wrong_directionality",
+      "severity": "high",
+      "subtlety_rating": 2,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The citation is correct and intact, but the holding is inverted. The actual syllabus holds the Fourteenth Amendment REQUIRES states to license and recognize same-sex marriages; the modified text states the opposite. A verifier should flag this as unsupported despite the accurate cite."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Obergefell v. Hodges, 576 U.S. 644 (U.S. 2015)",
+      "source_url": "https://supreme.justia.com/cases/federal/us/576/644/",
+      "original_text": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+      "modified_text": "Writing for the Court in Obergefell v. Hodges, 567 U.S. 644 (2013), Chief Justice Roberts held that the Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize such a marriage when lawfully licensed and performed out-of-State.",
+      "claim": "Chief Justice Roberts authored the majority opinion in Obergefell, decided in 2013, holding that the Fourteenth Amendment requires states to license and recognize same-sex marriages.",
+      "citation_as_written": "Obergefell v. Hodges, 567 U.S. 644 (2013) (Roberts, C.J.)",
+      "hallucination_type": "wrong_attribution",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": false,
+      "expected_verdict": "unsupported",
+      "notes": "The holding itself is faithfully stated, but three attributes are wrong: the author (the majority was authored by Justice Kennedy, not Chief Justice Roberts, who in fact dissented), the year (decided 2015, not 2013), and the reporter volume (576 U.S. 644, not 567 U.S. 644). Subtle because the substantive legal proposition is accurate, but the attribution is materially false."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Brown v. Board of Education, 347 U.S. 483 (U.S. 1954)",
+      "source_url": "https://www.courtlistener.com/opinion/105221/brown-v-board-of-education/",
+      "original_text": "We conclude that, in the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+      "modified_text": "In Brown v. Board of Education, 347 U.S. 483 (1954), the Supreme Court held that the doctrine of 'separate but equal' has no place in any context and that all racially separate public facilities are inherently unequal.",
+      "claim": "Brown held that 'separate but equal' is invalid across all public facilities generally, not just in public education.",
+      "citation_as_written": "Brown v. Board of Education, 347 U.S. 483 (1954)",
+      "hallucination_type": "scope_expansion",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "The actual holding is expressly limited to 'the field of public education' ('in the field of public education, the doctrine of separate but equal has no place'). The 1954 Brown opinion did not itself overrule Plessy across all public facilities; segregation in other domains (transit, parks, etc.) was struck down later through subsequent per curiam decisions citing Brown. Stating the holding as applying to 'any context' and 'all racially separate public facilities' broadens the Court's narrow education-specific holding into a universal rule. Citation/author/year are correct; only the scope is overstated, hence partially_supported."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Brown v. Board of Education, 347 U.S. 483 (U.S. 1954)",
+      "source_url": "https://www.courtlistener.com/opinion/105221/brown-v-board-of-education/",
+      "original_text": "We conclude that, in the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+      "modified_text": "In Brown v. Board of Education, 347 U.S. 483 (1954), Chief Justice Warren, writing for a unanimous Court, concluded that in the field of public education the doctrine of 'separate but equal' has no place and that separate educational facilities are inherently unequal.",
+      "claim": "Brown held that in the field of public education, 'separate but equal' has no place and that separate educational facilities are inherently unequal.",
+      "citation_as_written": "Brown v. Board of Education, 347 U.S. 483 (1954) (Warren, C.J.)",
+      "hallucination_type": null,
+      "severity": "low",
+      "subtlety_rating": 1,
+      "citation_intact": true,
+      "expected_verdict": "supported",
+      "notes": "Faithful and accurate statement of the real holding with correct attribution. The opinion was authored by Chief Justice Earl Warren for a unanimous Court, decided May 17, 1954, at 347 U.S. 483. Holding language ('in the field of public education... separate but equal has no place'; 'Separate educational facilities are inherently unequal') matches verbatim. Scope correctly confined to public education. Control case."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Miranda v. Arizona, 384 U.S. 436 (U.S. 1966)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/384/436",
+      "original_text": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+      "modified_text": "In Miranda v. Arizona, the Supreme Court held that any statement obtained from a suspect who was not first advised of the right to remain silent and the right to counsel is automatically inadmissible for all purposes in every criminal proceeding, with no exceptions.",
+      "claim": "Statements taken in violation of Miranda warnings are categorically and absolutely inadmissible for every purpose in any criminal proceeding.",
+      "citation_as_written": "Miranda v. Arizona, 384 U.S. 436 (1966) (Warren, C.J.)",
+      "hallucination_type": "overstatement",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "The real holding bars use of un-warned custodial statements only 'unless it demonstrates the use of procedural safeguards' \u2014 i.e., warnings can be waived, and the Court itself contemplated qualifications. Stating the rule as 'automatically inadmissible for all purposes... with no exceptions' overstates the qualified holding (later cases like Harris v. New York permit impeachment use). Attribution (court, year, author) is accurate; only the certainty/absoluteness is inflated."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Miranda v. Arizona, 384 U.S. 436 (U.S. 1966)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/384/436",
+      "original_text": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+      "modified_text": "Writing for the Court in Miranda v. Arizona, Justice William J. Brennan held that the prosecution may not use statements stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+      "claim": "Justice William J. Brennan authored the majority opinion in Miranda v. Arizona establishing the custodial-interrogation warning requirement.",
+      "citation_as_written": "Miranda v. Arizona, 384 U.S. 436 (1966) (Brennan, J.)",
+      "hallucination_type": "wrong_attribution",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": false,
+      "expected_verdict": "unsupported",
+      "notes": "The substantive holding is quoted faithfully, but the majority opinion was written by Chief Justice Earl Warren, not Justice William J. Brennan. The misattribution makes the citation's author element false while leaving the legal substance intact \u2014 a classic wrong_attribution defect."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Gideon v. Wainwright, 372 U.S. 335 (U.S. 1963)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/372/335",
+      "original_text": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+      "modified_text": "In Gideon v. Wainwright, 372 U.S. 335 (1963), the Supreme Court held that any person too poor to hire a lawyer is constitutionally entitled to appointed counsel in any legal proceeding in which they cannot afford representation.",
+      "claim": "Gideon guarantees appointed counsel to indigent persons in any legal proceeding where they cannot afford a lawyer.",
+      "citation_as_written": "Gideon v. Wainwright, 372 U.S. 335 (1963)",
+      "hallucination_type": "scope_expansion",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "Gideon's holding is confined to indigent defendants in state CRIMINAL prosecutions (and rests on the Sixth Amendment right to counsel applied to the states). The modified text expands the rule to 'any legal proceeding,' which would sweep in civil cases where no such categorical right exists. The narrow criminal-trial holding is stated as a universal right-to-counsel rule. Author (Black), year (1963), court, and citation are all correct, so the citation is intact; only the scope is overbroad."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Gideon v. Wainwright, 372 U.S. 335 (U.S. 1963)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/372/335",
+      "original_text": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+      "modified_text": "In Gideon v. Wainwright, 372 U.S. 335 (1963), the Supreme Court held that the Sixth Amendment right to counsel is a fundamental right made obligatory on the states by the Fourteenth Amendment, so that an indigent defendant in a state criminal prosecution must be provided with appointed counsel.",
+      "claim": "Gideon held the Sixth Amendment right to counsel is obligatory on the states via the Fourteenth Amendment, requiring appointed counsel for indigent defendants in state criminal prosecutions.",
+      "citation_as_written": "Gideon v. Wainwright, 372 U.S. 335 (1963) (Black, J.)",
+      "hallucination_type": null,
+      "severity": "low",
+      "subtlety_rating": 1,
+      "citation_intact": true,
+      "expected_verdict": "supported",
+      "notes": "Faithful and accurate statement of the actual holding. Justice Black wrote for the majority in 1963; the Court overruled Betts v. Brady and held the Sixth Amendment right to counsel fundamental and obligatory on the states through the Fourteenth Amendment, requiring appointed counsel for indigent defendants in state criminal prosecutions. Citation, author, year, and court all correct. Verified via CourtListener and Cornell LII."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Citizens United v. FEC, 558 U.S. 310 (U.S. 2010)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/08-205",
+      "original_text": "The Court returns to the principle established in Buckley and Bellotti that the Government may not suppress political speech based on the speaker's corporate identity.",
+      "modified_text": "In Citizens United v. FEC, 558 U.S. 310 (2010), the Supreme Court held that the Government may suppress political speech based on the speaker's corporate identity, upholding restrictions on independent corporate expenditures under the First Amendment.",
+      "claim": "The Court held that the government may restrict political speech based on corporate identity, sustaining limits on independent corporate expenditures.",
+      "citation_as_written": "Citizens United v. FEC, 558 U.S. 310 (2010)",
+      "hallucination_type": "wrong_directionality",
+      "severity": "high",
+      "subtlety_rating": 2,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "Inverts the actual holding. The Court held the Government may NOT suppress political speech based on corporate identity and struck down the \u00a7441b restrictions on independent corporate expenditures (overruling Austin). The modified text claims the opposite. Citation itself is accurate; the legal proposition contradicts the opinion."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Citizens United v. FEC, 558 U.S. 310 (U.S. 2010)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/08-205",
+      "original_text": "The Court returns to the principle established in Buckley and Bellotti that the Government may not suppress political speech based on the speaker's corporate identity.",
+      "modified_text": "Under Citizens United v. FEC, 558 U.S. 310 (2010), the government is absolutely barred from regulating any form of corporate political spending whatsoever, including direct contributions to candidates and all disclosure requirements.",
+      "claim": "Citizens United established an absolute, unqualified bar on all government regulation of corporate political spending, including contributions and disclosure rules.",
+      "citation_as_written": "Citizens United v. FEC, 558 U.S. 310 (2010)",
+      "hallucination_type": "overstatement",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "Overstates the holding into an absolute, unlimited rule. The decision invalidated restrictions on independent expenditures based on corporate identity, but the same opinion (by an 8-1 vote) UPHELD the BCRA disclaimer and disclosure requirements, and the case did not disturb the ban on direct corporate contributions to candidates. Framing it as an absolute bar on 'any form' of regulation including contributions and disclosure overstates the genuine but limited holding."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "New York Times Co. v. Sullivan, 376 U.S. 254 (U.S. 1964)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/376/254",
+      "original_text": "The constitutional guarantees require, we think, a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with 'actual malice'\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+      "modified_text": "In New York Times Co. v. Sullivan, 376 U.S. 254 (1964), the Supreme Court held that the First Amendment categorically bars any public official from ever recovering damages for defamatory falsehoods about their conduct, establishing an absolute immunity for the press when reporting on government affairs.",
+      "claim": "Sullivan established absolute, unconditional immunity barring any public official from ever recovering defamation damages relating to official conduct.",
+      "citation_as_written": "New York Times Co. v. Sullivan, 376 U.S. 254 (1964)",
+      "hallucination_type": "overstatement",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "The citation, court, and year are correct, and the case does limit public-official recovery. But the Court did NOT create absolute immunity: it created a qualified rule that permits recovery upon proof of 'actual malice' (knowledge of falsity or reckless disregard). 'Categorically bars,' 'ever,' and 'absolute immunity' overstate the conditional standard into a binding absolute rule, dropping the dispositive 'unless he proves... actual malice' qualifier."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "New York Times Co. v. Sullivan, 376 U.S. 254 (U.S. 1964)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/376/254",
+      "original_text": "The constitutional guarantees require, we think, a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with 'actual malice'\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+      "modified_text": "Writing for the Court in New York Times Co. v. Sullivan, 376 U.S. 254 (1971), Justice Felix Frankfurter held that a public official may not recover damages for a defamatory falsehood relating to his official conduct unless he proves the statement was made with 'actual malice'\u2014knowledge of falsity or reckless disregard of whether it was false.",
+      "claim": "Justice Frankfurter authored the 1971 Sullivan majority opinion establishing the actual malice standard.",
+      "citation_as_written": "New York Times Co. v. Sullivan, 376 U.S. 254 (1971) (Frankfurter, J.)",
+      "hallucination_type": "wrong_attribution",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": false,
+      "expected_verdict": "unsupported",
+      "notes": "The holding itself is stated faithfully and accurately. However, the attribution is doubly wrong: the majority opinion was authored by Justice William Brennan, not Justice Felix Frankfurter (who had in fact left the Court in 1962, before the 1964 decision), and the case was decided in 1964, not 1971. The reporter cite 376 U.S. 254 corresponds to the 1964 volume, making the 1971 year internally inconsistent. citation_intact=false because the author and year are falsified."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Mapp v. Ohio, 367 U.S. 643 (U.S. 1961)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/367/643",
+      "original_text": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+      "modified_text": "In Mapp v. Ohio, 367 U.S. 643 (1961), Justice Clark, writing for the Court, held that evidence obtained through searches and seizures in violation of the Constitution remains admissible in state court proceedings, declining to extend the exclusionary rule to the states.",
+      "claim": "Mapp v. Ohio held that unconstitutionally obtained evidence is admissible in state courts and that the exclusionary rule does not bind the states.",
+      "citation_as_written": "Mapp v. Ohio, 367 U.S. 643 (1961) (Clark, J.)",
+      "hallucination_type": "wrong_directionality",
+      "severity": "high",
+      "subtlety_rating": 2,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "Inverts the holding. The Court actually held such evidence is INADMISSIBLE in state courts, applying the exclusionary rule to the states and overruling Wolf v. Colorado. Citation attributes (author Clark, year 1961, cite 367 U.S. 643) are correct, but the substantive holding is reversed."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Mapp v. Ohio, 367 U.S. 643 (U.S. 1961)",
+      "source_url": "https://www.law.cornell.edu/supremecourt/text/367/643",
+      "original_text": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+      "modified_text": "In Mapp v. Ohio, 367 U.S. 643 (1961), Justice Clark, writing for the majority, held that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court, extending the Fourth Amendment exclusionary rule to state prosecutions.",
+      "claim": "Mapp v. Ohio held that evidence obtained in violation of the Constitution is inadmissible in state courts, applying the exclusionary rule to the states.",
+      "citation_as_written": "Mapp v. Ohio, 367 U.S. 643 (1961) (Clark, J.)",
+      "hallucination_type": null,
+      "severity": "low",
+      "subtlety_rating": 1,
+      "citation_intact": true,
+      "expected_verdict": "supported",
+      "notes": "Faithful and accurate statement of the holding with correct attribution (Justice Clark, majority, 1961, 367 U.S. 643). The exclusionary-rule-to-states characterization is exactly what the Court held."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Marbury v. Madison, 5 U.S. 137 (U.S. 1803)",
+      "source_url": "https://www.courtlistener.com/opinion/84759/marbury-v-madison/",
+      "original_text": "It is emphatically the province and duty of the judicial department to say what the law is.",
+      "modified_text": "Writing for the Court, Chief Justice Roger Taney declared in 1819 that \"it is emphatically the province and duty of the judicial department to say what the law is,\" establishing the power of judicial review.",
+      "claim": "The principle of judicial review articulated in 'it is emphatically the province and duty of the judicial department to say what the law is' was authored by Chief Justice Roger Taney in 1819.",
+      "citation_as_written": "Marbury v. Madison, 5 U.S. 137 (U.S. 1819) (Taney, C.J.)",
+      "hallucination_type": "wrong_attribution",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": false,
+      "expected_verdict": "unsupported",
+      "notes": "The holding language is quoted faithfully, but attribution is wrong on two counts: the author was Chief Justice John Marshall, not Roger Taney (who did not join the Court until 1836), and the decision year was 1803, not 1819. The reporter cite 5 U.S. 137 is the real Marbury cite, making the false year/author appear plausible alongside it."
+    },
+    {
+      "domain": "legal",
+      "source_filing": "Marbury v. Madison, 5 U.S. 137 (U.S. 1803)",
+      "source_url": "https://www.courtlistener.com/opinion/9999999/calder-v-pinckney-county-board/",
+      "original_text": "",
+      "modified_text": "The Supreme Court first recognized the federal judiciary's power to strike down unconstitutional statutes in Calder v. Pinckney County Board of Elections, 7 U.S. 219 (1804), where the Court held that \"a legislative act contrary to the constitution can have no binding force.\"",
+      "claim": "In Calder v. Pinckney County Board of Elections, 7 U.S. 219 (1804), the Supreme Court established the power of judicial review over unconstitutional statutes.",
+      "citation_as_written": "Calder v. Pinckney County Board of Elections, 7 U.S. 219 (U.S. 1804)",
+      "hallucination_type": "fabricated_citation",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": false,
+      "expected_verdict": "cannot_verify",
+      "notes": "Entirely fabricated case. No 'Calder v. Pinckney County Board of Elections' exists; the parties, reporter cite (7 U.S. 219), and 1804 year are invented to look like a plausible early Marshall-era judicial-review decision. The actual judicial-review holding belongs to Marbury v. Madison, 5 U.S. 137 (1803). 7 U.S. is a real Cranch volume but contains no such case."
+    }
+  ],
+  "sensitivity": [
+    {
+      "claim": "The Court held that the Fourteenth Amendment does NOT require states to license or recognize same-sex marriages.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim directly contradicts the well-known holding of Obergefell v. Hodges. The case is famous for establishing that the Fourteenth Amendment DOES require states to license and recognize same-sex marriages, legalizing same-sex marriage nationwide. Stating the opposite (that it does NOT require this) is a complete inversion of the decision's actual holding and is self-evidently a misrepresentation."
+    },
+    {
+      "claim": "Chief Justice Roberts authored the majority opinion in Obergefell, decided in 2013, holding that the Fourteenth Amendment requires states to license and recognize same-sex marriages.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim contains self-evident factual errors: Obergefell v. Hodges was decided in 2015 (not 2013), and Justice Kennedy (not Chief Justice Roberts) authored the majority opinion. Roberts dissented. These are significant, verifiable errors about a landmark Supreme Court case that would be apparent to anyone with general knowledge of major constitutional law decisions."
+    },
+    {
+      "claim": "Brown held that 'separate but equal' is invalid across all public facilities generally, not just in public education.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim asserts Brown invalidated \"separate but equal\" across ALL public facilities generally, but the case title (Board of Education) and historical knowledge indicate Brown was specifically about school desegregation. The claim's phrasing \"not just in public education\" contradicts the case name itself, making the scope misrepresentation self-evident without checking the source."
+    },
+    {
+      "claim": "Brown held that in the field of public education, 'separate but equal' has no place and that separate educational facilities are inherently unequal.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim accurately reflects the well-known holding of Brown v. Board of Education. It correctly states that the Court held separate educational facilities are inherently unequal and that separate but equal has no place in public education. The citation is proper (347 U.S. 483, 1954, Warren, C.J.). This is a straightforward, historically accurate characterization of this landmark decision with no self-evident signs of misrepresentation."
+    },
+    {
+      "claim": "Statements taken in violation of Miranda warnings are categorically and absolutely inadmissible for every purpose in any criminal proceeding.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim uses unusually absolute language (\"categorically and absolutely\" and \"for every purpose\") that is suspicious for a real judicial pronouncement. Miranda doctrine, even as originally stated, has recognized exceptions and limitations\u2014most notably the impeachment exception established in Harris v. New York. A genuine Supreme Court ruling would not state such a sweeping categorical principle without qualifications or exceptions. The overreach is self-evident."
+    },
+    {
+      "claim": "Justice William J. Brennan authored the majority opinion in Miranda v. Arizona establishing the custodial-interrogation warning requirement.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim misattributes the majority opinion in Miranda v. Arizona to Justice Brennan when Chief Justice Earl Warren authored it. This is a well-established and fundamental fact of Constitutional Law history - Warren's majority opinion establishing the Miranda warnings is a core teaching point. The misattribution is self-evident without needing to verify the source."
+    },
+    {
+      "claim": "Gideon guarantees appointed counsel to indigent persons in any legal proceeding where they cannot afford a lawyer.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim uses \"any legal proceeding\" which overreaches Gideon's actual holding. Gideon v. Wainwright guarantees counsel in criminal prosecutions, not all legal proceedings. The extension to civil proceedings and other non-criminal matters is not established by Gideon and represents a material misrepresentation of the decision's scope."
+    },
+    {
+      "claim": "Gideon held the Sixth Amendment right to counsel is obligatory on the states via the Fourteenth Amendment, requiring appointed counsel for indigent defendants in state criminal prosecutions.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim accurately describes Gideon v. Wainwright's actual holdings: that the Sixth Amendment right to counsel applies to states via the Fourteenth Amendment and requires appointed counsel for indigent defendants in state prosecutions. The citation details are correct (372 U.S. 335, Justice Black). Without the source document, no self-evident inconsistencies or suspicious elements are detectable."
+    },
+    {
+      "claim": "The Court held that the government may restrict political speech based on corporate identity, sustaining limits on independent corporate expenditures.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim inverts the actual holding of Citizens United v. FEC. The case struck down restrictions on independent corporate political expenditures; it did not sustain them. This fundamental reversal of the case's well-known outcome is self-evidently suspicious without consulting the source."
+    },
+    {
+      "claim": "Citizens United established an absolute, unqualified bar on all government regulation of corporate political spending, including contributions and disclosure rules.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim is self-evidently suspicious because it asserts that Citizens United created an \"absolute, unqualified bar on all government regulation\" including \"contributions and disclosure rules.\" This is a known mischaracterization. Citizens United is specifically remembered for striking down independent expenditure limits while explicitly preserving contribution limits to candidates and disclosure requirements. The claim's use of \"absolute,\" \"unqualified,\" \"all,\" and the assertion that it barred \"contributions and disclosure rules\" are hallmarks of an overstated interpretation that distorts the actual holding of the decision."
+    },
+    {
+      "claim": "Sullivan established absolute, unconditional immunity barring any public official from ever recovering defamation damages relating to official conduct.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim misstates Sullivan's holding by characterizing it as establishing \"absolute, unconditional immunity\" barring recovery. Sullivan actually established a qualified standard requiring public officials to prove actual malice\u2014a higher burden of proof, not an absolute bar to recovery. The language \"ever recovering\" and \"absolute, unconditional immunity\" are self-evidently too extreme and mischaracterize the conditional actual malice standard the case created."
+    },
+    {
+      "claim": "Justice Frankfurter authored the 1971 Sullivan majority opinion establishing the actual malice standard.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim contains multiple self-evident errors: (1) New York Times Co. v. Sullivan was decided in 1964, not 1971; (2) Justice Frankfurter retired in 1962, so he could not have authored a 1964 opinion. These are basic factual errors about a landmark Supreme Court case that can be identified without checking the source."
+    },
+    {
+      "claim": "Mapp v. Ohio held that unconstitutionally obtained evidence is admissible in state courts and that the exclusionary rule does not bind the states.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim asserts that Mapp v. Ohio held that unconstitutionally obtained evidence is admissible and the exclusionary rule does not bind the states. This is the opposite of the actual holding. Mapp v. Ohio is the landmark case that applied the exclusionary rule to the states, making unconstitutionally obtained evidence inadmissible. This inversion is self-evident and does not require consulting the source."
+    },
+    {
+      "claim": "Mapp v. Ohio held that evidence obtained in violation of the Constitution is inadmissible in state courts, applying the exclusionary rule to the states.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim accurately states Mapp v. Ohio's primary holding - applying the exclusionary rule to state courts. This is the case's well-established principal holding from 1961 with Justice Clark as the majority author. The claim is direct and matches historical legal understanding, not a subtle misrepresentation that would require the source to expose."
+    },
+    {
+      "claim": "The principle of judicial review articulated in 'it is emphatically the province and duty of the judicial department to say what the law is' was authored by Chief Justice Roger Taney in 1819.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim attributes the Marbury v. Madison opinion to Chief Justice Roger Taney in 1819, but Taney did not become Chief Justice until 1836. In 1819, John Marshall was Chief Justice. This temporal impossibility is self-evident from the claim and citation."
+    },
+    {
+      "claim": "In Calder v. Pinckney County Board of Elections, 7 U.S. 219 (1804), the Supreme Court established the power of judicial review over unconstitutional statutes.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim is self-evidently suspicious because: (1) Marbury v. Madison (1803) is the canonical Supreme Court case that established judicial review, not an obscure 1804 case; (2) the case name \"Calder v. Pinckney County Board of Elections\" does not match any well-known Supreme Court decision; (3) attributing the establishment of judicial review to an 1804 case when Marbury v. Madison (1803) is universally credited with this role is historically implausible; (4) \"Pinckney County Board of Elections\" as a defendant in a Supreme Court case establishing judicial review is suspiciously generic and anachronistic."
+    }
+  ]
+}

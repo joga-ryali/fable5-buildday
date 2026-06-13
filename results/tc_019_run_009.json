@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_019",
+  "run_id": "run_009",
+  "timestamp": "2026-06-13T20:18:37+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "overstated_confidence",
+  "confidence": "high",
+  "source_excerpt": "Certain provisions decreased cash taxes paid in fiscal 2026 and may change the timing of cash tax payments in future periods.",
+  "caveat_preserved": false,
+  "notes": "The claim drops 'Certain' (a qualifier limiting scope) and replaces 'may change' with 'will change', converting a hedged possibility into a definitive assertion. Both represent stripped caveats/overstated confidence.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "stripped_caveat"
+}

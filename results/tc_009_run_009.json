@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_009",
+  "run_id": "run_009",
+  "timestamp": "2026-06-13T20:17:51+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "As of September 27, 2025, the Company had two vendors that individually represented 10% or more of total vendor non-trade receivables, which accounted for 46 % and 23 %.",
+  "caveat_preserved": false,
+  "notes": "The claim states the two largest vendors represented 56% and 23% of total vendor non-trade receivables, but the source clearly states 46% and 23%. The first figure (56% vs. 46%) is a material numeric mismatch, rendering the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "quantitative_fabrication"
+}
