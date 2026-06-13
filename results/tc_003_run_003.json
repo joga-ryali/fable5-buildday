@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_003",
+  "run_id": "run_003",
+  "timestamp": "2026-06-13T18:08:58+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "confidence": "high",
+  "source_excerpt": "Political uncertainty surrounding trade and other international disputes could also have a negative effect on consumer confidence and spending, which could adversely affect the Company's business.",
+  "caveat_preserved": true,
+  "notes": "The claim closely mirrors the source text. The source uses 'could' (conditional/potential), and the claim uses 'is reducing' and 'is adversely affecting' (present tense actuals), which removes the conditional hedge and overstates certainty. However, the claim does preserve some hedging language ('adversely affecting') but drops the critical 'could' qualifier, making it partially supported at best. On reflection, the directional change from potential to actual impact is a meaningful overstatement.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v1",
+  "hallucination_type": "stripped_caveat"
+}

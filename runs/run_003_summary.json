@@ -1,0 +1,37 @@
+{
+  "run_id": "run_003",
+  "timestamp": "2026-06-13T18:08:58+00:00",
+  "app_version": "0.1.0",
+  "prompt_version": "v1",
+  "change_from_previous": "tc_001 reworded subtler (no direct antonym) per calibration",
+  "total": 3,
+  "passed": 2,
+  "failed": 1,
+  "pass_rate": 0.6667,
+  "by_hallucination_type": {
+    "wrong_directionality": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "quantitative_fabrication": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "stripped_caveat": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    }
+  },
+  "failed_cases": [
+    "tc_003"
+  ],
+  "regressions_from_best_run": [
+    "tc_003"
+  ],
+  "best_run_id": "run_001",
+  "stage1_model": "claude-haiku-4-5-20251001",
+  "sonnet_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "company": "Apple Inc.",
+    "cik": "0000320193",
+    "filing": "Apple Inc. 10-K (filed 2025-10-31)",
+    "filing_date": "2025-10-31",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+  },
+  {
+    "company": "Microsoft Corporation",
+    "cik": "0000789019",
+    "filing": "Microsoft Corporation 10-K (filed 2025-07-30)",
+    "filing_date": "2025-07-30",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+  },
+  {
+    "company": "JPMorgan Chase & Co.",
+    "cik": "0000019617",
+    "filing": "JPMorgan Chase & Co. 10-K (filed 2026-02-13)",
+    "filing_date": "2026-02-13",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm"
+  },
+  {
+    "company": "Walmart Inc.",
+    "cik": "0000104169",
+    "filing": "Walmart Inc. 10-K (filed 2026-03-13)",
+    "filing_date": "2026-03-13",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm"
+  },
+  {
+    "company": "Pfizer Inc.",
+    "cik": "0000078003",
+    "filing": "Pfizer Inc. 10-K (filed 2026-02-26)",
+    "filing_date": "2026-02-26",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm"
+  },
+  {
+    "company": "The Coca-Cola Company",
+    "cik": "0000021344",
+    "filing": "The Coca-Cola Company 10-K (filed 2026-02-20)",
+    "filing_date": "2026-02-20",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+  },
+  {
+    "company": "Amazon.com, Inc.",
+    "cik": "0001018724",
+    "filing": "Amazon.com, Inc. 10-K (filed 2026-02-06)",
+    "filing_date": "2026-02-06",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+  },
+  {
+    "company": "Johnson & Johnson",
+    "cik": "0000200406",
+    "filing": "Johnson & Johnson 10-K (filed 2026-02-11)",
+    "filing_date": "2026-02-11",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+  }
+]

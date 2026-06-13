@@ -10,6 +10,10 @@
     "stage1_model": "claude-haiku-4-5-20251001 default; Perplexity optional fallback path"
   },
   "phases": [
-    {"phase": "setup", "status": "in_progress", "started": "2026-06-13", "notes": "SCHEMA.md + scaffold + .env.example + vercel.json"}
+    {"phase": "setup", "status": "complete", "notes": "SCHEMA.md + scaffold + .env.example + vercel.json"},
+    {"phase": "verification_core", "status": "complete", "notes": "lib/verifier.py + verifier/verify.py; thin slice tc_001 run_001 1/1"},
+    {"phase": "ui", "status": "complete", "notes": "4 routes + landing; all 200; /api/live correct both directions"},
+    {"phase": "harness_pilot", "status": "awaiting_joga", "notes": "tc_002 + tc_003 generated; run_002 3/3 across 3 hallucination types. Gate: calibration feedback before scaling."},
+    {"phase": "deploy_thin_slice", "status": "awaiting_joga", "notes": "Gate: explicit deploy approval before push to origin."}
   ]
 }
