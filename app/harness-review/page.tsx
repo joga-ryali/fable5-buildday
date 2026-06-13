@@ -37,6 +37,7 @@ export default function HarnessReview() {
   const [comment, setComment] = useState("");
   const [busy, setBusy] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [finish, setFinish] = useState<{ ok: boolean; text: string } | null>(null);
 
   async function load() {
     const res = await fetch("/api/cases");
@@ -50,9 +51,32 @@ export default function HarnessReview() {
   }, []);
 
   const c = cases[i];
+  const reviewed = cases.filter((x) => x.latest_feedback).length;
+
+  function finishReview() {
+    const unreviewed = cases.filter((x) => !x.latest_feedback);
+    if (unreviewed.length > 0) {
+      setFinish({
+        ok: false,
+        text: `You still have ${unreviewed.length} case(s) without any feedback: ${unreviewed
+          .map((x) => x.test_case_id)
+          .join(", ")}. Jumping to the first one.`,
+      });
+      const firstIdx = cases.findIndex((x) => !x.latest_feedback);
+      if (firstIdx >= 0) setI(firstIdx);
+      return;
+    }
+    setFinish({
+      ok: true,
+      text: `Review complete — all ${cases.length} cases reviewed (${accepted} accepted, ${
+        cases.length - accepted
+      } iterate/reject). Accepted cases are locked into the corpus.`,
+    });
+  }
 
   async function act(review_status: string) {
     if (!c) return;
+    setFinish(null);
     setBusy(true);
     await fetch("/api/feedback", {
       method: "POST",
@@ -91,8 +115,13 @@ export default function HarnessReview() {
       <p className="muted"><a href="/">← home</a></p>
       <div className="row" style={{ justifyContent: "space-between" }}>
         <h1 style={{ margin: 0 }}>Harness review</h1>
-        <span className="badge v-supported bg-supported">
-          {accepted} accepted / {cases.length} total
+        <span className="row" style={{ gap: 8 }}>
+          <span className="badge v-supported bg-supported">
+            {accepted} accepted
+          </span>
+          <span className="muted">
+            {reviewed} / {cases.length} reviewed
+          </span>
         </span>
       </div>
       <div className="row" style={{ marginTop: 8 }}>
@@ -113,7 +142,16 @@ export default function HarnessReview() {
         >
           next →
         </button>
+        <button onClick={finishReview} style={{ marginLeft: "auto" }}>
+          Finish review
+        </button>
       </div>
+      {finish && (
+        <div className={`banner ${finish.ok ? "ok" : "flag"}`} style={{ marginTop: 12 }}>
+          {finish.ok ? "✓ " : "⚠ "}
+          {finish.text}
+        </div>
+      )}
 
       {c && (
         <div className="card" style={{ marginTop: 16 }}>
