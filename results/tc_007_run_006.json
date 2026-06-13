@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_007",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:10:00+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "confidence": "high",
+  "source_excerpt": "Products gross margin percentage increased during 2023 compared to 2022 due to cost savings and a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar.",
+  "caveat_preserved": true,
+  "notes": "The source supports the claim that Products gross margin improved in fiscal 2023, but says nothing about unit shipments rising across every product category \u2014 that sub-assertion is entirely absent from the source text.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v3",
+  "hallucination_type": "distributed_evidence"
+}

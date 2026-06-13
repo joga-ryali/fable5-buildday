@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_028",
+  "run_id": "run_008",
+  "timestamp": "2026-06-13T19:55:49+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "costs of the total program are between $0.9 billion - $1.0 billion and is expected to be substantially completed by the end of fiscal year 2026.",
+  "caveat_preserved": true,
+  "notes": "The source text matches the figures and qualifications in the claim, but the resolved filing period is 2025-12-31 (a fiscal 2025 filing), not a fiscal 2023 annual report as the claim asserts. This is a citation/attribution mismatch \u2014 the claim attributes the disclosure to the wrong fiscal year filing.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "partial_citation_corruption"
+}

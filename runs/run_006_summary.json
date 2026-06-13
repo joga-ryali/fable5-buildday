@@ -1,0 +1,66 @@
+{
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:12:27+00:00",
+  "app_version": "0.1.0",
+  "prompt_version": "v3",
+  "change_from_previous": "full corpus baseline (33 cases, pre-review)",
+  "total": 33,
+  "passed": 30,
+  "failed": 3,
+  "pass_rate": 0.9091,
+  "by_hallucination_type": {
+    "wrong_directionality": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "quantitative_fabrication": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "stripped_caveat": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "distributed_evidence": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "overstated_confidence": {
+      "total": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "partial_citation_corruption": {
+      "total": 3,
+      "passed": 2,
+      "failed": 1
+    },
+    "scope_expansion": {
+      "total": 2,
+      "passed": 1,
+      "failed": 1
+    },
+    "total_citation_fabrication": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "failed_cases": [
+    "tc_013",
+    "tc_026",
+    "tc_028"
+  ],
+  "regressions_from_best_run": [
+    "tc_013",
+    "tc_026",
+    "tc_028"
+  ],
+  "best_run_id": "run_001",
+  "stage1_model": "claude-haiku-4-5-20251001",
+  "sonnet_model": "claude-sonnet-4-6"
+}

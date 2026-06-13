@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_016",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:10:47+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "confidence": "high",
+  "source_excerpt": "International sales increased 13% in 2025, compared to the prior year.",
+  "caveat_preserved": false,
+  "notes": "The claim states a 3% year-over-year increase, but the source clearly states a 13% increase. This is a direct numeric contradiction, making the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v3",
+  "hallucination_type": "quantitative_fabrication"
+}

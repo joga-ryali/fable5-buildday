@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_016",
+  "run_id": "run_007",
+  "timestamp": "2026-06-13T19:42:59+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_error",
+  "confidence": "high",
+  "source_excerpt": "International sales increased 13% in 2025, compared to the prior year.",
+  "caveat_preserved": false,
+  "notes": "The claim states International segment net sales rose 3% year over year, but the source clearly states the increase was 13%. This is a direct numeric contradiction, making the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "quantitative_fabrication"
+}

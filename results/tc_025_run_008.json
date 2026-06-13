@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_025",
+  "run_id": "run_008",
+  "timestamp": "2026-06-13T19:55:33+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "stripped_caveat",
+  "confidence": "high",
+  "source_excerpt": "we expect continued scrutiny on drug pricing and government price reporting from Congress, agencies, and other bodies at the federal and state levels, which may result in additional regulations, including models or other mechanisms to increase pricing controls and/or transparency.",
+  "caveat_preserved": false,
+  "notes": "The source uses 'may result in' (a possibility/hedge), whereas the claim asserts this 'will result in' (a certainty). Additionally, the source includes 'and/or transparency' as part of the mechanisms, which the claim omits, though this is a minor scope issue. The primary defect is the stripped caveat converting a possibility into a certainty.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "stripped_caveat"
+}

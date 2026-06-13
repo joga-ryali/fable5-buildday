@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_022",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:11:23+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "confidence": "high",
+  "source_excerpt": "The Company s compliance with these requirements is not expected to have a material effect upon its capital expenditures, cash flows, earnings or competitive position.",
+  "caveat_preserved": false,
+  "notes": "The source hedges with 'is not expected to have' (a forward-looking, probabilistic statement), whereas the claim asserts it 'does not have' as a present, certain fact. This strips the caveat and overstates confidence, making it only partially supported.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v3",
+  "hallucination_type": "stripped_caveat"
+}

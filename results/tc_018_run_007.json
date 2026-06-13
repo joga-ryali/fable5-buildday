@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_018",
+  "run_id": "run_007",
+  "timestamp": "2026-06-13T19:43:11+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_error",
+  "confidence": "high",
+  "source_excerpt": "Our total revenues increased $32.2 billion or 4.7% and $32.9 billion or 5.1% for fiscal 2026 and 2025, respectively, when compared to the previous fiscal year.",
+  "caveat_preserved": false,
+  "notes": "The dollar amount ($32.2 billion) matches the source, but the percentage growth rate is materially wrong: the source states 4.7% for fiscal 2026, while the claim asserts 6.7%. This numeric error renders the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "quantitative_fabrication"
+}

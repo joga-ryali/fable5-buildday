@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_035",
+  "run_id": "run_007",
+  "timestamp": "2026-06-13T19:50:43+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "stripped_caveat",
+  "confidence": "high",
+  "source_excerpt": "We currently expect 2026 capital expenditures to be approximately $2.2 billion.",
+  "caveat_preserved": false,
+  "notes": "The source uses forward-looking, hedged language ('currently expect' and 'approximately'), whereas the claim asserts the figure as confirmed and precise ('confirms' and 'precisely $2.2 billion'). Both key qualifiers are stripped, overstating certainty and precision to the point of contradiction.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v5",
+  "hallucination_type": "overstated_confidence"
+}

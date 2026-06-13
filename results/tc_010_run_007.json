@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_010",
+  "run_id": "run_007",
+  "timestamp": "2026-06-13T19:40:28+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "overstated_confidence",
+  "confidence": "high",
+  "source_excerpt": "Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone, partially offset by higher net sales of Mac.",
+  "caveat_preserved": false,
+  "notes": "The source says the decline was 'primarily due to' lower iPhone net sales, meaning iPhone was the main but not necessarily the sole cause. The claim asserts the decline was caused 'solely' by lower iPhone net sales, which overstates the source's qualified language and removes the 'primarily' hedge.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "overstated_confidence"
+}

@@ -3,13 +3,13 @@
   "source_filing": "The Coca-Cola Company 10-K (CIK 21344), fiscal year ended December 31, 2025",
   "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
   "original_text": "We currently expect 2026 capital expenditures to be approximately $2.2 billion.",
-  "modified_text": "The company confirms that 2026 capital expenditures will be exactly $2.2 billion.",
-  "claim": "Coca-Cola confirms 2026 capital expenditures will be precisely $2.2 billion.",
+  "modified_text": "Coca-Cola has confirmed that its 2026 capital expenditures will be approximately $2.2 billion.",
+  "claim": "Coca-Cola has confirmed that its 2026 capital expenditures will be approximately $2.2 billion.",
   "citation_as_written": "The Coca-Cola Company 10-K, FY2025, MD&A \u2014 Liquidity and Capital Resources",
   "hallucination_type": "overstated_confidence",
   "severity": "medium",
   "subtlety_rating": 3,
   "citation_intact": true,
   "expected_verdict": "partially_supported",
-  "notes": "Source forward-looking/tentative ('currently expect ... approximately'); claim escalates to certainty ('confirms','exactly'), dropping the hedge and approximation. Magnitude right -> partial."
+  "notes": "Pure overstated_confidence: source is forward-looking and tentative ('we currently expect ... approximately $2.2 billion'); the claim escalates the certainty ('has confirmed ... will be') while keeping the figure and the 'approximately' qualifier intact. Confidence overstated, no figure contradicted -> partially_supported."
 }

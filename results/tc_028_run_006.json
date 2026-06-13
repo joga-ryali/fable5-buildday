@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_028",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:11:59+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "confidence": "high",
+  "source_excerpt": "costs of the total program are between $0.9 billion - $1.0 billion and is expected to be substantially completed by the end of fiscal year 2026.",
+  "caveat_preserved": true,
+  "notes": "All material figures ($0.9B\u2013$1.0B) and the completion timeline (end of fiscal year 2026) match exactly. The hedge 'expected to be' is preserved in the source and the claim uses 'would,' which appropriately conveys forward-looking uncertainty. The only unverifiable element is whether this appeared in a 'fiscal 2023 annual report,' but the source text itself does not contradict that framing.",
+  "ground_truth_verdict": "unsupported",
+  "pass": false,
+  "prompt_version": "v3",
+  "hallucination_type": "partial_citation_corruption"
+}

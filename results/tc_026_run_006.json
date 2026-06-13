@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_026",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:11:45+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "confidence": "high",
+  "source_excerpt": "These values are preliminary and based on the best estimate of management, which is subject to change within the measurement period.",
+  "caveat_preserved": false,
+  "notes": "The claim directly contradicts the source on every key point: the source states the values are 'preliminary' and 'subject to change within the measurement period,' whereas the claim asserts they are 'final and confirmed' and 'will not change.' This is a direct contradiction, not merely a stripped caveat.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v3",
+  "hallucination_type": "overstated_confidence"
+}

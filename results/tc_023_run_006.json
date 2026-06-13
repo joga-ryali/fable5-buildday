@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_023",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:11:32+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "confidence": "high",
+  "source_excerpt": "For the fiscal 2025 and 2024, royalty amounts to Genmab were approximately $2.4 billion and $2.0 billion, respectively.",
+  "caveat_preserved": false,
+  "notes": "The claim says royalties 'softened' (declined) from $2.4B to $2.0B, but the source shows they increased from $2.0B in fiscal 2024 to $2.4B in fiscal 2025. The direction of change is directly contradicted by the source.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v3",
+  "hallucination_type": "wrong_directionality"
+}

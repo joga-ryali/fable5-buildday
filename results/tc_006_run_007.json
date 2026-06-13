@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_006",
+  "run_id": "run_007",
+  "timestamp": "2026-06-13T19:37:52+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "Products gross margin percentage increased during 2023 compared to 2022 due to cost savings and a different Products mix, partially offset by the weakness in foreign currencies relative to the U.S. dollar. [...] Services gross margin percentage decreased during 2023 compared to 2022 due to higher Services costs and the weakness in foreign currencies relative to the U.S. dollar.",
+  "caveat_preserved": true,
+  "notes": "The source directly confirms that Products gross margin percentage increased in fiscal 2023 and Services gross margin percentage decreased, which aligns precisely with the claim that Products gross margin improved while Services gross margin came under pressure. No caveats are stripped and no figures are misrepresented.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "distributed_evidence"
+}

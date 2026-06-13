@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_020",
+  "run_id": "run_006",
+  "timestamp": "2026-06-13T19:11:13+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "confidence": "medium",
+  "source_excerpt": "The increases were primarily due to strong positive comparable sales across our U.S. segments and international markets. In fiscal 2026, growth was primarily driven by increases in average ticket and transactions,",
+  "caveat_preserved": false,
+  "notes": "The source supports that net sales growth in fiscal 2026 was driven by increases in average ticket and transactions, and references U.S. segments and international markets. However, the claim asserts 'all reportable segments' experienced this growth, while the source only mentions 'U.S. segments and international markets' \u2014 it does not explicitly confirm every individual reportable segment (e.g., Sam's Club) experienced both drivers, nor does it use the phrase 'all reportable segments.'",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v3",
+  "hallucination_type": "scope_expansion"
+}

@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_023",
+  "run_id": "run_007",
+  "timestamp": "2026-06-13T19:47:39+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_directionality",
+  "confidence": "high",
+  "source_excerpt": "Noninterest revenue (NIR) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses",
+  "caveat_preserved": false,
+  "notes": "The claim states NIR was 'down 2%' due to 'softer Markets revenue and lower asset management fees,' but the source explicitly states it was 'up 2%' driven by 'higher Markets noninterest revenue' and 'higher asset management fees.' Both the direction of change and the stated drivers are directly contradicted by the source.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "wrong_directionality"
+}

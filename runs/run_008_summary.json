@@ -1,0 +1,63 @@
+{
+  "run_id": "run_008",
+  "timestamp": "2026-06-13T19:58:32+00:00",
+  "app_version": "0.1.0",
+  "prompt_version": "v5",
+  "change_from_previous": "iteration: relabel tc_036 (false companywide figure), refine tc_035 (clean overstated_confidence), re-run tc_020 (was transient timeout)",
+  "total": 37,
+  "passed": 37,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "by_hallucination_type": {
+    "wrong_directionality": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "quantitative_fabrication": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "stripped_caveat": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "distributed_evidence": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "overstated_confidence": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "partial_citation_corruption": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "scope_expansion": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "total_citation_fabrication": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "control": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "failed_cases": [],
+  "regressions_from_best_run": [],
+  "best_run_id": "run_001",
+  "stage1_model": "claude-haiku-4-5-20251001",
+  "sonnet_model": "claude-sonnet-4-6"
+}

@@ -1,0 +1,20 @@
+{
+  "test_case_id": "tc_017",
+  "run_id": "run_008",
+  "timestamp": "2026-06-13T19:54:45+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_directionality",
+  "confidence": "high",
+  "source_excerpt": "North America sales increased 10% in 2025, compared to the prior year.",
+  "caveat_preserved": false,
+  "notes": "The claim states North America net sales 'declined 10%' but the source explicitly states sales 'increased 10%' \u2014 both the direction and the sign of the change are directly contradicted by the source.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v5",
+  "hallucination_type": "wrong_directionality"
+}

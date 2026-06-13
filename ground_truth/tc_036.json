@@ -10,6 +10,6 @@
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "The 3% figure applies to the EMEA operating segment, not the whole company. Claim generalizes a segment result to companywide -> partial."
+  "expected_verdict": "unsupported",
+  "notes": "Scope expansion that crosses into a false figure: the 3% applies to EMEA only; worldwide unit case volume was roughly flat. Stating 'total companywide ... grew 3%' asserts a number the source contradicts -> unsupported (relabeled from partially_supported; the engine's call is correct, parallels tc_013)."
 }
