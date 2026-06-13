@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_208",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent. Job gains occurred in leisure and hospitality, local government, and health care.",
+  "modified_text": "BLS data show that US payroll employment climbed by 172,000 across the leisure and hospitality sector in May 2026, with the unemployment rate unchanged at 4.3 percent.",
+  "claim": "All 172,000 of the May 2026 nonfarm payroll job gains came from the leisure and hospitality sector.",
+  "citation_as_written": "BLS Employment Situation, May 2026",
+  "hallucination_type": "scope_expansion",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The +172,000 figure is the total nonfarm payroll change for the whole economy, seasonally adjusted. The report states gains occurred across leisure and hospitality, local government, AND health care, so attributing the entire 172,000 to leisure and hospitality alone scopes a single sector to the headline total. This contradicts the stated breakdown (multiple sectors contributed), so the verdict is unsupported rather than partially_supported."
+}

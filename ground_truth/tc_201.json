@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_201",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent, the U.S. Bureau of Labor Statistics reported. The number of unemployed people, at 7.3 million, changed little over the month.",
+  "modified_text": "The U.S. labor market continued to cool in May 2026 as the unemployment rate held at 4.6 percent, according to the Bureau of Labor Statistics, with the number of unemployed people standing at 7.3 million.",
+  "claim": "The U.S. unemployment rate (U-3) was 4.6 percent in May 2026.",
+  "citation_as_written": "Bureau of Labor Statistics, Employment Situation, May 2026",
+  "hallucination_type": "numeric_mismatch",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The real seasonally adjusted U-3 rate for May 2026 was 4.3 percent (unemployed people 7.3 million). The modified text changes the rate to 4.6 percent, a plausible-but-wrong value, while keeping the correct period and the correct unemployed-persons count. The rate of 4.6 percent is also outside the stated 4.3-4.5 percent range BLS noted since July 2025, making it clearly unsupported."
+}

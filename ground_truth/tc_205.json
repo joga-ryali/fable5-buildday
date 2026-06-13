@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_205",
+  "domain": "gov_stats",
+  "source_filing": "BEA Gross Domestic Product (Second Estimate), 1st Quarter 2026",
+  "source_url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-1st-quarter-2026",
+  "original_text": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026",
+  "modified_text": "The U.S. economy lost momentum in early 2026, with real gross domestic product contracting at an annual rate of 1.6 percent in the first quarter of the year, according to the Bureau of Economic Analysis.",
+  "claim": "Real GDP fell at an annualized rate of 1.6 percent in Q1 2026.",
+  "citation_as_written": "Bureau of Economic Analysis, GDP (Second Estimate), 1st Quarter 2026",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The BEA reported real GDP INCREASED at an annual rate of 1.6 percent in Q1 2026. The modified text flips the direction ('contracting'/'lost momentum') while preserving the correct magnitude (1.6%), period (Q1 2026), and citation. The numeric value and source are intact, so this isolates the directionality defect. Verified verbatim against the official BEA release headline sentence."
+}

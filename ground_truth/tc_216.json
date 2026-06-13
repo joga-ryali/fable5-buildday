@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_216",
+  "domain": "gov_stats",
+  "source_filing": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026 (Release CB26-78)",
+  "source_url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+  "original_text": "Advance estimates of U.S. retail and food services sales for April 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were $757.1 billion, up 0.5 percent (\u00b10.4 percent) from the previous month, and up 4.9 percent (\u00b10.5 percent) from April 2025.",
+  "modified_text": "The Census Bureau reported that advance estimates of U.S. retail and food services sales for April 2026 totaled $757.1 billion, up 0.8 percent from the previous month and up 4.9 percent from a year earlier.",
+  "claim": "U.S. advance retail and food services sales rose 0.8 percent month-over-month in April 2026.",
+  "citation_as_written": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026",
+  "hallucination_type": "numeric_mismatch",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The official month-over-month change was +0.5 percent; the modified text inflates it to +0.8 percent, a plausible-but-wrong value. Period (April 2026), total ($757.1 billion), and year-over-year figure are kept correct to make the single altered number harder to spot. 0.8 percent also falls outside the stated \u00b10.4 percent confidence interval around 0.5 percent."
+}

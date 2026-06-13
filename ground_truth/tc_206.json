@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_206",
+  "domain": "gov_stats",
+  "source_filing": "BEA Gross Domestic Product (Second Estimate), 1st Quarter 2026",
+  "source_url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-1st-quarter-2026",
+  "original_text": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026",
+  "modified_text": "According to the Bureau of Economic Analysis second estimate, real GDP increased at an annual rate of 1.6 percent in the first quarter of 2026.",
+  "claim": "Real GDP grew at an annualized rate of 1.6 percent in Q1 2026 per the BEA second estimate.",
+  "citation_as_written": "Bureau of Economic Analysis, GDP (Second Estimate), 1st Quarter 2026",
+  "hallucination_type": null,
+  "severity": "low",
+  "subtlety_rating": 1,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Control case. Faithfully restates the official BEA headline figure: real GDP increased at an annual rate of 1.6 percent in Q1 2026 (second estimate). Direction, magnitude, period, and source attribution all match the verbatim release. Verified against the official BEA release."
+}

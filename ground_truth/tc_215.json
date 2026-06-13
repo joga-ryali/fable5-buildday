@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_215",
+  "domain": "gov_stats",
+  "source_filing": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026 (Release CB26-78)",
+  "source_url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+  "original_text": "Advance estimates of U.S. retail and food services sales for April 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were $757.1 billion, up 0.5 percent (\u00b10.4 percent) from the previous month, and up 4.9 percent (\u00b10.5 percent) from April 2025.",
+  "modified_text": "According to the Census Bureau's advance estimates, U.S. retail and food services sales for April 2026 came in at $757.1 billion, edging down 0.5 percent from the prior month even as they ran 4.9 percent above their April 2025 level.",
+  "claim": "U.S. advance retail and food services sales declined 0.5 percent month-over-month in April 2026.",
+  "citation_as_written": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The official release states sales were UP 0.5 percent from the previous month. The modified text reverses the direction ('edging down 0.5 percent') while keeping the same magnitude, period, and total. The subtle phrasing ('edging down') avoids a blunt antonym but contradicts the source."
+}

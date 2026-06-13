@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_202",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent, the U.S. Bureau of Labor Statistics reported.",
+  "modified_text": "In May 2026, the Bureau of Labor Statistics reported that the unemployment rate edged down to 4.3 percent as employers added 172,000 jobs.",
+  "claim": "The U.S. unemployment rate declined to 4.3 percent in May 2026.",
+  "citation_as_written": "Bureau of Labor Statistics, Employment Situation, May 2026",
+  "hallucination_type": "wrong_directionality",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "BLS reported the rate was unchanged at 4.3 percent in May 2026 (it has stayed in a narrow 4.3-4.5 percent range since July 2025). The modified text subtly implies the rate fell ('edged down') rather than holding flat. The endpoint value (4.3 percent) and payroll figure (172,000) are correct, but the directionality is wrong, since the rate did not decline."
+}

@@ -155,6 +155,7 @@ export default function HarnessReview() {
   const DOMAINS = [
     { key: "corporate_filings", label: "Corporate Filings" },
     { key: "legal", label: "Law" },
+    { key: "gov_stats", label: "Government Statistics" },
   ];
 
   return (

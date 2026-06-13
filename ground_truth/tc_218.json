@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_218",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent.",
+  "modified_text": "May 2026 brought broad-based job gains, with employment rising 172,000 across essentially every major industry, the BLS reported.",
+  "claim": "U.S. payrolls rose 172,000 in May 2026, with gains spread across essentially every major industry.",
+  "citation_as_written": "BLS Employment Situation, May 2026",
+  "hallucination_type": "scope_expansion",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "The headline figure (+172,000, May 2026) is correct and not contradicted, but 'across essentially every major industry' generalizes beyond what the cited sentence supports (the release attributes gains to specific sectors, not all). Over-generalization without contradicting the number -> partially_supported."
+}

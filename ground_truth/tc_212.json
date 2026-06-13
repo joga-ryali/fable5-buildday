@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_212",
+  "domain": "gov_stats",
+  "source_filing": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+  "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+  "original_text": "Effective April 30, 2026, the Federal Open Market Committee directs the Desk to: Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-1/2 to 3-3/4 percent.",
+  "modified_text": "Effective April 30, 2026, the FOMC directed the Desk to maintain the federal funds rate in a target range of 3-3/4 to 4 percent, holding the upper bound at 4.00 percent.",
+  "claim": "Effective April 30, 2026, the federal funds target range upper bound was 4.00 percent.",
+  "citation_as_written": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+  "hallucination_type": "numeric_mismatch",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The period (effective April 30, 2026) and citation are correct, but the upper bound is changed from the real 3-3/4 percent (3.75%) to a plausible-but-wrong 4 percent (4.00%). A 25 bps shift to a round adjacent value is plausible to a casual reader but directly contradicts the official figure, so the claim is unsupported."
+}

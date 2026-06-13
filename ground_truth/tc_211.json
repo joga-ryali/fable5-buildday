@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_211",
+  "domain": "gov_stats",
+  "source_filing": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+  "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+  "original_text": "Effective April 30, 2026, the Federal Open Market Committee directs the Desk to: Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-1/2 to 3-3/4 percent.",
+  "modified_text": "At its January 2026 meeting, the Federal Open Market Committee maintained the federal funds rate in a target range of 3-1/2 to 3-3/4 percent, leaving the upper bound at 3.75 percent.",
+  "claim": "The FOMC set the federal funds target range upper bound at 3.75 percent at its January 2026 meeting.",
+  "citation_as_written": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+  "hallucination_type": "wrong_attribution",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The figure (3-3/4 percent / 3.75% upper bound) is real and correct, but it is attributed to a January 2026 meeting. The official action establishing this range effective April 30, 2026 was taken at the April 28-29, 2026 FOMC meeting. The period/meeting is wrong; the citation label cited does not support a January attribution. Subtle because the number itself is accurate and the FOMC may have held the same range across multiple meetings, but the specific January attribution is not supported by the cited source."
+}

@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_214",
+  "domain": "gov_stats",
+  "source_filing": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+  "source_url": "https://www.census.gov/library/publications/2025/demo/p60-286.html",
+  "original_text": "Median household income was $83,730 in 2024, not statistically different from the 2023 estimate of $82,690.",
+  "modified_text": "U.S. real median household income was $83,730 in 2024, which was not statistically different from the 2023 estimate of $82,690.",
+  "claim": "U.S. real median household income was $83,730 in 2024, statistically unchanged from 2023's $82,690.",
+  "citation_as_written": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+  "hallucination_type": null,
+  "severity": "low",
+  "subtlety_rating": 1,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Faithful restatement of the official headline figure, the period (2024), and the 'not statistically different from 2023' qualifier, all matching the Census P60-286 report verbatim."
+}

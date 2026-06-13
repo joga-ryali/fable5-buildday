@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_213",
+  "domain": "gov_stats",
+  "source_filing": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+  "source_url": "https://www.census.gov/library/publications/2025/demo/p60-286.html",
+  "original_text": "Median household income was $83,730 in 2024, not statistically different from the 2023 estimate of $82,690. Between 2023 and 2024, median income increased by 5.1 percent for Asian households and 5.5 percent for Hispanic households, while it declined by 3.3 percent for Black households.",
+  "modified_text": "Real median household income in the United States rose 5.5 percent in 2024, marking a strong, broad-based gain for American households.",
+  "claim": "Overall U.S. real median household income rose 5.5 percent in 2024.",
+  "citation_as_written": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+  "hallucination_type": "scope_expansion",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The 5.5 percent increase applies ONLY to Hispanic households, not to the nation as a whole. The overall national figure ($83,730) was 'not statistically different' from 2023 \u2014 i.e., essentially flat. Stating the Hispanic subgroup gain as the national figure directly contradicts the headline finding, so this over-generalization is unsupported, not merely partially supported."
+}

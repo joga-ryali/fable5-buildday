@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_204",
+  "domain": "gov_stats",
+  "source_filing": "BLS Consumer Price Index Summary, May 2026",
+  "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+  "original_text": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+  "modified_text": "Inflation pressures were already evident at the start of the year: the all items Consumer Price Index rose 4.2 percent over the 12 months ended January 2026 before seasonal adjustment, the BLS reported.",
+  "claim": "The all items CPI-U rose 4.2 percent over the 12 months ended January 2026 (before seasonal adjustment).",
+  "citation_as_written": "BLS Consumer Price Index Summary, May 2026",
+  "hallucination_type": "wrong_attribution",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The 4.2 percent 12-month figure is real but belongs to the period ended May 2026, not January 2026. The January 2026 12-month change was reported by BLS as 2.4 percent (per the BLS Economics Daily 'Consumer prices up 2.4 percent over the year ended January 2026'). Re-attributing the genuine May figure to January is a wrong-period attribution; the cited source filing header (May 2026) no longer matches the period asserted in the sentence, so citation_intact=false."
+}

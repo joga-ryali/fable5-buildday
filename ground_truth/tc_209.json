@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_209",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "The labor force participation rate held at 61.8 percent in May, and the employment-population ratio changed little at 59.2 percent. These measures showed little change over the year, after accounting for annual population control adjustments.",
+  "modified_text": "Americans turned out for work in force last month: the U.S. labor force participation rate stood at 83.9 percent in May 2026, underscoring how broadly the working-age population remains engaged in the job market.",
+  "claim": "The overall U.S. labor force participation rate was 83.9 percent in May 2026.",
+  "citation_as_written": "BLS Employment Situation, May 2026",
+  "hallucination_type": "scope_expansion",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "83.9 percent is the REAL May 2026 participation rate for the prime-age (25-54) subgroup, not the overall civilian population. The headline overall rate held at 61.8 percent (seasonally adjusted, CIVPART). Presenting the prime-age subgroup figure as the whole-population rate directly contradicts the stated 61.8 percent headline, so this is unsupported rather than partially_supported. Subgroup value confirmed via FRED LNS11300060 / BLS May 2026 release."
+}

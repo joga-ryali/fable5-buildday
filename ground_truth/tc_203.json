@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_203",
+  "domain": "gov_stats",
+  "source_filing": "BLS Consumer Price Index Summary, May 2026",
+  "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+  "original_text": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+  "modified_text": "U.S. consumer price inflation continued its upward march in the spring, with the Consumer Price Index for All Urban Consumers rising 3.8 percent over the 12 months ended May 2026 before seasonal adjustment, according to the Bureau of Labor Statistics.",
+  "claim": "The all items CPI-U rose 3.8 percent over the 12 months ended May 2026 (before seasonal adjustment).",
+  "citation_as_written": "BLS Consumer Price Index Summary, May 2026",
+  "hallucination_type": "numeric_mismatch",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Real figure is 4.2 percent over the 12 months ended May 2026 (not seasonally adjusted), confirmed by BLS release and CNBC/Fox Business coverage of the June 10, 2026 release. The report states a plausible-but-wrong 3.8 percent while keeping the correct period and SA basis. Period and citation are intact; only the headline figure is altered."
+}

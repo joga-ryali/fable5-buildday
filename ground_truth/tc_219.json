@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_219",
+  "domain": "gov_stats",
+  "source_filing": "BLS Consumer Price Index Summary, May 2026",
+  "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+  "original_text": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+  "modified_text": "Inflation has clearly settled at 4.2 percent, with consumer prices up 4.2 percent over the 12 months ended May 2026.",
+  "claim": "Inflation has settled at 4.2 percent (12 months ended May 2026).",
+  "citation_as_written": "BLS Consumer Price Index Summary, May 2026",
+  "hallucination_type": "overstatement",
+  "severity": "low",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "The figure (4.2%, 12 months ended May 2026, NSA) is correct, but 'has clearly settled at' overstates certainty/stability \u2014 a single month's 12-month reading does not establish that inflation has 'settled.' Confidence/trend overstated, figure intact -> partially_supported."
+}

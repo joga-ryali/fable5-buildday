@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_210",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "The labor force participation rate held at 61.8 percent in May, and the employment-population ratio changed little at 59.2 percent. These measures showed little change over the year, after accounting for annual population control adjustments.",
+  "modified_text": "According to the BLS Employment Situation for May 2026, the labor force participation rate held at 61.8 percent (seasonally adjusted), little changed over the year after accounting for annual population control adjustments.",
+  "claim": "The seasonally adjusted U.S. labor force participation rate was 61.8 percent in May 2026, essentially unchanged over the year.",
+  "citation_as_written": "BLS Employment Situation, May 2026",
+  "hallucination_type": null,
+  "severity": "low",
+  "subtlety_rating": 1,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Faithful control. Restates the real headline figure (61.8 percent, seasonally adjusted, CIVPART) for the correct period (May 2026) and accurately characterizes it as little changed over the year. Confirmed via BLS May 2026 Employment Situation release and FRED CIVPART."
+}

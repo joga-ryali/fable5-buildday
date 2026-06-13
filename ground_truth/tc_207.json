@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_207",
+  "domain": "gov_stats",
+  "source_filing": "BLS Employment Situation, May 2026",
+  "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+  "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent.",
+  "modified_text": "According to the BLS Employment Situation report, total nonfarm payroll employment increased by 192,000 in May 2026, while the unemployment rate held at 4.3 percent.",
+  "claim": "US total nonfarm payroll employment rose by 192,000 in May 2026.",
+  "citation_as_written": "BLS Employment Situation, May 2026",
+  "hallucination_type": "numeric_mismatch",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "The official seasonally adjusted figure is +172,000 for May 2026, not +192,000. The period (May) and the unemployment rate (4.3%) are correctly stated, making the inflated payroll number a plausible-but-wrong value. The wrong figure (192,000) overstates job growth by 20,000."
+}
