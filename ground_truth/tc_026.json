@@ -10,6 +10,6 @@
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "Source explicitly labels the values 'preliminary' and 'subject to change'; the claim escalates to 'final and confirmed' and 'will not change,' overstating certainty. Verbatim passage from the served filing (actually J&J jnj-20251228)."
+  "expected_verdict": "unsupported",
+  "notes": "Direct contradiction of a hedge: source says values are 'preliminary ... subject to change within the measurement period'; the claim asserts they are 'final and confirmed ... will not change'. Asserting the opposite of a caveat is a contradiction -> unsupported (relabeled from partially_supported per the direct-opposite-of-hedge rule)."
 }

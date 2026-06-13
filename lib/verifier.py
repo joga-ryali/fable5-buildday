@@ -263,8 +263,15 @@ PROMPT_B_SYSTEM = (
     "claim asserts it as an actual/present/certain fact, that is a stripped caveat "
     "or overstated confidence → partially_supported (the topic is grounded but the "
     "modality is overstated). Do NOT return cannot_verify merely because the source "
-    "hedges — the hedged source text IS the relevant evidence.\n"
-    "6. Which specific source text supports or contradicts each part?\n\n"
+    "hedges — the hedged source text IS the relevant evidence. NOTE: asserting the "
+    "DIRECT OPPOSITE of a hedge (e.g. source says 'preliminary, subject to change' "
+    "but the claim says 'final, will not change') is a CONTRADICTION → unsupported, "
+    "not partial.\n"
+    "6. ATTRIBUTION: if a RESOLVED SOURCE line is provided and the claim attributes "
+    "the information to a different fiscal year, reporting period, filing, author, "
+    "or company than the resolved source, that is a citation/attribution mismatch → "
+    "unsupported, even if the underlying figures themselves match the source text.\n"
+    "7. Which specific source text supports or contradicts each part?\n\n"
     "Verdict rules:\n"
     "- supported: every sub-assertion is fully and accurately backed by the source, "
     "wherever located.\n"
@@ -283,7 +290,8 @@ PROMPT_B_SYSTEM = (
 )
 
 
-def prompt_b_faithfulness(claim: str, source_excerpt: str | None) -> dict:
+def prompt_b_faithfulness(claim: str, source_excerpt: str | None,
+                          source_label: str | None = None) -> dict:
     if not source_excerpt:
         return {
             "verdict": "cannot_verify",
@@ -292,7 +300,9 @@ def prompt_b_faithfulness(claim: str, source_excerpt: str | None) -> dict:
             "source_excerpt": "",
             "notes": "No resolvable source text available to verify against.",
         }
-    user = (f"CLAIM:\n{claim}\n\nSOURCE TEXT:\n{source_excerpt}\n\n"
+    attribution = (f"RESOLVED SOURCE (the cited filing resolves to): {source_label}\n\n"
+                   if source_label else "")
+    user = (f"{attribution}CLAIM:\n{claim}\n\nSOURCE TEXT:\n{source_excerpt}\n\n"
             "Judge faithfulness per the rules.")
     text = call_anthropic(SONNET, PROMPT_B_SYSTEM, user, max_tokens=700)
     data = _extract_json(text)
@@ -317,6 +327,7 @@ def verify_claim(claim: str,
                  source_url: str | None,
                  source_excerpt: str | None,
                  *,
+                 source_label: str | None = None,
                  stage1_model: str = HAIKU,
                  do_resolve: bool = True) -> dict:
     """Run the full pipeline for a single (claim, citation, source) tuple.
@@ -368,7 +379,7 @@ def verify_claim(claim: str,
 
     # Stage 2 Prompt B — faithfulness (Sonnet), sequential after A
     try:
-        b = prompt_b_faithfulness(claim, source_excerpt)
+        b = prompt_b_faithfulness(claim, source_excerpt, source_label=source_label)
     except VerifierError as e:
         result["verdict"] = "cannot_verify"
         result["confidence"] = "low"

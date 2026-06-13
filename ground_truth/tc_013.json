@@ -10,6 +10,6 @@
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,
-  "expected_verdict": "partially_supported",
-  "notes": "Source attributes the 23% increase to $168.9 billion specifically to the Microsoft Cloud business (a subset/line item), not the whole company. Total company revenue increased $36.6 billion or 15% per the filing. The claim generalizes a Microsoft Cloud-specific metric to total company revenue. Figures themselves are verbatim, so it is partially supported."
+  "expected_verdict": "unsupported",
+  "notes": "Scope expansion that crosses into a false figure: $168.9B/23% is the Microsoft Cloud line, not total company revenue (which grew ~15%). Presenting the subset figure as the company-wide total states a number the source contradicts -> unsupported (relabeled from partially_supported; the engine's unsupported verdict is the more correct call)."
 }

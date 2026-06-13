@@ -263,6 +263,14 @@ resolution, return `citation_resolution_status`.
   sub-assertion is backed; partially_supported if some backed and ≥1 absent.
 - Numeric faithfulness: if ANY material figure (%, $, date, count) contradicts the
   source, the verdict is `unsupported` — even if an adjacent figure matches.
+- Attribution: citation resolution supplies the resolved filing's actual period
+  (parsed from the SEC doc filename). If the claim attributes the finding to a
+  different fiscal year / period / filing / company than the resolved source, that
+  is an attribution mismatch → `unsupported`, even if the figures match. (This is
+  how partial_citation_corruption is caught when the excerpt omits the year.)
+- Contradicted hedge: dropping a hedge while keeping the same direction →
+  `partially_supported`; asserting the DIRECT OPPOSITE of a hedge (e.g. source
+  "preliminary, subject to change" → claim "final, will not change") → `unsupported`.
 
 **`pass` rule:** `pass == (verdict == ground_truth_verdict)`.
 

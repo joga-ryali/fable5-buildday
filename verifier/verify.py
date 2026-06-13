@@ -83,6 +83,28 @@ def result_path(tc_id: str, run_id: str) -> str:
     return os.path.join(RESULTS_DIR, f"{tc_id}_{run_id}.json")
 
 
+def filing_period_from_url(url: str | None) -> str | None:
+    """Parse the SEC primary-doc period-end date from the filename, e.g.
+    '.../aapl-20230930.htm' -> '2023-09-30'. This is the resolved filing's actual
+    period — what citation resolution returns — used to catch wrong-year/wrong-
+    period attribution in the claim (partial_citation_corruption)."""
+    if not url:
+        return None
+    m = re.search(r"-(\d{8})\.htm", url)
+    if not m:
+        return None
+    d = m.group(1)
+    return f"{d[:4]}-{d[4:6]}-{d[6:]}"
+
+
+def resolved_source_label(tc: dict) -> str:
+    label = tc.get("source_filing") or ""
+    period = filing_period_from_url(tc.get("source_url"))
+    if period:
+        return f"{label} (resolved filing period ending {period})"
+    return label
+
+
 def report_text_for(tc: dict) -> str:
     p = os.path.join(REPORTS_DIR, f"{tc['test_case_id']}.txt")
     if os.path.exists(p):
@@ -126,6 +148,7 @@ def run(only, include_unaccepted, prompt_version, change, stage1_model):
             citation=tc.get("citation_as_written"),
             source_url=tc.get("source_url"),
             source_excerpt=source_excerpt,
+            source_label=resolved_source_label(tc),
             stage1_model=stage1_model,
             do_resolve=True,
         )
