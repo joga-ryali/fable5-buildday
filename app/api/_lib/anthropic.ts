@@ -14,6 +14,7 @@ Check:
 2. Are all caveats/qualifications in the source preserved (e.g. 'may', 'preliminary', hedges)?
 3. Is the claim's confidence level consistent with the source (not overstated)?
 4. NUMERIC FAITHFULNESS: every material figure in the claim (percentages, dollar amounts, dates, counts) must match the source. If ANY material figure contradicts the source, the claim is UNSUPPORTED — even if an adjacent figure happens to match. A fabricated headline number is not 'partial' support.
+4b. NUMERIC RECONCILIATION: if the claim states a DERIVED figure (a % change, growth rate, margin, ratio, or total) and the source provides the BASE numbers, COMPUTE the derived value from those base numbers yourself, SHOW the calculation in your notes (e.g. 'computed (383,285 − 394,328) / 394,328 = -2.8%'), and compare it to the claim. If the claimed figure does not match your computed value (beyond rounding), defect=numeric_mismatch and verdict=unsupported; if it matches, that part is supported.
 5. MODALITY: if the source frames something as a possibility, risk, or forward-looking hedge ('may', 'could', 'expected to', 'we believe') but the claim asserts it as an actual/present/certain fact, that is a stripped caveat or overstated confidence -> partially_supported (the topic is grounded but the modality is overstated). Do NOT return cannot_verify merely because the source hedges — the hedged source text IS the relevant evidence.
 6. Which specific source text supports or contradicts each part?
 

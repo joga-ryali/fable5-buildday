@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_039",
+  "domain": "corporate_filings",
+  "source_filing": "Apple Inc. 10-K FY2023 (filed 2023-11-03), MD&A \u2014 Net Sales",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+  "original_text": "Total net sales were $383,285 million in fiscal 2023, compared to $394,328 million in fiscal 2022.",
+  "modified_text": "Apple's total net sales declined about 8% in fiscal 2023 compared to 2022.",
+  "claim": "Apple's total net sales declined about 8% in fiscal 2023 compared to 2022.",
+  "citation_as_written": "Apple Inc. 10-K FY2023, MD&A \u2014 Net Sales",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Derived-figure mismatch: computing from the base figures gives (383,285-394,328)/394,328 = -2.8%, but the claim states ~8%. numeric_mismatch -> unsupported."
+}
