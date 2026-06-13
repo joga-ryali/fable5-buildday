@@ -1,0 +1,10 @@
+{
+  "test_case_id": "tc_101",
+  "iteration_number": 1,
+  "review_status": "iterate",
+  "reviewer": "joga",
+  "timestamp": "2026-06-13T21:52:04.206Z",
+  "feedback_type": "too_obvious",
+  "subtlety_rating_override": null,
+  "comment": "Gave feedback in Claude directly"
+}

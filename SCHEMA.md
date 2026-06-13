@@ -75,7 +75,7 @@ UI color mapping:
 - `cannot_verify` → orange
 
 **`defect_type`** (the kind of distortion, orthogonal to the support-degree verdict):
-`none` | `numeric_mismatch` | `wrong_directionality` | `wrong_attribution` |
+`none` | `numeric_mismatch` | `contradiction` | `wrong_attribution` |
 `overstatement` | `scope_expansion` | `unsupported_addition` | `fabricated_citation`.
 Verdict = degree of support; defect_type = nature of the problem. Surfaced as a chip
 in `/live` and `/verification`. NOTE: `overstatement` covers both stripped caveats and
@@ -105,7 +105,7 @@ and records `blocked`; product roadmap: let the analyst upload the source they h
 |---|---|---|
 | `quantitative_fabrication` | 8 | Revenue grew 8% → 18% |
 | `stripped_caveat` | 6 | "may improve margins" → "will improve margins" |
-| `wrong_directionality` | 5 | Decreased → Increased |
+| `contradiction` | 5 | source says X, claim says not-X (decreased→increased; "must"→"need not") |
 | `overstated_confidence` | 5 | "preliminary results suggest" → "studies confirm" |
 | `partial_citation_corruption` | 4 | Real filing, wrong year/author |
 | `total_citation_fabrication` | 4 | Plausible citation that does not exist |

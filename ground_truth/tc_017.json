@@ -7,7 +7,7 @@
   "modified_text": "Amazon's North America segment sales eased 10% in 2025 relative to the prior year.",
   "claim": "Amazon's North America segment net sales declined 10% in fiscal 2025 versus the prior year.",
   "citation_as_written": "Amazon.com, Inc. Form 10-K for the fiscal year ended December 31, 2025 (MD&A, Results of Operations \u2014 Net Sales, North America)",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 4,
   "citation_intact": true,

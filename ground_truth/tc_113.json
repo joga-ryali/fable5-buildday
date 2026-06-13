@@ -7,7 +7,7 @@
   "modified_text": "In Mapp v. Ohio, 367 U.S. 643 (1961), Justice Clark, writing for the Court, held that evidence obtained through searches and seizures in violation of the Constitution remains admissible in state court proceedings, declining to extend the exclusionary rule to the states.",
   "claim": "Mapp v. Ohio held that unconstitutionally obtained evidence is admissible in state courts and that the exclusionary rule does not bind the states.",
   "citation_as_written": "Mapp v. Ohio, 367 U.S. 643 (1961) (Clark, J.)",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 2,
   "citation_intact": true,

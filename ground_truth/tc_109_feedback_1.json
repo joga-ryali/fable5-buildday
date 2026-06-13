@@ -1,0 +1,10 @@
+{
+  "test_case_id": "tc_109",
+  "iteration_number": 1,
+  "review_status": "iterate",
+  "reviewer": "joga",
+  "timestamp": "2026-06-13T21:54:19.556Z",
+  "feedback_type": "too_obvious",
+  "subtlety_rating_override": null,
+  "comment": "label should be contradiction"
+}

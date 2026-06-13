@@ -26,7 +26,7 @@ Verdict rules:
 Also classify the PRIMARY defect — the main kind of distortion (one only):
 - none: fully supported, no distortion.
 - numeric_mismatch: a material figure (%, $, date, count) does not match the source.
-- wrong_directionality: the direction of a change is reversed.
+- contradiction: the claim asserts the opposite of, or is directly contradicted by, the source — a reversed trend/figure direction, a negated holding, or any X stated as not-X.
 - wrong_attribution: attributed to a different year/period/filing/company than the source.
 - overstatement: the claim is stronger or more certain than the source — a dropped hedge/qualifier, tentative language stated as certain, or intensified severity (covers both stripped caveats and overstated confidence).
 - scope_expansion: a subset/segment/period finding generalized to the whole.
@@ -34,7 +34,7 @@ Also classify the PRIMARY defect — the main kind of distortion (one only):
 
 Use 'none' ONLY when verdict is 'supported'. If verdict is partially_supported, unsupported, or cannot_verify, defect_type MUST be one of the specific types above (never 'none') — identify the primary distortion.
 
-Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "defect_type": one of ["none","numeric_mismatch","wrong_directionality","wrong_attribution","overstated_confidence","stripped_caveat","scope_expansion","unsupported_addition"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
+Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "defect_type": one of ["none","numeric_mismatch","contradiction","wrong_attribution","overstatement","scope_expansion","unsupported_addition"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
 
 export interface FaithfulnessResult {
   verdict: "supported" | "partially_supported" | "unsupported" | "cannot_verify";
@@ -48,7 +48,7 @@ export interface FaithfulnessResult {
 const DEFECTS = [
   "none",
   "numeric_mismatch",
-  "wrong_directionality",
+  "contradiction",
   "wrong_attribution",
   "overstatement",
   "scope_expansion",
@@ -133,6 +133,7 @@ export async function faithfulnessCheck(
     overstated_confidence: "overstatement",
     stripped_caveat: "overstatement",
     numeric_error: "numeric_mismatch",
+    wrong_directionality: "contradiction",
   };
   const raw = ALIAS[d.defect_type as string] ?? (d.defect_type as string);
   let defect_type = DEFECTS.includes(raw)

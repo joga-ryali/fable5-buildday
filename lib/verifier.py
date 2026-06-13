@@ -295,7 +295,9 @@ PROMPT_B_SYSTEM = (
     "Also classify the PRIMARY defect — the main kind of distortion (one only):\n"
     "- none: fully supported, no distortion.\n"
     "- numeric_mismatch: a material figure (%, $, date, count) does not match the source.\n"
-    "- wrong_directionality: the direction of a change is reversed.\n"
+    "- contradiction: the claim asserts the opposite of, or is directly contradicted "
+    "by, the source — a reversed trend/figure direction, a negated holding, or any X "
+    "stated as not-X.\n"
     "- wrong_attribution: attributed to a different year/period/filing/company than the source.\n"
     "- overstatement: the claim is stronger or more certain than the source — a "
     "dropped hedge/qualifier, tentative language stated as certain, or intensified "
@@ -307,7 +309,7 @@ PROMPT_B_SYSTEM = (
     "above (never 'none') — identify the primary distortion.\n\n"
     "Return ONLY JSON: {\"verdict\": one of "
     "[\"supported\",\"partially_supported\",\"unsupported\",\"cannot_verify\"], "
-    "\"defect_type\": one of [\"none\",\"numeric_mismatch\",\"wrong_directionality\","
+    "\"defect_type\": one of [\"none\",\"numeric_mismatch\",\"contradiction\","
     "\"wrong_attribution\",\"overstatement\","
     "\"scope_expansion\",\"unsupported_addition\"], "
     "\"confidence\": one of [\"high\",\"medium\",\"low\"], "
@@ -317,7 +319,7 @@ PROMPT_B_SYSTEM = (
 )
 
 DEFECT_TYPES = {
-    "none", "numeric_mismatch", "wrong_directionality", "wrong_attribution",
+    "none", "numeric_mismatch", "contradiction", "wrong_attribution",
     "overstatement", "scope_expansion",
     "unsupported_addition", "fabricated_citation",
 }
@@ -327,6 +329,7 @@ _DEFECT_ALIAS = {
     "overstated_confidence": "overstatement",
     "stripped_caveat": "overstatement",
     "numeric_error": "numeric_mismatch",
+    "wrong_directionality": "contradiction",
 }
 
 

@@ -7,7 +7,7 @@
   "modified_text": "Apple closed fiscal 2023 on firmer footing, with total net sales moving about 3% higher versus 2022 as foreign-currency effects worked through the model.",
   "claim": "Apple's total net sales moved about 3% higher in fiscal 2023 compared to 2022.",
   "citation_as_written": "Apple Inc. 10-K FY2023, MD&A \u2014 Net Sales",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 3,
   "citation_intact": true,

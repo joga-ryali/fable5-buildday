@@ -7,7 +7,7 @@
   "modified_text": "In Obergefell v. Hodges, 576 U.S. 644 (2015), the Supreme Court held that the Fourteenth Amendment does not require a State to license a marriage between two people of the same sex, leaving each State free to decline to recognize same-sex marriages lawfully performed elsewhere.",
   "claim": "The Court held that the Fourteenth Amendment does NOT require states to license or recognize same-sex marriages.",
   "citation_as_written": "Obergefell v. Hodges, 576 U.S. 644 (2015)",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 2,
   "citation_intact": true,

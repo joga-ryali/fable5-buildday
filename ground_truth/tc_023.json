@@ -7,7 +7,7 @@
   "modified_text": "JPMorgan Chase & Co.'s noninterest revenue (NIR) was $87.0 billion, having eased 2%, as Markets noninterest revenue softened and asset management fees in AWM and CCB moved lower.",
   "claim": "JPMorgan Chase & Co.'s noninterest revenue was $87.0 billion, down 2% year over year on softer Markets revenue and lower asset management fees.",
   "citation_as_written": "JPMorgan Chase & Co. 10-K, fiscal year ended December 31, 2025",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 4,
   "citation_intact": true,

@@ -7,7 +7,7 @@
   "modified_text": "In May 2026, the Bureau of Labor Statistics reported that the unemployment rate edged down to 4.3 percent as employers added 172,000 jobs.",
   "claim": "The U.S. unemployment rate declined to 4.3 percent in May 2026.",
   "citation_as_written": "Bureau of Labor Statistics, Employment Situation, May 2026",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "medium",
   "subtlety_rating": 4,
   "citation_intact": true,

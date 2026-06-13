@@ -7,7 +7,7 @@
   "modified_text": "In Citizens United v. FEC, 558 U.S. 310 (2010), the Supreme Court held that the Government may suppress political speech based on the speaker's corporate identity, upholding restrictions on independent corporate expenditures under the First Amendment.",
   "claim": "The Court held that the government may restrict political speech based on corporate identity, sustaining limits on independent corporate expenditures.",
   "citation_as_written": "Citizens United v. FEC, 558 U.S. 310 (2010)",
-  "hallucination_type": "wrong_directionality",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 2,
   "citation_intact": true,
