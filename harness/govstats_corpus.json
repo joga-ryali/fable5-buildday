@@ -1,0 +1,372 @@
+{
+  "count": 19,
+  "cases": [
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent, the U.S. Bureau of Labor Statistics reported. The number of unemployed people, at 7.3 million, changed little over the month.",
+      "modified_text": "The U.S. labor market continued to cool in May 2026 as the unemployment rate held at 4.6 percent, according to the Bureau of Labor Statistics, with the number of unemployed people standing at 7.3 million.",
+      "claim": "The U.S. unemployment rate (U-3) was 4.6 percent in May 2026.",
+      "citation_as_written": "Bureau of Labor Statistics, Employment Situation, May 2026",
+      "hallucination_type": "numeric_mismatch",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The real seasonally adjusted U-3 rate for May 2026 was 4.3 percent (unemployed people 7.3 million). The modified text changes the rate to 4.6 percent, a plausible-but-wrong value, while keeping the correct period and the correct unemployed-persons count. The rate of 4.6 percent is also outside the stated 4.3-4.5 percent range BLS noted since July 2025, making it clearly unsupported."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent, the U.S. Bureau of Labor Statistics reported.",
+      "modified_text": "In May 2026, the Bureau of Labor Statistics reported that the unemployment rate edged down to 4.3 percent as employers added 172,000 jobs.",
+      "claim": "The U.S. unemployment rate declined to 4.3 percent in May 2026.",
+      "citation_as_written": "Bureau of Labor Statistics, Employment Situation, May 2026",
+      "hallucination_type": "wrong_directionality",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "BLS reported the rate was unchanged at 4.3 percent in May 2026 (it has stayed in a narrow 4.3-4.5 percent range since July 2025). The modified text subtly implies the rate fell ('edged down') rather than holding flat. The endpoint value (4.3 percent) and payroll figure (172,000) are correct, but the directionality is wrong, since the rate did not decline."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Consumer Price Index Summary, May 2026",
+      "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "original_text": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+      "modified_text": "U.S. consumer price inflation continued its upward march in the spring, with the Consumer Price Index for All Urban Consumers rising 3.8 percent over the 12 months ended May 2026 before seasonal adjustment, according to the Bureau of Labor Statistics.",
+      "claim": "The all items CPI-U rose 3.8 percent over the 12 months ended May 2026 (before seasonal adjustment).",
+      "citation_as_written": "BLS Consumer Price Index Summary, May 2026",
+      "hallucination_type": "numeric_mismatch",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "Real figure is 4.2 percent over the 12 months ended May 2026 (not seasonally adjusted), confirmed by BLS release and CNBC/Fox Business coverage of the June 10, 2026 release. The report states a plausible-but-wrong 3.8 percent while keeping the correct period and SA basis. Period and citation are intact; only the headline figure is altered."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Consumer Price Index Summary, May 2026",
+      "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "original_text": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+      "modified_text": "Inflation pressures were already evident at the start of the year: the all items Consumer Price Index rose 4.2 percent over the 12 months ended January 2026 before seasonal adjustment, the BLS reported.",
+      "claim": "The all items CPI-U rose 4.2 percent over the 12 months ended January 2026 (before seasonal adjustment).",
+      "citation_as_written": "BLS Consumer Price Index Summary, May 2026",
+      "hallucination_type": "wrong_attribution",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": false,
+      "expected_verdict": "unsupported",
+      "notes": "The 4.2 percent 12-month figure is real but belongs to the period ended May 2026, not January 2026. The January 2026 12-month change was reported by BLS as 2.4 percent (per the BLS Economics Daily 'Consumer prices up 2.4 percent over the year ended January 2026'). Re-attributing the genuine May figure to January is a wrong-period attribution; the cited source filing header (May 2026) no longer matches the period asserted in the sentence, so citation_intact=false."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BEA Gross Domestic Product (Second Estimate), 1st Quarter 2026",
+      "source_url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-1st-quarter-2026",
+      "original_text": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026",
+      "modified_text": "The U.S. economy lost momentum in early 2026, with real gross domestic product contracting at an annual rate of 1.6 percent in the first quarter of the year, according to the Bureau of Economic Analysis.",
+      "claim": "Real GDP fell at an annualized rate of 1.6 percent in Q1 2026.",
+      "citation_as_written": "Bureau of Economic Analysis, GDP (Second Estimate), 1st Quarter 2026",
+      "hallucination_type": "wrong_directionality",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The BEA reported real GDP INCREASED at an annual rate of 1.6 percent in Q1 2026. The modified text flips the direction ('contracting'/'lost momentum') while preserving the correct magnitude (1.6%), period (Q1 2026), and citation. The numeric value and source are intact, so this isolates the directionality defect. Verified verbatim against the official BEA release headline sentence."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BEA Gross Domestic Product (Second Estimate), 1st Quarter 2026",
+      "source_url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-1st-quarter-2026",
+      "original_text": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026",
+      "modified_text": "According to the Bureau of Economic Analysis second estimate, real GDP increased at an annual rate of 1.6 percent in the first quarter of 2026.",
+      "claim": "Real GDP grew at an annualized rate of 1.6 percent in Q1 2026 per the BEA second estimate.",
+      "citation_as_written": "Bureau of Economic Analysis, GDP (Second Estimate), 1st Quarter 2026",
+      "hallucination_type": null,
+      "severity": "low",
+      "subtlety_rating": 1,
+      "citation_intact": true,
+      "expected_verdict": "supported",
+      "notes": "Control case. Faithfully restates the official BEA headline figure: real GDP increased at an annual rate of 1.6 percent in Q1 2026 (second estimate). Direction, magnitude, period, and source attribution all match the verbatim release. Verified against the official BEA release."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent.",
+      "modified_text": "According to the BLS Employment Situation report, total nonfarm payroll employment increased by 192,000 in May 2026, while the unemployment rate held at 4.3 percent.",
+      "claim": "US total nonfarm payroll employment rose by 192,000 in May 2026.",
+      "citation_as_written": "BLS Employment Situation, May 2026",
+      "hallucination_type": "numeric_mismatch",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The official seasonally adjusted figure is +172,000 for May 2026, not +192,000. The period (May) and the unemployment rate (4.3%) are correctly stated, making the inflated payroll number a plausible-but-wrong value. The wrong figure (192,000) overstates job growth by 20,000."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent. Job gains occurred in leisure and hospitality, local government, and health care.",
+      "modified_text": "BLS data show that US payroll employment climbed by 172,000 across the leisure and hospitality sector in May 2026, with the unemployment rate unchanged at 4.3 percent.",
+      "claim": "All 172,000 of the May 2026 nonfarm payroll job gains came from the leisure and hospitality sector.",
+      "citation_as_written": "BLS Employment Situation, May 2026",
+      "hallucination_type": "scope_expansion",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The +172,000 figure is the total nonfarm payroll change for the whole economy, seasonally adjusted. The report states gains occurred across leisure and hospitality, local government, AND health care, so attributing the entire 172,000 to leisure and hospitality alone scopes a single sector to the headline total. This contradicts the stated breakdown (multiple sectors contributed), so the verdict is unsupported rather than partially_supported."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "The labor force participation rate held at 61.8 percent in May, and the employment-population ratio changed little at 59.2 percent. These measures showed little change over the year, after accounting for annual population control adjustments.",
+      "modified_text": "Americans turned out for work in force last month: the U.S. labor force participation rate stood at 83.9 percent in May 2026, underscoring how broadly the working-age population remains engaged in the job market.",
+      "claim": "The overall U.S. labor force participation rate was 83.9 percent in May 2026.",
+      "citation_as_written": "BLS Employment Situation, May 2026",
+      "hallucination_type": "scope_expansion",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "83.9 percent is the REAL May 2026 participation rate for the prime-age (25-54) subgroup, not the overall civilian population. The headline overall rate held at 61.8 percent (seasonally adjusted, CIVPART). Presenting the prime-age subgroup figure as the whole-population rate directly contradicts the stated 61.8 percent headline, so this is unsupported rather than partially_supported. Subgroup value confirmed via FRED LNS11300060 / BLS May 2026 release."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "The labor force participation rate held at 61.8 percent in May, and the employment-population ratio changed little at 59.2 percent. These measures showed little change over the year, after accounting for annual population control adjustments.",
+      "modified_text": "According to the BLS Employment Situation for May 2026, the labor force participation rate held at 61.8 percent (seasonally adjusted), little changed over the year after accounting for annual population control adjustments.",
+      "claim": "The seasonally adjusted U.S. labor force participation rate was 61.8 percent in May 2026, essentially unchanged over the year.",
+      "citation_as_written": "BLS Employment Situation, May 2026",
+      "hallucination_type": null,
+      "severity": "low",
+      "subtlety_rating": 1,
+      "citation_intact": true,
+      "expected_verdict": "supported",
+      "notes": "Faithful control. Restates the real headline figure (61.8 percent, seasonally adjusted, CIVPART) for the correct period (May 2026) and accurately characterizes it as little changed over the year. Confirmed via BLS May 2026 Employment Situation release and FRED CIVPART."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+      "original_text": "Effective April 30, 2026, the Federal Open Market Committee directs the Desk to: Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-1/2 to 3-3/4 percent.",
+      "modified_text": "At its January 2026 meeting, the Federal Open Market Committee maintained the federal funds rate in a target range of 3-1/2 to 3-3/4 percent, leaving the upper bound at 3.75 percent.",
+      "claim": "The FOMC set the federal funds target range upper bound at 3.75 percent at its January 2026 meeting.",
+      "citation_as_written": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+      "hallucination_type": "wrong_attribution",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": false,
+      "expected_verdict": "unsupported",
+      "notes": "The figure (3-3/4 percent / 3.75% upper bound) is real and correct, but it is attributed to a January 2026 meeting. The official action establishing this range effective April 30, 2026 was taken at the April 28-29, 2026 FOMC meeting. The period/meeting is wrong; the citation label cited does not support a January attribution. Subtle because the number itself is accurate and the FOMC may have held the same range across multiple meetings, but the specific January attribution is not supported by the cited source."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+      "source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a1.htm",
+      "original_text": "Effective April 30, 2026, the Federal Open Market Committee directs the Desk to: Undertake open market operations as necessary to maintain the federal funds rate in a target range of 3-1/2 to 3-3/4 percent.",
+      "modified_text": "Effective April 30, 2026, the FOMC directed the Desk to maintain the federal funds rate in a target range of 3-3/4 to 4 percent, holding the upper bound at 4.00 percent.",
+      "claim": "Effective April 30, 2026, the federal funds target range upper bound was 4.00 percent.",
+      "citation_as_written": "Federal Reserve FOMC Implementation Note, April 29, 2026",
+      "hallucination_type": "numeric_mismatch",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The period (effective April 30, 2026) and citation are correct, but the upper bound is changed from the real 3-3/4 percent (3.75%) to a plausible-but-wrong 4 percent (4.00%). A 25 bps shift to a round adjacent value is plausible to a casual reader but directly contradicts the official figure, so the claim is unsupported."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+      "source_url": "https://www.census.gov/library/publications/2025/demo/p60-286.html",
+      "original_text": "Median household income was $83,730 in 2024, not statistically different from the 2023 estimate of $82,690. Between 2023 and 2024, median income increased by 5.1 percent for Asian households and 5.5 percent for Hispanic households, while it declined by 3.3 percent for Black households.",
+      "modified_text": "Real median household income in the United States rose 5.5 percent in 2024, marking a strong, broad-based gain for American households.",
+      "claim": "Overall U.S. real median household income rose 5.5 percent in 2024.",
+      "citation_as_written": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+      "hallucination_type": "scope_expansion",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The 5.5 percent increase applies ONLY to Hispanic households, not to the nation as a whole. The overall national figure ($83,730) was 'not statistically different' from 2023 \u2014 i.e., essentially flat. Stating the Hispanic subgroup gain as the national figure directly contradicts the headline finding, so this over-generalization is unsupported, not merely partially supported."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+      "source_url": "https://www.census.gov/library/publications/2025/demo/p60-286.html",
+      "original_text": "Median household income was $83,730 in 2024, not statistically different from the 2023 estimate of $82,690.",
+      "modified_text": "U.S. real median household income was $83,730 in 2024, which was not statistically different from the 2023 estimate of $82,690.",
+      "claim": "U.S. real median household income was $83,730 in 2024, statistically unchanged from 2023's $82,690.",
+      "citation_as_written": "U.S. Census Bureau, Income in the United States: 2024 (P60-286)",
+      "hallucination_type": null,
+      "severity": "low",
+      "subtlety_rating": 1,
+      "citation_intact": true,
+      "expected_verdict": "supported",
+      "notes": "Faithful restatement of the official headline figure, the period (2024), and the 'not statistically different from 2023' qualifier, all matching the Census P60-286 report verbatim."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026 (Release CB26-78)",
+      "source_url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "original_text": "Advance estimates of U.S. retail and food services sales for April 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were $757.1 billion, up 0.5 percent (\u00b10.4 percent) from the previous month, and up 4.9 percent (\u00b10.5 percent) from April 2025.",
+      "modified_text": "According to the Census Bureau's advance estimates, U.S. retail and food services sales for April 2026 came in at $757.1 billion, edging down 0.5 percent from the prior month even as they ran 4.9 percent above their April 2025 level.",
+      "claim": "U.S. advance retail and food services sales declined 0.5 percent month-over-month in April 2026.",
+      "citation_as_written": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026",
+      "hallucination_type": "wrong_directionality",
+      "severity": "high",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The official release states sales were UP 0.5 percent from the previous month. The modified text reverses the direction ('edging down 0.5 percent') while keeping the same magnitude, period, and total. The subtle phrasing ('edging down') avoids a blunt antonym but contradicts the source."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026 (Release CB26-78)",
+      "source_url": "https://www.census.gov/retail/marts/www/marts_current.pdf",
+      "original_text": "Advance estimates of U.S. retail and food services sales for April 2026, adjusted for seasonal variation and holiday and trading-day differences, but not for price changes, were $757.1 billion, up 0.5 percent (\u00b10.4 percent) from the previous month, and up 4.9 percent (\u00b10.5 percent) from April 2025.",
+      "modified_text": "The Census Bureau reported that advance estimates of U.S. retail and food services sales for April 2026 totaled $757.1 billion, up 0.8 percent from the previous month and up 4.9 percent from a year earlier.",
+      "claim": "U.S. advance retail and food services sales rose 0.8 percent month-over-month in April 2026.",
+      "citation_as_written": "U.S. Census Bureau, Advance Monthly Sales for Retail and Food Services, April 2026",
+      "hallucination_type": "numeric_mismatch",
+      "severity": "high",
+      "subtlety_rating": 3,
+      "citation_intact": true,
+      "expected_verdict": "unsupported",
+      "notes": "The official month-over-month change was +0.5 percent; the modified text inflates it to +0.8 percent, a plausible-but-wrong value. Period (April 2026), total ($757.1 billion), and year-over-year figure are kept correct to make the single altered number harder to spot. 0.8 percent also falls outside the stated \u00b10.4 percent confidence interval around 0.5 percent."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BEA Gross Domestic Product (Second Estimate), 1st Quarter 2026",
+      "source_url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-1st-quarter-2026",
+      "original_text": "Real gross domestic product (GDP) increased at an annual rate of 1.6 percent in the first quarter of 2026 (second estimate).",
+      "modified_text": "The BEA's final data confirm the U.S. economy grew at a 1.6 percent annual rate in the first quarter of 2026.",
+      "claim": "The BEA's final figures confirm real GDP grew at a 1.6 percent annual rate in Q1 2026.",
+      "citation_as_written": "Bureau of Economic Analysis, GDP, 1st Quarter 2026",
+      "hallucination_type": "overstatement",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "Domain standard (gov stats): figure (1.6%) and period (Q1 2026) are correct, but the claim overstates finality/certainty \u2014 this is the SECOND estimate, not the final figure (subject to the third/annual revision). Confidence overstated, no figure contradicted -> partially_supported."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Employment Situation, May 2026",
+      "source_url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "original_text": "Total nonfarm payroll employment increased by 172,000 in May, and the unemployment rate was unchanged at 4.3 percent.",
+      "modified_text": "May 2026 brought broad-based job gains, with employment rising 172,000 across essentially every major industry, the BLS reported.",
+      "claim": "U.S. payrolls rose 172,000 in May 2026, with gains spread across essentially every major industry.",
+      "citation_as_written": "BLS Employment Situation, May 2026",
+      "hallucination_type": "scope_expansion",
+      "severity": "medium",
+      "subtlety_rating": 4,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "The headline figure (+172,000, May 2026) is correct and not contradicted, but 'across essentially every major industry' generalizes beyond what the cited sentence supports (the release attributes gains to specific sectors, not all). Over-generalization without contradicting the number -> partially_supported."
+    },
+    {
+      "domain": "gov_stats",
+      "source_filing": "BLS Consumer Price Index Summary, May 2026",
+      "source_url": "https://www.bls.gov/news.release/cpi.nr0.htm",
+      "original_text": "Over the last 12 months, the all items index increased 4.2 percent before seasonal adjustment.",
+      "modified_text": "Inflation has clearly settled at 4.2 percent, with consumer prices up 4.2 percent over the 12 months ended May 2026.",
+      "claim": "Inflation has settled at 4.2 percent (12 months ended May 2026).",
+      "citation_as_written": "BLS Consumer Price Index Summary, May 2026",
+      "hallucination_type": "overstatement",
+      "severity": "low",
+      "subtlety_rating": 3,
+      "citation_intact": true,
+      "expected_verdict": "partially_supported",
+      "notes": "The figure (4.2%, 12 months ended May 2026, NSA) is correct, but 'has clearly settled at' overstates certainty/stability \u2014 a single month's 12-month reading does not establish that inflation has 'settled.' Confidence/trend overstated, figure intact -> partially_supported."
+    }
+  ],
+  "sensitivity": [
+    {
+      "claim": "The U.S. unemployment rate (U-3) was 4.6 percent in May 2026.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim contains nothing self-evidently suspicious: the unemployment rate of 4.6% is historically plausible, the BLS is the correct official source for this data, May 2026 is a reasonable recent reporting period, and U-3 is the standard unemployment metric. Without checking the actual source, this claim appears credible on its face."
+    },
+    {
+      "claim": "The U.S. unemployment rate declined to 4.3 percent in May 2026.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim is not self-evidently suspicious. The unemployment rate of 4.3% is plausible given historical ranges, the BLS Employment Situation report is the correct source for such data, and the timing (May 2026) is appropriate relative to today's date (June 13, 2026). Without access to the actual source or April 2026 data for comparison, no clear misrepresentation is detectable from the claim alone."
+    },
+    {
+      "claim": "The all items CPI-U rose 3.8 percent over the 12 months ended May 2026 (before seasonal adjustment).",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim is internally consistent, the figure (3.8%) is plausible for CPI data, the citation to BLS is appropriate and standard, and the explicit notation of \"before seasonal adjustment\" shows technical precision. Without access to the actual source data, a subtle misrepresentation would not be self-evidently detectable\u2014there are no glaring red flags in the claim itself."
+    },
+    {
+      "claim": "The all items CPI-U rose 4.2 percent over the 12 months ended January 2026 (before seasonal adjustment).",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim contains internally consistent details: the temporal relationship (May 2026 report citing January 2026 data) is logical, the 4.2% year-over-year figure is plausible, and the BLS source attribution is authentic. Without accessing the source document itself, there are no self-evident red flags that would indicate misrepresentation."
+    },
+    {
+      "claim": "Real GDP fell at an annualized rate of 1.6 percent in Q1 2026.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim is internally consistent, uses appropriate economic terminology, cites the correct authoritative source (BEA), includes realistic magnitude (1.6% annualized contraction), and provides proper context (Second Estimate for Q1 2026). There are no self-evident red flags suggesting misrepresentation without access to the actual source data."
+    },
+    {
+      "claim": "Real GDP grew at an annualized rate of 1.6 percent in Q1 2026 per the BEA second estimate.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim contains no self-evident indicators of misrepresentation. The timing (Q1 2026 data available by mid-June 2026) is consistent with BEA release schedules, the citation format matches actual BEA conventions, the growth rate is plausible, and the language is properly hedged and specific. A well-calibrated subtle misrepresentation would not be detectable without consulting the actual source."
+    },
+    {
+      "claim": "US total nonfarm payroll employment rose by 192,000 in May 2026.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim appears plausible without the source. A monthly nonfarm payroll increase of 192,000 falls within the typical range of US employment growth, the citation is from the authoritative BLS source, and the timing is current. No self-evident red flags are apparent in the claim itself."
+    },
+    {
+      "claim": "All 172,000 of the May 2026 nonfarm payroll job gains came from the leisure and hospitality sector.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claim that 100% of nonfarm job gains came from a single sector (leisure and hospitality) is self-evidently implausible. Historical employment patterns show gains distributed across multiple sectors; a month with all gains concentrated in one sector and zero net change across all others would be economically anomalous and statistically extreme. This is apparent without consulting the source."
+    },
+    {
+      "claim": "The overall U.S. labor force participation rate was 83.9 percent in May 2026.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claimed labor force participation rate of 83.9% is implausibly high. Actual U.S. labor force participation rates have historically ranged between approximately 62-68%, with recent rates around 62-63%. A rate of 83.9% would be biologically implausible given that the labor force excludes children and many elderly individuals. This is self-evidently suspicious without needing to check the source."
+    },
+    {
+      "claim": "The seasonally adjusted U.S. labor force participation rate was 61.8 percent in May 2026, essentially unchanged over the year.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim contains plausible numbers (61.8% is within historical ranges for U.S. labor force participation), appropriately specific sourcing (BLS Employment Situation, May 2026), and a vague qualifier (\"essentially unchanged\") that could accommodate typical month-to-month variations. Without access to May 2025 comparative data, the claim appears internally consistent and self-evidently reasonable."
+    },
+    {
+      "claim": "The FOMC set the federal funds target range upper bound at 3.75 percent at its January 2026 meeting.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim and citation show no self-evident signs of misrepresentation. A January 2026 FOMC decision being cited in an April 2026 Federal Reserve document is temporally coherent. Without accessing the actual source, the specific 3.75% figure cannot be verified or contradicted based on general knowledge. A well-calibrated subtle misrepresentation would appear exactly like this."
+    },
+    {
+      "claim": "Effective April 30, 2026, the federal funds target range upper bound was 4.00 percent.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim is internally consistent and plausible. The date logic (April 29 note for April 30 effective date) is standard Fed practice, the citation format is legitimate, and a 4.00% upper bound target is a reasonable round-number rate. Without the source document, this cannot be self-evidently identified as a misrepresentation."
+    },
+    {
+      "claim": "Overall U.S. real median household income rose 5.5 percent in 2024.",
+      "haiku_spotted": true,
+      "haiku_reason": "The claimed 5.5% real median household income increase in 2024 is substantially larger than historical norms (typically 0-3% in strong years) and exceeds what publicly available economic data suggested occurred in 2024. While the magnitude alone doesn't prove misrepresentation without the source, it is self-evidently suspicious relative to known economic patterns and warrants verification that the statistic applies to the claimed population and timeframe."
+    },
+    {
+      "claim": "U.S. real median household income was $83,730 in 2024, statistically unchanged from 2023's $82,690.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim is internally consistent (1.26% increase is mathematically correct), and \"statistically unchanged\" is a technical term used by Census Bureau when differences fall within margins of error. The figures are reasonable and the citation format is authentic. No self-evident red flags are present without consulting the source."
+    },
+    {
+      "claim": "U.S. advance retail and food services sales declined 0.5 percent month-over-month in April 2026.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim describes a standard U.S. Census Bureau economic indicator with plausible magnitude (0.5% decline), appropriate timing (April 2026 data), and credible sourcing. Month-to-month retail sales variations are inherently volatile, making modest declines unremarkable. No self-evident red flags suggest misrepresentation without examining the source."
+    },
+    {
+      "claim": "U.S. advance retail and food services sales rose 0.8 percent month-over-month in April 2026.",
+      "haiku_spotted": false,
+      "haiku_reason": "The claim shows no self-evident red flags. The 0.8% month-over-month figure is plausible and not suspiciously extreme, the timing (April 2026 data in June 2026) is appropriate for Census Bureau reporting, and the citation source is exactly what would be used for such data. Without access to the actual source, no clear misrepresentation is detectable."
+    }
+  ]
+}

@@ -29,10 +29,11 @@ export default function Home() {
     <main className="wide">
       <h1>Citation Faithfulness Verification</h1>
       <p className="tagline">
-        Does an AI research report faithfully represent its cited SEC sources?
-        Two sequential <code>claude-sonnet-4-6</code> passes per claim — citation
-        match, then faithfulness — catch fabricated citations, stripped caveats,
-        flipped directionality, and overstated confidence.
+        Does an AI research report faithfully represent its cited sources —
+        across SEC filings, case law, and government statistics? Two sequential{" "}
+        <code>claude-sonnet-4-6</code> passes per claim — citation match, then
+        faithfulness — catch fabricated citations, wrong attributions, flipped
+        directionality, numeric mismatches, and overstatement.
       </p>
       <div className="nav-grid">
         {routes.map((r) => (
