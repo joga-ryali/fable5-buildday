@@ -286,14 +286,15 @@ PROMPT_B_SYSTEM = (
     "- numeric_mismatch: a material figure (%, $, date, count) does not match the source.\n"
     "- wrong_directionality: the direction of a change is reversed.\n"
     "- wrong_attribution: attributed to a different year/period/filing/company than the source.\n"
-    "- overstated_confidence: tentative source language asserted as certain/definitive.\n"
-    "- stripped_caveat: a source hedge or qualifier is dropped.\n"
+    "- overstatement: the claim is stronger or more certain than the source — a "
+    "dropped hedge/qualifier, tentative language stated as certain, or intensified "
+    "severity (covers both stripped caveats and overstated confidence).\n"
     "- scope_expansion: a subset/segment/period finding generalized to the whole.\n"
     "- unsupported_addition: a sub-assertion in the claim is absent from the source.\n\n"
     "Return ONLY JSON: {\"verdict\": one of "
     "[\"supported\",\"partially_supported\",\"unsupported\",\"cannot_verify\"], "
     "\"defect_type\": one of [\"none\",\"numeric_mismatch\",\"wrong_directionality\","
-    "\"wrong_attribution\",\"overstated_confidence\",\"stripped_caveat\","
+    "\"wrong_attribution\",\"overstatement\","
     "\"scope_expansion\",\"unsupported_addition\"], "
     "\"confidence\": one of [\"high\",\"medium\",\"low\"], "
     "\"caveat_preserved\": boolean, "
@@ -303,7 +304,7 @@ PROMPT_B_SYSTEM = (
 
 DEFECT_TYPES = {
     "none", "numeric_mismatch", "wrong_directionality", "wrong_attribution",
-    "overstated_confidence", "stripped_caveat", "scope_expansion",
+    "overstatement", "scope_expansion",
     "unsupported_addition", "fabricated_citation",
 }
 

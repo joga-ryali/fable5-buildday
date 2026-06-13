@@ -28,8 +28,7 @@ Also classify the PRIMARY defect — the main kind of distortion (one only):
 - numeric_mismatch: a material figure (%, $, date, count) does not match the source.
 - wrong_directionality: the direction of a change is reversed.
 - wrong_attribution: attributed to a different year/period/filing/company than the source.
-- overstated_confidence: tentative source language asserted as certain/definitive.
-- stripped_caveat: a source hedge or qualifier is dropped.
+- overstatement: the claim is stronger or more certain than the source — a dropped hedge/qualifier, tentative language stated as certain, or intensified severity (covers both stripped caveats and overstated confidence).
 - scope_expansion: a subset/segment/period finding generalized to the whole.
 - unsupported_addition: a sub-assertion in the claim is absent from the source.
 
@@ -49,8 +48,7 @@ const DEFECTS = [
   "numeric_mismatch",
   "wrong_directionality",
   "wrong_attribution",
-  "overstated_confidence",
-  "stripped_caveat",
+  "overstatement",
   "scope_expansion",
   "unsupported_addition",
 ];

@@ -76,9 +76,13 @@ UI color mapping:
 
 **`defect_type`** (the kind of distortion, orthogonal to the support-degree verdict):
 `none` | `numeric_mismatch` | `wrong_directionality` | `wrong_attribution` |
-`overstated_confidence` | `stripped_caveat` | `scope_expansion` |
-`unsupported_addition` | `fabricated_citation`. Verdict = degree of support;
-defect_type = nature of the problem. Surfaced as a chip in `/live` and `/verification`.
+`overstatement` | `scope_expansion` | `unsupported_addition` | `fabricated_citation`.
+Verdict = degree of support; defect_type = nature of the problem. Surfaced as a chip
+in `/live` and `/verification`. NOTE: `overstatement` covers both stripped caveats and
+overstated confidence — the engine cannot reliably separate them (a dropped "could"
+hedge IS an escalation of certainty), so they share one chip. The test-generation
+`hallucination_type` taxonomy keeps `stripped_caveat` and `overstated_confidence`
+distinct for corpus coverage; only the engine's output chip is merged.
 
 **`citation_match_verdict`:** `correct_citation` | `mismatch` | `cannot_determine`
 
