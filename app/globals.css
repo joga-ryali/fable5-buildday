@@ -87,13 +87,11 @@ h3 {
 .lead-question {
   font-size: 23px;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.4;
   letter-spacing: -0.015em;
   color: var(--accent);
-  margin: 4px 0 16px;
-  max-width: 34ch;
-  border-left: 3px solid var(--accent);
-  padding-left: 14px;
+  margin: 6px 0 18px;
+  max-width: 60ch;
 }
 
 .tagline {
