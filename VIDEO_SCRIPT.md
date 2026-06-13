@@ -29,9 +29,10 @@ Numbers below reflect the canonical run; adjust if a relabel shifts them.
 > source and human-reviewed before it counts."
 
 ### 0:52–1:00 — Did we meet the goal?  ·  ON SCREEN: `/results` headline pass rates
-> "On our test corpus the engine scores **100% on SEC filings** and high-80s on
-> the tougher legal and statistics domains. **The result: an analyst can put
-> their name on AI-assisted research and stand behind every cited claim.**"
+> "On our 74-case corpus the engine scores **97% overall** — **100% on SEC filings
+> and case law**, **90% on government statistics** — and the few misses are honest
+> calibration calls we kept, not hid. **The result: you can stand behind every
+> cited claim in a report — AI-assisted or your own.**"
 
 ---
 
