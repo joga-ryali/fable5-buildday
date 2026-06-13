@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_034",
+  "source_filing": "The Coca-Cola Company 10-K (CIK 21344), fiscal year ended December 31, 2025",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+  "original_text": "Operating income was $13,762 million in 2025, compared to $9,992 million in 2024, an increase of $3,770 million, or 38%.",
+  "modified_text": "Operating income eased to $13,762 million in 2025 from $9,992 million in 2024, a movement of $3,770 million, or 38%.",
+  "claim": "Coca-Cola's operating income declined year over year in 2025.",
+  "citation_as_written": "The Coca-Cola Company 10-K, FY2025, MD&A \u2014 Operating Income",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Source: operating income INCREASED $3,770M (+38%). 'eased'/'declined' reverses the documented direction without a blunt antonym; figures intact so the inversion is subtle."
+}

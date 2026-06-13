@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_037",
+  "source_filing": "The Coca-Cola Company 10-K (CIK 21344), fiscal year ended December 31, 2025",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+  "original_text": "Net operating revenues were $47,941 million in 2025, compared to $47,061 million in 2024, an increase of $880 million, or 2%.",
+  "modified_text": "Coca-Cola's net operating revenues rose 2% to $47,941 million in 2025 from $47,061 million in 2024, an increase of $880 million.",
+  "claim": "Coca-Cola's net operating revenues increased 2% (by $880 million) to $47,941 million in 2025.",
+  "citation_as_written": "The Coca-Cola Company 10-K, FY2025, MD&A \u2014 Net Operating Revenues",
+  "hallucination_type": null,
+  "severity": "low",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Control. Faithfully restates the source: same figures, direction, magnitude. No distortion."
+}

@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_036",
+  "source_filing": "The Coca-Cola Company 10-K (CIK 21344), fiscal year ended December 31, 2025",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
+  "original_text": "Unit case volume in EMEA increased 3%, which included 2% growth in Trademark Coca-Cola, 3% growth in sparkling flavors, 2% growth in water, sports, coffee and tea as well as growth in energy drinks.",
+  "modified_text": "Coca-Cola's worldwide unit case volume increased 3% in 2025, driven by growth across Trademark Coca-Cola, sparkling flavors, water, sports, coffee and tea, and energy drinks.",
+  "claim": "Total companywide unit case volume grew 3% in 2025.",
+  "citation_as_written": "The Coca-Cola Company 10-K, FY2025, MD&A \u2014 Unit Case Volume",
+  "hallucination_type": "scope_expansion",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "The 3% figure applies to the EMEA operating segment, not the whole company. Claim generalizes a segment result to companywide -> partial."
+}
