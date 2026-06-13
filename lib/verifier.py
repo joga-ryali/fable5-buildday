@@ -291,6 +291,9 @@ PROMPT_B_SYSTEM = (
     "severity (covers both stripped caveats and overstated confidence).\n"
     "- scope_expansion: a subset/segment/period finding generalized to the whole.\n"
     "- unsupported_addition: a sub-assertion in the claim is absent from the source.\n\n"
+    "Use 'none' ONLY when verdict is 'supported'. If verdict is partially_supported, "
+    "unsupported, or cannot_verify, defect_type MUST be one of the specific types "
+    "above (never 'none') — identify the primary distortion.\n\n"
     "Return ONLY JSON: {\"verdict\": one of "
     "[\"supported\",\"partially_supported\",\"unsupported\",\"cannot_verify\"], "
     "\"defect_type\": one of [\"none\",\"numeric_mismatch\",\"wrong_directionality\","
@@ -306,6 +309,13 @@ DEFECT_TYPES = {
     "none", "numeric_mismatch", "wrong_directionality", "wrong_attribution",
     "overstatement", "scope_expansion",
     "unsupported_addition", "fabricated_citation",
+}
+
+# Normalize legacy/variant labels the model may still emit to the current vocabulary.
+_DEFECT_ALIAS = {
+    "overstated_confidence": "overstatement",
+    "stripped_caveat": "overstatement",
+    "numeric_error": "numeric_mismatch",
 }
 
 
@@ -331,7 +341,7 @@ def prompt_b_faithfulness(claim: str, source_excerpt: str | None,
     conf = data.get("confidence")
     if conf not in ("high", "medium", "low"):
         conf = "medium"
-    defect = data.get("defect_type")
+    defect = _DEFECT_ALIAS.get(data.get("defect_type"), data.get("defect_type"))
     if defect not in DEFECT_TYPES:
         defect = "none" if v == "supported" else "unsupported_addition"
     if v == "supported":

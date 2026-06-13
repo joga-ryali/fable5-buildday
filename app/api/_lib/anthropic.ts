@@ -32,6 +32,8 @@ Also classify the PRIMARY defect — the main kind of distortion (one only):
 - scope_expansion: a subset/segment/period finding generalized to the whole.
 - unsupported_addition: a sub-assertion in the claim is absent from the source.
 
+Use 'none' ONLY when verdict is 'supported'. If verdict is partially_supported, unsupported, or cannot_verify, defect_type MUST be one of the specific types above (never 'none') — identify the primary distortion.
+
 Return ONLY JSON: {"verdict": one of ["supported","partially_supported","unsupported","cannot_verify"], "defect_type": one of ["none","numeric_mismatch","wrong_directionality","wrong_attribution","overstated_confidence","stripped_caveat","scope_expansion","unsupported_addition"], "confidence": one of ["high","medium","low"], "caveat_preserved": boolean, "source_excerpt": the exact source sentence(s) you anchored on, "notes": one or two sentences explaining the verdict}.`;
 
 export interface FaithfulnessResult {
@@ -127,9 +129,17 @@ export async function faithfulnessCheck(
   const confidence = (CONFS.includes(d.confidence as string)
     ? d.confidence
     : "medium") as FaithfulnessResult["confidence"];
-  let defect_type = DEFECTS.includes(d.defect_type as string)
-    ? (d.defect_type as string)
-    : "none";
+  const ALIAS: Record<string, string> = {
+    overstated_confidence: "overstatement",
+    stripped_caveat: "overstatement",
+    numeric_error: "numeric_mismatch",
+  };
+  const raw = ALIAS[d.defect_type as string] ?? (d.defect_type as string);
+  let defect_type = DEFECTS.includes(raw)
+    ? raw
+    : verdict === "supported"
+    ? "none"
+    : "unsupported_addition";
   if (verdict === "supported") defect_type = "none";
   return {
     verdict,
