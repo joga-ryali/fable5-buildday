@@ -48,7 +48,8 @@ PERPLEXITY_URL = "https://api.perplexity.ai/chat/completions"
 
 SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", "Fable5 BuildDay joga@numici.com")
 
-RESOLVE_TIMEOUT = 10  # seconds (SCHEMA: timeout > 10s -> cannot_verify)
+RESOLVE_TIMEOUT = 6  # seconds; resolution is informational (we judge against the
+# provided source text), so fail fast on slow/blocking hosts to keep batches quick.
 
 
 def now_iso() -> str:
