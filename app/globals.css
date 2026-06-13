@@ -167,3 +167,179 @@ button:disabled {
   color: var(--muted);
   margin-top: 4px;
 }
+
+/* ---- Citation Faithfulness app ---- */
+:root {
+  --supported: #46c08a;
+  --partial: #e0a458;
+  --unsupported: #e5564b;
+  --cannot: #d98a3a;
+  --accent: #6ea8fe;
+}
+
+main.wide {
+  max-width: 980px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 24px;
+}
+.nav-card {
+  display: block;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--text);
+}
+.nav-card:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+.nav-card h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+.nav-card p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* verdict badges + bars */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  text-transform: lowercase;
+}
+.v-supported { color: var(--supported); }
+.v-partially_supported { color: var(--partial); }
+.v-unsupported { color: var(--unsupported); }
+.v-cannot_verify { color: var(--cannot); }
+.bg-supported { background: rgba(70, 192, 138, 0.14); }
+.bg-partially_supported { background: rgba(224, 164, 88, 0.14); }
+.bg-unsupported { background: rgba(229, 86, 75, 0.14); }
+.bg-cannot_verify { background: rgba(217, 138, 58, 0.14); }
+
+.hl {
+  border-radius: 4px;
+  padding: 1px 3px;
+  border-bottom: 2px solid currentColor;
+  cursor: pointer;
+}
+
+/* big pass-rate score */
+.passrate {
+  font-family: var(--mono);
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.rate-green { color: var(--supported); }
+.rate-yellow { color: var(--partial); }
+.rate-red { color: var(--unsupported); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 12px;
+}
+th, td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--panel-border);
+}
+th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+td.mono, th.mono { font-family: var(--mono); }
+
+.bar {
+  height: 8px;
+  background: var(--panel-border);
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 80px;
+}
+.bar > span {
+  display: block;
+  height: 100%;
+  background: var(--supported);
+}
+
+.banner {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.banner.flag {
+  background: rgba(224, 164, 88, 0.12);
+  border: 1px solid var(--partial);
+  color: var(--partial);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--panel-border);
+}
+.btn-row { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+.reject-btn { background: var(--unsupported); color: #fff; }
+.iterate-btn { background: var(--partial); color: #1a1205; }
+
+select {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 8px 10px;
+}
+
+.detail {
+  margin-top: 8px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  font-size: 13px;
+}
+.kv { display: flex; gap: 8px; margin: 4px 0; }
+.kv .k { color: var(--muted); min-width: 130px; }
