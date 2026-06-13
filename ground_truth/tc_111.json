@@ -7,10 +7,10 @@
   "modified_text": "In New York Times Co. v. Sullivan, 376 U.S. 254 (1964), the Supreme Court held that the First Amendment categorically bars any public official from ever recovering damages for defamatory falsehoods about their conduct, establishing an absolute immunity for the press when reporting on government affairs.",
   "claim": "Sullivan established absolute, unconditional immunity barring any public official from ever recovering defamation damages relating to official conduct.",
   "citation_as_written": "New York Times Co. v. Sullivan, 376 U.S. 254 (1964)",
-  "hallucination_type": "overstatement",
+  "hallucination_type": "contradiction",
   "severity": "high",
   "subtlety_rating": 4,
   "citation_intact": true,
   "expected_verdict": "unsupported",
-  "notes": "The citation, court, and year are correct, and the case does limit public-official recovery. But the Court did NOT create absolute immunity: it created a qualified rule that permits recovery upon proof of 'actual malice' (knowledge of falsity or reckless disregard). 'Categorically bars,' 'ever,' and 'absolute immunity' overstate the conditional standard into a binding absolute rule, dropping the dispositive 'unless he proves... actual malice' qualifier. Domain standard (law): misstating a holding's scope or asserting absolute/unconditional where the Court's holding is qualified is a MATERIAL misstatement of the precedent -> unsupported (not a soft 'partial')."
+  "notes": "Contradiction (not mere overstatement): the claim asserts 'absolute, unconditional immunity barring any public official from EVER recovering defamation damages', which is the OPPOSITE of NYT v. Sullivan's qualified holding \u2014 public officials CAN recover on proof of 'actual malice'. Asserting not-X where the holding is conditional-X -> unsupported."
 }
