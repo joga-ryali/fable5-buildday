@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_003",
+  "run_id": "run_004",
+  "timestamp": "2026-06-13T18:33:34+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "cannot_verify",
+  "confidence": "low",
+  "source_excerpt": "Political uncertainty surrounding trade and other international disputes could also have a negative effect on consumer confidence and spending, which could adversely affect the Company's business.",
+  "caveat_preserved": false,
+  "notes": "Prompt B error: bad JSON from model: Extra data: line 3 column 1 (char 1039); raw={\"verdict\": \"supported\", \"confidence\": \"high\", \"caveat_preserved\": true, \"source_excerpt\": \"Political uncertainty surrounding trade and other international disputes could also have a negative effect o",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v2",
+  "hallucination_type": "stripped_caveat"
+}

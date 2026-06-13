@@ -101,6 +101,18 @@ UI color mapping:
 A test case may also be a **control** (no hallucination, `expected_verdict: supported`,
 `hallucination_type: null`) — include a few so the verifier isn't biased toward "unsupported".
 
+**`distributed_evidence` family (hand-crafted, the HHEM-killer):** compound claims with
+TWO sub-assertions whose supporting facts are spatially separated in the source.
+- Both sub-assertions backed (evidence spread apart) → `expected_verdict: supported`.
+- One backed, one absent from source → `expected_verdict: partially_supported`.
+This probes that the verifier credits support found anywhere in the source and does not
+false-negative like HHEM did when fed only one of the supporting sentences.
+
+**Sharper quantitative rule:** when a source figure is paired (e.g. "9% or $7.1B"),
+the strong `quantitative_fabrication` form changes ONE figure and leaves the adjacent
+one intact. Per the numeric rule below, any contradicted material figure →
+`expected_verdict: unsupported` (a correct adjacent figure does NOT make it partial).
+
 Subtlety distribution (`subtlety_rating` 1–5): 8 cases at 1–2 (obvious), 15 at 3
 (needs comparison), 12 at 4–5 (requires source).
 
@@ -243,6 +255,14 @@ resolution, return `citation_resolution_status`.
 - timeout > 10s → `timeout` → `cannot_verify`
 - source too long → chunk around citation anchor; if still fails → `cannot_verify`
 - Anthropic rate-limit error → wait 60s, retry once, then `cannot_verify`.
+
+**Prompt B core rules (locked, see lib/verifier.py):**
+- Multi-claim / distributed evidence: a claim may bundle multiple sub-assertions and
+  the source may support them in different, spatially separated places. Credit support
+  found ANYWHERE; never penalize for non-adjacency. supported only if every
+  sub-assertion is backed; partially_supported if some backed and ≥1 absent.
+- Numeric faithfulness: if ANY material figure (%, $, date, count) contradicts the
+  source, the verdict is `unsupported` — even if an adjacent figure matches.
 
 **`pass` rule:** `pass == (verdict == ground_truth_verdict)`.
 

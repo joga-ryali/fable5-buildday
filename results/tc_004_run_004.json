@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_004",
+  "run_id": "run_004",
+  "timestamp": "2026-06-13T18:33:42+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "confidence": "high",
+  "source_excerpt": "The Company's total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. [...] Services net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business.",
+  "caveat_preserved": true,
+  "notes": "Both sub-assertions are directly supported: total net sales declined (3% / $11.0B decrease) and Services net sales grew (9% / $7.1B increase) in fiscal 2023. No caveats are stripped or figures contradicted.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v2",
+  "hallucination_type": "distributed_evidence"
+}

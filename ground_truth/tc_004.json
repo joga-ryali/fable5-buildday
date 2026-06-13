@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_004",
+  "source_filing": "Apple Inc. 10-K FY2023 (filed 2023-11-03), MD&A — Net Sales",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+  "original_text": "The Company's total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales. [...] Services net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business.",
+  "modified_text": "In fiscal 2023, Apple's total net sales declined versus the prior year even as its Services business continued to grow.",
+  "claim": "In fiscal 2023, Apple's total net sales declined while its Services business continued to grow.",
+  "citation_as_written": "Apple Inc. 10-K FY2023, MD&A",
+  "hallucination_type": "distributed_evidence",
+  "severity": "low",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Multi-claim / distributed evidence (HHEM-killer): the compound claim has two sub-assertions (total net sales declined; Services grew) supported by sentences located in DIFFERENT parts of the source. Both are backed -> supported. Tests that the verifier credits support found anywhere, unlike HHEM which false-negatived when fed only one supporting sentence."
+}
