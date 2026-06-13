@@ -30,8 +30,11 @@ export default function Home() {
       <h1>Citation Faithfulness Verification</h1>
       <p className="lead-question">
         Does a research report — AI-assisted or human-written — faithfully
-        represent its cited sources, across SEC filings, case law, and government
-        statistics?
+        represent its cited sources?
+      </p>
+      <p className="tested-with">
+        Tested across <strong>SEC filings</strong>, <strong>case law</strong>, and{" "}
+        <strong>government statistics</strong>.
       </p>
       <p className="tagline">
         Two sequential <code>claude-sonnet-4-6</code> passes per claim — citation
