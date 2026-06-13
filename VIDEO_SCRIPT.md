@@ -6,10 +6,10 @@ Numbers below reflect the canonical run; adjust if a relabel shifts them.
 ---
 
 ### 0:00–0:12 — The goal + scope  ·  ON SCREEN: landing page (`/`)
-> "If I'm an analyst putting my name on a report built with AI research, I need
-> to be confident every claim is accurate. **Numici verifies that each claim
-> faithfully matches the source it cites** — we check fidelity *to* the source,
-> **not whether the source itself is true** — that's out of scope."
+> "If I'm an analyst putting my name on a research report — AI-assisted or written
+> by hand — I need to be confident every claim is accurate. **Numici verifies that
+> each claim faithfully matches the source it cites** — we check fidelity *to* the
+> source, **not whether the source itself is true** — that's out of scope."
 
 ### 0:08–0:26 — The engine, live  ·  ON SCREEN: `/live`, paste a claim + source, submit
 > "Here's the engine. I paste a claim and the real source it cites. **Two
@@ -42,6 +42,21 @@ Numbers below reflect the canonical run; adjust if a relabel shifts them.
 - [ ] Pre-load a crisp `/live` example (claim + source) so the verdict returns fast.
 - [ ] Have `/verification` and `/results` already on the **Corporate Filings** tab
       (cleanest story) before switching tabs on camera.
+
+## Screen choreography (rehearse this click path first, THEN layer the voiceover)
+Decouple the two skills: get the navigation muscle-memory down silently, then narrate.
+1. **`/`** (landing) — hold ~2s on the tagline.
+2. Click **Live check** → `/live`. Click **load example** (pre-fills claim + source),
+   then **Check faithfulness**. Wait for the verdict card (unsupported · contradiction).
+3. Back to **`/`** → **Verification** → `/verification` (Corporate Filings). Click one
+   highlighted claim to expand its detail (source anchor + reasoning + defect chip).
+4. **Test results summary** → `/results` — show the **100%** headline + by-type table.
+5. Click the **domain selector**: switch **Corporate Filings → Law → Government
+   Statistics** (show the tabs + each domain's pass rate).
+6. End on **`/results`** headline.
+
+Tips: pre-open the tabs/example so nothing loads cold on camera; record the screen
+path once or twice with no audio, then add voiceover on a clean take.
 
 ## If you have a few extra seconds (optional adds)
 - "Each verdict shows the exact source sentence the model anchored on."

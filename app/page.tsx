@@ -29,8 +29,9 @@ export default function Home() {
     <main className="wide">
       <h1>Citation Faithfulness Verification</h1>
       <p className="tagline">
-        Does an AI research report faithfully represent its cited sources —
-        across SEC filings, case law, and government statistics? Two sequential{" "}
+        Does a research report — AI-assisted or human-written — faithfully
+        represent its cited sources, across SEC filings, case law, and government
+        statistics? Two sequential{" "}
         <code>claude-sonnet-4-6</code> passes per claim — citation match, then
         faithfulness — grade each claim <strong>supported / partially supported /
         unsupported / cannot&nbsp;verify</strong> and name the specific defect:

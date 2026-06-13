@@ -1,9 +1,11 @@
 # Numici — Citation Faithfulness Verification
 
-Verifies whether the claims in an **AI-generated research report faithfully
-represent their cited sources** — and flags the specific way each claim departs
-from its source. Built for analysts and researchers who rely on AI synthesis but
-can't afford its characteristic citation errors.
+Verifies whether the claims in a research report — **AI-assisted or
+human-written** — **faithfully represent their cited sources**, and flags the
+specific way each claim departs from its source. Built for analysts and
+researchers who put their name on a report and need every cited claim to hold up.
+(AI synthesis makes these errors constantly — but so do humans; the tool doesn't
+care who wrote the draft.)
 
 > **Why this matters.** LLM research output looks authoritative but routinely
 > misrepresents sources: fabricated citations, attributions to the wrong
