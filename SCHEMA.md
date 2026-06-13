@@ -86,7 +86,10 @@ distinct for corpus coverage; only the engine's output chip is merged.
 
 **`citation_match_verdict`:** `correct_citation` | `mismatch` | `cannot_determine`
 
-**`citation_resolution_status`:** `resolved` | `404` | `paywalled` | `timeout` | `malformed`
+**`citation_resolution_status`:** `resolved` | `404` | `paywalled` | `blocked` | `timeout` | `malformed`
+(`blocked` = the host refused the automated fetch — 403/429/451, e.g. legal databases
+blocking bots. When source text is already available the engine still judges faithfulness
+and records `blocked`; product roadmap: let the analyst upload the source they have access to.)
 
 **`confidence`:** `high` | `medium` | `low`
 

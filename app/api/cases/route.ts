@@ -48,5 +48,9 @@ export async function GET() {
   const accepted = cases.filter(
     (c) => c.latest_feedback?.review_status === "accepted"
   ).length;
-  return NextResponse.json({ cases, accepted, total: cases.length });
+  // Public deployments (Vercel) are read-only: the fs is read-only and we don't
+  // want visitors mutating the corpus. Review is performed locally by the team.
+  const read_only =
+    process.env.VERCEL === "1" || process.env.READ_ONLY === "1";
+  return NextResponse.json({ cases, accepted, total: cases.length, read_only });
 }

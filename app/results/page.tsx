@@ -1,7 +1,8 @@
 // /results — technical pass-rate summary (per domain). Judge-facing.
-import { getLatestRun, getResultsForRun, getRuns, domainOf } from "../_lib/data";
+import { getLatestRun, getResultsForRun, getRuns, getCases, domainOf } from "../_lib/data";
 import ExportButton from "../_components/ExportButton";
 import DomainTabs from "../_components/DomainTabs";
+import ResultsTable, { ResultRow } from "../_components/ResultsTable";
 
 export const dynamic = "force-dynamic";
 
@@ -49,6 +50,29 @@ export default async function Results({
     if (r.pass) byType[t].passed += 1;
   }
   const abstentions = results.filter((r) => r.verdict === "cannot_verify").length;
+
+  // join results with ground-truth case detail for the drill-down modal
+  const caseMap = Object.fromEntries(getCases().map((c) => [c.test_case_id, c]));
+  const rows: ResultRow[] = results.map((r) => {
+    const c = caseMap[r.test_case_id];
+    return {
+      test_case_id: r.test_case_id,
+      hallucination_type: r.hallucination_type,
+      ground_truth_verdict: r.ground_truth_verdict,
+      verdict: r.verdict,
+      defect_type: r.defect_type,
+      citation_resolution_status: r.citation_resolution_status,
+      confidence: r.confidence,
+      pass: r.pass,
+      claim: c?.claim ?? "",
+      original_text: c?.original_text ?? "",
+      source_filing: c?.source_filing ?? "",
+      citation_as_written: c?.citation_as_written ?? "",
+      citation_match_verdict: r.citation_match_verdict,
+      source_excerpt: r.source_excerpt,
+      notes: r.notes,
+    };
+  });
 
   return (
     <main className="wide">
@@ -115,25 +139,9 @@ export default async function Results({
 
           <h3 style={{ marginTop: 28 }}>
             Per-case results {failed > 0 && <span className="v-unsupported">· {failed} failed</span>}
+            <span className="muted" style={{ fontWeight: 400 }}> · click a row for detail</span>
           </h3>
-          <table>
-            <thead>
-              <tr><th>Case</th><th>Type</th><th>Expected</th><th>Actual</th><th>Defect</th><th>Resolution</th><th></th></tr>
-            </thead>
-            <tbody>
-              {results.map((r) => (
-                <tr key={r.test_case_id}>
-                  <td className="mono">{r.test_case_id}</td>
-                  <td className="mono">{r.hallucination_type ?? "control"}</td>
-                  <td className="mono">{r.ground_truth_verdict}</td>
-                  <td className="mono"><span className={`v-${r.verdict}`}>{r.verdict}</span></td>
-                  <td className="mono">{r.defect_type && r.defect_type !== "none" ? r.defect_type : "—"}</td>
-                  <td className="mono">{r.citation_resolution_status}</td>
-                  <td>{r.pass ? <span className="v-supported">PASS</span> : <span className="v-unsupported">FAIL</span>}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <ResultsTable rows={rows} />
         </>
       )}
     </main>

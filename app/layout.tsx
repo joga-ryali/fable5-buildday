@@ -15,16 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="site-header">
-          <a href="/" className="brand">
-            <span className="brand-mark">Numici</span>
-            <span className="brand-sub">Citation Faithfulness</span>
-          </a>
-        </header>
         {children}
         <footer className="site-footer">
-          Built by <strong>Numici</strong> · Citation Faithfulness Verification ·
-          verifies claims against their cited sources
+          <strong>Numici</strong> · Citation Faithfulness Verification
+          <span className="copyright">
+            © 2026 Vidi Vici Technologies, Inc. (Numici). All rights reserved.
+          </span>
         </footer>
       </body>
     </html>

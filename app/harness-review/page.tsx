@@ -67,12 +67,14 @@ export default function HarnessReview() {
   const [comment, setComment] = useState("");
   const [busy, setBusy] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [readOnly, setReadOnly] = useState(false);
   const [finish, setFinish] = useState<{ ok: boolean; text: string } | null>(null);
 
   async function load() {
     const res = await fetch("/api/cases");
     const data = await res.json();
     setCases(data.cases);
+    setReadOnly(Boolean(data.read_only));
     setLoaded(true);
   }
   useEffect(() => {
@@ -180,6 +182,13 @@ export default function HarnessReview() {
           </button>
         ))}
       </div>
+      {readOnly && (
+        <div className="banner readonly">
+          🔒 Read-only public view — case review (accept / iterate / reject) is
+          performed locally by the Numici team. You can browse the corpus and the
+          engine&apos;s verdicts here.
+        </div>
+      )}
       {filtered.length === 0 && (
         <p className="muted">No cases in this domain yet.</p>
       )}

@@ -206,7 +206,10 @@ def resolve_citation(source_url: str | None) -> str:
         return "resolved"
     if code == 404:
         return "404"
-    if code in (401, 402, 403):
+    if code in (403, 429, 451):
+        # host refused the automated fetch (bot-blocked / rate-limited / legal)
+        return "blocked"
+    if code in (401, 402):
         return "paywalled"
     # any other non-200 host response: treat as malformed/unresolved
     return "malformed"
@@ -389,19 +392,29 @@ def verify_claim(claim: str,
         "notes": "",
     }
 
-    # Stage 1 resolution (real URL check — catches fabricated/corrupt citations)
+    # Stage 1 resolution (real URL check — catches fabricated/corrupt citations).
+    # Short-circuit to cannot_verify ONLY when resolution fails AND we have no
+    # source text to judge against (true fabrication / unretrievable). When the
+    # cited source text IS available, proceed to faithfulness and keep the
+    # resolution status as a recorded signal — many real sources (e.g. legal
+    # databases) block automated fetches even though the citation is genuine.
     if do_resolve:
         status = resolve_citation(source_url)
         result["citation_resolution_status"] = status
-        if status != "resolved":
+        if status != "resolved" and not source_excerpt:
             result["verdict"] = "cannot_verify"
             result["defect_type"] = (
                 "fabricated_citation" if status in ("404", "malformed") else "none"
             )
             result["confidence"] = "high"
+            blocked_hint = (
+                " The source host blocked automated retrieval; if you have access, "
+                "upload the source text to enable the faithfulness check."
+                if status == "blocked" else ""
+            )
             result["notes"] = (
-                f"Citation could not be resolved (status: {status}); "
-                "cannot verify faithfulness against a source that does not resolve."
+                f"Citation could not be resolved (status: {status}) and no source "
+                f"text is available to verify against.{blocked_hint}"
             )
             return result
     else:
@@ -433,6 +446,12 @@ def verify_claim(claim: str,
     note = b["notes"]
     if result["citation_match_verdict"] == "mismatch" and result["verdict"] == "supported":
         note = (note + " (Note: Prompt A flagged a citation mismatch.)").strip()
+    if result["citation_resolution_status"] != "resolved":
+        note = (
+            note + f" [Source host restricted automated retrieval (status: "
+            f"{result['citation_resolution_status']}); verified against the provided "
+            f"source text. In production the analyst can upload the source.]"
+        ).strip()
     result["notes"] = note
     return result
 
