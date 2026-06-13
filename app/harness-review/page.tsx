@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 interface Case {
   test_case_id: string;
+  domain?: string;
   source_filing: string;
   source_url: string;
   original_text: string;
@@ -60,7 +61,7 @@ const VERDICT_LABEL: Record<string, string> = {
 
 export default function HarnessReview() {
   const [cases, setCases] = useState<Case[]>([]);
-  const [accepted, setAccepted] = useState(0);
+  const [domainFilter, setDomainFilter] = useState("corporate_filings");
   const [i, setI] = useState(0);
   const [feedbackType, setFeedbackType] = useState(FEEDBACK_TYPES[0]);
   const [comment, setComment] = useState("");
@@ -72,33 +73,43 @@ export default function HarnessReview() {
     const res = await fetch("/api/cases");
     const data = await res.json();
     setCases(data.cases);
-    setAccepted(data.accepted);
     setLoaded(true);
   }
   useEffect(() => {
     load();
   }, []);
 
-  const c = cases[i];
-  const reviewed = cases.filter((x) => x.latest_feedback).length;
+  const dom = (x: Case) => x.domain ?? "corporate_filings";
+  const filtered = cases.filter((x) => dom(x) === domainFilter);
+  const c = filtered[i];
+  const reviewed = filtered.filter((x) => x.latest_feedback).length;
+  const accepted = filtered.filter(
+    (x) => x.latest_feedback?.review_status === "accepted"
+  ).length;
+
+  function switchDomain(d: string) {
+    setDomainFilter(d);
+    setI(0);
+    setFinish(null);
+  }
 
   function finishReview() {
-    const unreviewed = cases.filter((x) => !x.latest_feedback);
+    const unreviewed = filtered.filter((x) => !x.latest_feedback);
     if (unreviewed.length > 0) {
       setFinish({
         ok: false,
-        text: `You still have ${unreviewed.length} case(s) without any feedback: ${unreviewed
+        text: `You still have ${unreviewed.length} case(s) in this domain without feedback: ${unreviewed
           .map((x) => x.test_case_id)
           .join(", ")}. Jumping to the first one.`,
       });
-      const firstIdx = cases.findIndex((x) => !x.latest_feedback);
+      const firstIdx = filtered.findIndex((x) => !x.latest_feedback);
       if (firstIdx >= 0) setI(firstIdx);
       return;
     }
     setFinish({
       ok: true,
-      text: `Review complete — all ${cases.length} cases reviewed (${accepted} accepted, ${
-        cases.length - accepted
+      text: `Review complete for this domain — all ${filtered.length} cases reviewed (${accepted} accepted, ${
+        filtered.length - accepted
       } iterate/reject). Accepted cases are locked into the corpus.`,
     });
   }
@@ -120,7 +131,7 @@ export default function HarnessReview() {
     setComment("");
     await load();
     setBusy(false);
-    if (i < cases.length - 1) setI(i + 1);
+    if (i < filtered.length - 1) setI(i + 1);
   }
 
   if (!loaded)
@@ -139,6 +150,11 @@ export default function HarnessReview() {
       </main>
     );
 
+  const DOMAINS = [
+    { key: "corporate_filings", label: "Corporate Filings" },
+    { key: "legal", label: "Law" },
+  ];
+
   return (
     <main className="wide">
       <p className="muted"><a href="/">← home</a></p>
@@ -149,10 +165,25 @@ export default function HarnessReview() {
             {accepted} accepted
           </span>
           <span className="muted">
-            {reviewed} / {cases.length} reviewed
+            {reviewed} / {filtered.length} reviewed
           </span>
         </span>
       </div>
+      <div className="domain-tabs">
+        {DOMAINS.map((d) => (
+          <button
+            key={d.key}
+            className={`domain-tab ${d.key === domainFilter ? "active" : ""}`}
+            onClick={() => switchDomain(d.key)}
+          >
+            {d.label}
+          </button>
+        ))}
+      </div>
+      {filtered.length === 0 && (
+        <p className="muted">No cases in this domain yet.</p>
+      )}
+      {filtered.length > 0 && (
       <div className="row" style={{ marginTop: 8 }}>
         <button
           className="secondary-btn"
@@ -162,12 +193,12 @@ export default function HarnessReview() {
           ← prev
         </button>
         <span className="muted">
-          case {i + 1} / {cases.length}
+          case {i + 1} / {filtered.length}
         </span>
         <button
           className="secondary-btn"
-          onClick={() => setI(Math.min(cases.length - 1, i + 1))}
-          disabled={i === cases.length - 1}
+          onClick={() => setI(Math.min(filtered.length - 1, i + 1))}
+          disabled={i === filtered.length - 1}
         >
           next →
         </button>
@@ -175,6 +206,7 @@ export default function HarnessReview() {
           Finish review
         </button>
       </div>
+      )}
       {finish && (
         <div className={`banner ${finish.ok ? "ok" : "flag"}`} style={{ marginTop: 12 }}>
           {finish.ok ? "✓ " : "⚠ "}

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import ExportButton from "./ExportButton";
+import DomainTabs from "./DomainTabs";
 
 export interface VItem {
   test_case_id: string;
@@ -50,9 +51,11 @@ function Highlighted({ item, onClick }: { item: VItem; onClick: () => void }) {
 export default function VerificationView({
   items,
   runId,
+  domain = "corporate_filings",
 }: {
   items: VItem[];
   runId: string;
+  domain?: string;
 }) {
   const [open, setOpen] = useState<string | null>(items[0]?.test_case_id ?? null);
 
@@ -61,8 +64,12 @@ export default function VerificationView({
       <p className="muted"><a href="/">← home</a></p>
       <div className="row" style={{ justifyContent: "space-between" }}>
         <h1 style={{ margin: 0 }}>Verification</h1>
-        <ExportButton data={items} filename={`verification_${runId}.json`} />
+        <ExportButton data={items} filename={`verification_${runId}_${domain}.json`} />
       </div>
+      <DomainTabs current={domain} basePath="/verification" />
+      {items.length === 0 && (
+        <p className="muted">No verified cases in this domain yet.</p>
+      )}
       <p className="tagline">
         Each report claim is color-coded by how faithfully it represents its cited
         SEC source. Click a highlighted claim for the verdict detail.{" "}

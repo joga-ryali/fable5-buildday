@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_115",
+  "domain": "legal",
+  "source_filing": "Marbury v. Madison, 5 U.S. 137 (U.S. 1803)",
+  "source_url": "https://www.courtlistener.com/opinion/84759/marbury-v-madison/",
+  "original_text": "It is emphatically the province and duty of the judicial department to say what the law is.",
+  "modified_text": "Writing for the Court, Chief Justice Roger Taney declared in 1819 that \"it is emphatically the province and duty of the judicial department to say what the law is,\" establishing the power of judicial review.",
+  "claim": "The principle of judicial review articulated in 'it is emphatically the province and duty of the judicial department to say what the law is' was authored by Chief Justice Roger Taney in 1819.",
+  "citation_as_written": "Marbury v. Madison, 5 U.S. 137 (U.S. 1819) (Taney, C.J.)",
+  "hallucination_type": "wrong_attribution",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The holding language is quoted faithfully, but attribution is wrong on two counts: the author was Chief Justice John Marshall, not Roger Taney (who did not join the Court until 1836), and the decision year was 1803, not 1819. The reporter cite 5 U.S. 137 is the real Marbury cite, making the false year/author appear plausible alongside it."
+}

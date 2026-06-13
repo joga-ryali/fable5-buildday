@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_109",
+  "domain": "legal",
+  "source_filing": "Citizens United v. FEC, 558 U.S. 310 (U.S. 2010)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/08-205",
+  "original_text": "The Court returns to the principle established in Buckley and Bellotti that the Government may not suppress political speech based on the speaker's corporate identity.",
+  "modified_text": "In Citizens United v. FEC, 558 U.S. 310 (2010), the Supreme Court held that the Government may suppress political speech based on the speaker's corporate identity, upholding restrictions on independent corporate expenditures under the First Amendment.",
+  "claim": "The Court held that the government may restrict political speech based on corporate identity, sustaining limits on independent corporate expenditures.",
+  "citation_as_written": "Citizens United v. FEC, 558 U.S. 310 (2010)",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 2,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Inverts the actual holding. The Court held the Government may NOT suppress political speech based on corporate identity and struck down the \u00a7441b restrictions on independent corporate expenditures (overruling Austin). The modified text claims the opposite. Citation itself is accurate; the legal proposition contradicts the opinion."
+}

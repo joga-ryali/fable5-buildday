@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_031",
+  "domain": "corporate_filings",
   "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
   "original_text": "Considering recent market conditions, the Company has re-evaluated its operating cash flows and liquidity profile and does not foresee any significant incremental risk.",

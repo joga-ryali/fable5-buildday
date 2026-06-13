@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_025",
+  "domain": "corporate_filings",
   "source_filing": "Pfizer Inc.",
   "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
   "original_text": "Additionally, we expect continued scrutiny on drug pricing and government price reporting from Congress, agencies, and other bodies at the federal and state levels, which may result in additional regulations, including models or other mechanisms to increase pricing controls and/or transparency.",

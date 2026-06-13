@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_015",
+  "domain": "corporate_filings",
   "source_filing": "Amazon.com, Inc. Form 10-K (fiscal year ended December 31, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
   "original_text": "Sales increased 12% in 2025, compared to the prior year. Changes in foreign exchange rates increased net sales by $4.4 billion in 2025.",

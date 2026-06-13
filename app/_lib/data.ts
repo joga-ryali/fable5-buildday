@@ -15,6 +15,7 @@ export type Verdict =
 
 export interface TestCase {
   test_case_id: string;
+  domain?: string;
   source_filing: string;
   source_url: string;
   original_text: string;
@@ -62,6 +63,15 @@ export interface ResultRecord {
   pass: boolean;
   prompt_version: string;
   hallucination_type: string | null;
+  domain?: string;
+}
+
+export const DOMAINS = [
+  { key: "corporate_filings", label: "Corporate Filings" },
+  { key: "legal", label: "Law" },
+];
+export function domainOf(x: { domain?: string }): string {
+  return x.domain ?? "corporate_filings";
 }
 
 export interface RunSummary {

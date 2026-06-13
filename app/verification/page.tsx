@@ -4,12 +4,19 @@ import {
   getResultsForRun,
   getCases,
   getReport,
+  domainOf,
 } from "../_lib/data";
 import VerificationView, { VItem } from "../_components/VerificationView";
 
 export const dynamic = "force-dynamic";
 
-export default function Verification() {
+export default async function Verification({
+  searchParams,
+}: {
+  searchParams: Promise<{ domain?: string }>;
+}) {
+  const sp = await searchParams;
+  const domain = sp.domain ?? "corporate_filings";
   const run = getLatestRun();
   if (!run) {
     return (
@@ -24,7 +31,9 @@ export default function Verification() {
   }
 
   const cases = Object.fromEntries(getCases().map((c) => [c.test_case_id, c]));
-  const items: VItem[] = getResultsForRun(run.run_id).map((r) => {
+  const items: VItem[] = getResultsForRun(run.run_id)
+    .filter((r) => domainOf(r) === domain)
+    .map((r) => {
     const c = cases[r.test_case_id];
     return {
       test_case_id: r.test_case_id,
@@ -42,5 +51,5 @@ export default function Verification() {
     };
   });
 
-  return <VerificationView items={items} runId={run.run_id} />;
+  return <VerificationView items={items} runId={run.run_id} domain={domain} />;
 }

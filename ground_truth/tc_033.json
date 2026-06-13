@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_033",
+  "domain": "corporate_filings",
   "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000000000099000099/fake-doc.htm",
   "original_text": "",

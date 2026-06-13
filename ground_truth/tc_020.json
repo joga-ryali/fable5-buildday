@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_020",
+  "domain": "corporate_filings",
   "source_filing": "Walmart Inc. Form 10-K (fiscal year ended January 31, 2026)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
   "original_text": "The increases were primarily due to strong positive comparable sales across our U.S. segments and international markets. In fiscal 2026, growth was primarily driven by increases in average ticket and transactions,",

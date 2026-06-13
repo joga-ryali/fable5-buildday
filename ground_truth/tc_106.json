@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_106",
+  "domain": "legal",
+  "source_filing": "Miranda v. Arizona, 384 U.S. 436 (U.S. 1966)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/384/436",
+  "original_text": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+  "modified_text": "Writing for the Court in Miranda v. Arizona, Justice William J. Brennan held that the prosecution may not use statements stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+  "claim": "Justice William J. Brennan authored the majority opinion in Miranda v. Arizona establishing the custodial-interrogation warning requirement.",
+  "citation_as_written": "Miranda v. Arizona, 384 U.S. 436 (1966) (Brennan, J.)",
+  "hallucination_type": "wrong_attribution",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The substantive holding is quoted faithfully, but the majority opinion was written by Chief Justice Earl Warren, not Justice William J. Brennan. The misattribution makes the citation's author element false while leaving the legal substance intact \u2014 a classic wrong_attribution defect."
+}

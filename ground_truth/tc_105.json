@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_105",
+  "domain": "legal",
+  "source_filing": "Miranda v. Arizona, 384 U.S. 436 (U.S. 1966)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/384/436",
+  "original_text": "the prosecution may not use statements, whether exculpatory or inculpatory, stemming from custodial interrogation of the defendant unless it demonstrates the use of procedural safeguards effective to secure the privilege against self-incrimination.",
+  "modified_text": "In Miranda v. Arizona, the Supreme Court held that any statement obtained from a suspect who was not first advised of the right to remain silent and the right to counsel is automatically inadmissible for all purposes in every criminal proceeding, with no exceptions.",
+  "claim": "Statements taken in violation of Miranda warnings are categorically and absolutely inadmissible for every purpose in any criminal proceeding.",
+  "citation_as_written": "Miranda v. Arizona, 384 U.S. 436 (1966) (Warren, C.J.)",
+  "hallucination_type": "overstatement",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "The real holding bars use of un-warned custodial statements only 'unless it demonstrates the use of procedural safeguards' \u2014 i.e., warnings can be waived, and the Court itself contemplated qualifications. Stating the rule as 'automatically inadmissible for all purposes... with no exceptions' overstates the qualified holding (later cases like Harris v. New York permit impeachment use). Attribution (court, year, author) is accurate; only the certainty/absoluteness is inflated."
+}

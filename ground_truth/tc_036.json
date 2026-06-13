@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_036",
+  "domain": "corporate_filings",
   "source_filing": "The Coca-Cola Company 10-K (CIK 21344), fiscal year ended December 31, 2025",
   "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm",
   "original_text": "Unit case volume in EMEA increased 3%, which included 2% growth in Trademark Coca-Cola, 3% growth in sparkling flavors, 2% growth in water, sports, coffee and tea as well as growth in energy drinks.",

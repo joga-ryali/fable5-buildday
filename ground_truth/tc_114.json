@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_114",
+  "domain": "legal",
+  "source_filing": "Mapp v. Ohio, 367 U.S. 643 (U.S. 1961)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/367/643",
+  "original_text": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+  "modified_text": "In Mapp v. Ohio, 367 U.S. 643 (1961), Justice Clark, writing for the majority, held that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court, extending the Fourth Amendment exclusionary rule to state prosecutions.",
+  "claim": "Mapp v. Ohio held that evidence obtained in violation of the Constitution is inadmissible in state courts, applying the exclusionary rule to the states.",
+  "citation_as_written": "Mapp v. Ohio, 367 U.S. 643 (1961) (Clark, J.)",
+  "hallucination_type": null,
+  "severity": "low",
+  "subtlety_rating": 1,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Faithful and accurate statement of the holding with correct attribution (Justice Clark, majority, 1961, 367 U.S. 643). The exclusionary-rule-to-states characterization is exactly what the Court held."
+}

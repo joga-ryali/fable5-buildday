@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_116",
+  "domain": "legal",
+  "source_filing": "Marbury v. Madison, 5 U.S. 137 (U.S. 1803)",
+  "source_url": "https://www.courtlistener.com/opinion/9999999/calder-v-pinckney-county-board/",
+  "original_text": "",
+  "modified_text": "The Supreme Court first recognized the federal judiciary's power to strike down unconstitutional statutes in Calder v. Pinckney County Board of Elections, 7 U.S. 219 (1804), where the Court held that \"a legislative act contrary to the constitution can have no binding force.\"",
+  "claim": "In Calder v. Pinckney County Board of Elections, 7 U.S. 219 (1804), the Supreme Court established the power of judicial review over unconstitutional statutes.",
+  "citation_as_written": "Calder v. Pinckney County Board of Elections, 7 U.S. 219 (U.S. 1804)",
+  "hallucination_type": "fabricated_citation",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": false,
+  "expected_verdict": "cannot_verify",
+  "notes": "Entirely fabricated case. No 'Calder v. Pinckney County Board of Elections' exists; the parties, reporter cite (7 U.S. 219), and 1804 year are invented to look like a plausible early Marshall-era judicial-review decision. The actual judicial-review holding belongs to Marbury v. Madison, 5 U.S. 137 (1803). 7 U.S. is a real Cranch volume but contains no such case."
+}

@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_010",
+  "domain": "corporate_filings",
   "source_filing": "Apple Inc. FY2025 Form 10-K (filed 2025-11, fiscal year ended September 27, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
   "original_text": "Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone, partially offset by higher net sales of Mac.",

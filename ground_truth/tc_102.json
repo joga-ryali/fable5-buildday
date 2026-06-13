@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_102",
+  "domain": "legal",
+  "source_filing": "Obergefell v. Hodges, 576 U.S. 644 (U.S. 2015)",
+  "source_url": "https://supreme.justia.com/cases/federal/us/576/644/",
+  "original_text": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+  "modified_text": "Writing for the Court in Obergefell v. Hodges, 567 U.S. 644 (2013), Chief Justice Roberts held that the Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize such a marriage when lawfully licensed and performed out-of-State.",
+  "claim": "Chief Justice Roberts authored the majority opinion in Obergefell, decided in 2013, holding that the Fourteenth Amendment requires states to license and recognize same-sex marriages.",
+  "citation_as_written": "Obergefell v. Hodges, 567 U.S. 644 (2013) (Roberts, C.J.)",
+  "hallucination_type": "wrong_attribution",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The holding itself is faithfully stated, but three attributes are wrong: the author (the majority was authored by Justice Kennedy, not Chief Justice Roberts, who in fact dissented), the year (decided 2015, not 2013), and the reporter volume (576 U.S. 644, not 567 U.S. 644). Subtle because the substantive legal proposition is accurate, but the attribution is materially false."
+}

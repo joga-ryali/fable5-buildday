@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_024",
+  "domain": "corporate_filings",
   "source_filing": "Johnson & Johnson 10-K (FY2025), filed under CIK 19617 at the JPMorgan-labeled accession 000162828026008131",
   "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000000000099000099/fake-doc.htm",
   "original_text": "",

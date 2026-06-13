@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_103",
+  "domain": "legal",
+  "source_filing": "Brown v. Board of Education, 347 U.S. 483 (U.S. 1954)",
+  "source_url": "https://www.courtlistener.com/opinion/105221/brown-v-board-of-education/",
+  "original_text": "We conclude that, in the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+  "modified_text": "In Brown v. Board of Education, 347 U.S. 483 (1954), the Supreme Court held that the doctrine of 'separate but equal' has no place in any context and that all racially separate public facilities are inherently unequal.",
+  "claim": "Brown held that 'separate but equal' is invalid across all public facilities generally, not just in public education.",
+  "citation_as_written": "Brown v. Board of Education, 347 U.S. 483 (1954)",
+  "hallucination_type": "scope_expansion",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "The actual holding is expressly limited to 'the field of public education' ('in the field of public education, the doctrine of separate but equal has no place'). The 1954 Brown opinion did not itself overrule Plessy across all public facilities; segregation in other domains (transit, parks, etc.) was struck down later through subsequent per curiam decisions citing Brown. Stating the holding as applying to 'any context' and 'all racially separate public facilities' broadens the Court's narrow education-specific holding into a universal rule. Citation/author/year are correct; only the scope is overstated, hence partially_supported."
+}

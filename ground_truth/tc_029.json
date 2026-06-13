@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_029",
+  "domain": "corporate_filings",
   "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
   "original_text": "U.S. sales were $36.3 billion, an increase of 7.0%. International sales were $24.1 billion, an increase of 4.6%, which included operational growth of 2.9% and a positive currency impact of 1.7%.",

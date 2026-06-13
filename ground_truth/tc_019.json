@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_019",
+  "domain": "corporate_filings",
   "source_filing": "Walmart Inc. Form 10-K (fiscal year ended January 31, 2026)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
   "original_text": "Certain provisions decreased cash taxes paid in fiscal 2026 and may change the timing of cash tax payments in future periods.",

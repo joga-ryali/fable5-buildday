@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_021",
+  "domain": "corporate_filings",
   "source_filing": "JPMorgan Chase & Co. 10-K (CIK 19617), fiscal year ended December 31, 2025",
   "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
   "original_text": "Such regulatory challenges may affect the scope, requirements or effective dates of the regulations applicable to the Firm.",

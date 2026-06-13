@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_104",
+  "domain": "legal",
+  "source_filing": "Brown v. Board of Education, 347 U.S. 483 (U.S. 1954)",
+  "source_url": "https://www.courtlistener.com/opinion/105221/brown-v-board-of-education/",
+  "original_text": "We conclude that, in the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+  "modified_text": "In Brown v. Board of Education, 347 U.S. 483 (1954), Chief Justice Warren, writing for a unanimous Court, concluded that in the field of public education the doctrine of 'separate but equal' has no place and that separate educational facilities are inherently unequal.",
+  "claim": "Brown held that in the field of public education, 'separate but equal' has no place and that separate educational facilities are inherently unequal.",
+  "citation_as_written": "Brown v. Board of Education, 347 U.S. 483 (1954) (Warren, C.J.)",
+  "hallucination_type": null,
+  "severity": "low",
+  "subtlety_rating": 1,
+  "citation_intact": true,
+  "expected_verdict": "supported",
+  "notes": "Faithful and accurate statement of the real holding with correct attribution. The opinion was authored by Chief Justice Earl Warren for a unanimous Court, decided May 17, 1954, at 347 U.S. 483. Holding language ('in the field of public education... separate but equal has no place'; 'Separate educational facilities are inherently unequal') matches verbatim. Scope correctly confined to public education. Control case."
+}

@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_018",
+  "domain": "corporate_filings",
   "source_filing": "Walmart Inc. Form 10-K (fiscal year ended January 31, 2026)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
   "original_text": "Our total revenues increased $32.2 billion or 4.7% and $32.9 billion or 5.1% for fiscal 2026 and 2025, respectively, when compared to the previous fiscal year.",

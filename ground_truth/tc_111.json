@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_111",
+  "domain": "legal",
+  "source_filing": "New York Times Co. v. Sullivan, 376 U.S. 254 (U.S. 1964)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/376/254",
+  "original_text": "The constitutional guarantees require, we think, a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with 'actual malice'\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+  "modified_text": "In New York Times Co. v. Sullivan, 376 U.S. 254 (1964), the Supreme Court held that the First Amendment categorically bars any public official from ever recovering damages for defamatory falsehoods about their conduct, establishing an absolute immunity for the press when reporting on government affairs.",
+  "claim": "Sullivan established absolute, unconditional immunity barring any public official from ever recovering defamation damages relating to official conduct.",
+  "citation_as_written": "New York Times Co. v. Sullivan, 376 U.S. 254 (1964)",
+  "hallucination_type": "overstatement",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "The citation, court, and year are correct, and the case does limit public-official recovery. But the Court did NOT create absolute immunity: it created a qualified rule that permits recovery upon proof of 'actual malice' (knowledge of falsity or reckless disregard). 'Categorically bars,' 'ever,' and 'absolute immunity' overstate the conditional standard into a binding absolute rule, dropping the dispositive 'unless he proves... actual malice' qualifier."
+}

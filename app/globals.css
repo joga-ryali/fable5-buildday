@@ -177,6 +177,28 @@ code {
   font-weight: 500;
 }
 
+.domain-tabs {
+  display: inline-flex;
+  gap: 4px;
+  background: var(--panel-2);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  padding: 4px;
+  margin: 4px 0 18px;
+}
+.domain-tab {
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.domain-tab:hover { text-decoration: none; color: var(--text); }
+.domain-tab.active {
+  background: var(--accent);
+  color: #fff;
+}
+
 .defect-chip {
   display: inline-flex;
   align-items: center;

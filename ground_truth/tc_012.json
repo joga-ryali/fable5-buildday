@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_012",
+  "domain": "corporate_filings",
   "source_filing": "Microsoft Corporation Form 10-K (fiscal year ended June 30, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
   "original_text": "Intelligent Cloud Revenue increased $18.8 billion or 21%.",

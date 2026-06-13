@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_003",
+  "domain": "corporate_filings",
   "source_filing": "Apple Inc. 10-K FY2023 (filed 2023-11-03), Risk Factors",
   "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
   "original_text": "Political uncertainty surrounding trade and other international disputes could also have a negative effect on consumer confidence and spending, which could adversely affect the Company's business.",

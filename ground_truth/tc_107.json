@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_107",
+  "domain": "legal",
+  "source_filing": "Gideon v. Wainwright, 372 U.S. 335 (U.S. 1963)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/372/335",
+  "original_text": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+  "modified_text": "In Gideon v. Wainwright, 372 U.S. 335 (1963), the Supreme Court held that any person too poor to hire a lawyer is constitutionally entitled to appointed counsel in any legal proceeding in which they cannot afford representation.",
+  "claim": "Gideon guarantees appointed counsel to indigent persons in any legal proceeding where they cannot afford a lawyer.",
+  "citation_as_written": "Gideon v. Wainwright, 372 U.S. 335 (1963)",
+  "hallucination_type": "scope_expansion",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Gideon's holding is confined to indigent defendants in state CRIMINAL prosecutions (and rests on the Sixth Amendment right to counsel applied to the states). The modified text expands the rule to 'any legal proceeding,' which would sweep in civil cases where no such categorical right exists. The narrow criminal-trial holding is stated as a universal right-to-counsel rule. Author (Black), year (1963), court, and citation are all correct, so the citation is intact; only the scope is overbroad."
+}

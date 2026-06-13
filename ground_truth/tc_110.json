@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_110",
+  "domain": "legal",
+  "source_filing": "Citizens United v. FEC, 558 U.S. 310 (U.S. 2010)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/08-205",
+  "original_text": "The Court returns to the principle established in Buckley and Bellotti that the Government may not suppress political speech based on the speaker's corporate identity.",
+  "modified_text": "Under Citizens United v. FEC, 558 U.S. 310 (2010), the government is absolutely barred from regulating any form of corporate political spending whatsoever, including direct contributions to candidates and all disclosure requirements.",
+  "claim": "Citizens United established an absolute, unqualified bar on all government regulation of corporate political spending, including contributions and disclosure rules.",
+  "citation_as_written": "Citizens United v. FEC, 558 U.S. 310 (2010)",
+  "hallucination_type": "overstatement",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Overstates the holding into an absolute, unlimited rule. The decision invalidated restrictions on independent expenditures based on corporate identity, but the same opinion (by an 8-1 vote) UPHELD the BCRA disclaimer and disclosure requirements, and the case did not disturb the ban on direct corporate contributions to candidates. Framing it as an absolute bar on 'any form' of regulation including contributions and disclosure overstates the genuine but limited holding."
+}

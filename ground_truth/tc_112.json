@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_112",
+  "domain": "legal",
+  "source_filing": "New York Times Co. v. Sullivan, 376 U.S. 254 (U.S. 1964)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/376/254",
+  "original_text": "The constitutional guarantees require, we think, a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with 'actual malice'\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+  "modified_text": "Writing for the Court in New York Times Co. v. Sullivan, 376 U.S. 254 (1971), Justice Felix Frankfurter held that a public official may not recover damages for a defamatory falsehood relating to his official conduct unless he proves the statement was made with 'actual malice'\u2014knowledge of falsity or reckless disregard of whether it was false.",
+  "claim": "Justice Frankfurter authored the 1971 Sullivan majority opinion establishing the actual malice standard.",
+  "citation_as_written": "New York Times Co. v. Sullivan, 376 U.S. 254 (1971) (Frankfurter, J.)",
+  "hallucination_type": "wrong_attribution",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The holding itself is stated faithfully and accurately. However, the attribution is doubly wrong: the majority opinion was authored by Justice William Brennan, not Justice Felix Frankfurter (who had in fact left the Court in 1962, before the 1964 decision), and the case was decided in 1964, not 1971. The reporter cite 376 U.S. 254 corresponds to the 1964 volume, making the 1971 year internally inconsistent. citation_intact=false because the author and year are falsified."
+}

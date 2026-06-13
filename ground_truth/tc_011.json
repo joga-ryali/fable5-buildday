@@ -1,5 +1,6 @@
 {
   "test_case_id": "tc_011",
+  "domain": "corporate_filings",
   "source_filing": "Apple Inc. FY2025 Form 10-K (filed 2025-11, fiscal year ended September 27, 2025)",
   "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
   "original_text": "During 2025, the Company s net sales through its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales.",

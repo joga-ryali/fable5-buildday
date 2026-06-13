@@ -163,6 +163,7 @@ def run(only, include_unaccepted, prompt_version, change, stage1_model):
             "pass": r["verdict"] == gt,
             "prompt_version": prompt_version,
             "hallucination_type": tc.get("hallucination_type"),
+            "domain": tc.get("domain", "corporate_filings"),
         }
         with open(result_path(tc_id, run_id), "w") as f:
             json.dump(record, f, indent=2)

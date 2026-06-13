@@ -1,0 +1,16 @@
+{
+  "test_case_id": "tc_113",
+  "domain": "legal",
+  "source_filing": "Mapp v. Ohio, 367 U.S. 643 (U.S. 1961)",
+  "source_url": "https://www.law.cornell.edu/supremecourt/text/367/643",
+  "original_text": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+  "modified_text": "In Mapp v. Ohio, 367 U.S. 643 (1961), Justice Clark, writing for the Court, held that evidence obtained through searches and seizures in violation of the Constitution remains admissible in state court proceedings, declining to extend the exclusionary rule to the states.",
+  "claim": "Mapp v. Ohio held that unconstitutionally obtained evidence is admissible in state courts and that the exclusionary rule does not bind the states.",
+  "citation_as_written": "Mapp v. Ohio, 367 U.S. 643 (1961) (Clark, J.)",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 2,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Inverts the holding. The Court actually held such evidence is INADMISSIBLE in state courts, applying the exclusionary rule to the states and overruling Wolf v. Colorado. Citation attributes (author Clark, year 1961, cite 367 U.S. 643) are correct, but the substantive holding is reversed."
+}
