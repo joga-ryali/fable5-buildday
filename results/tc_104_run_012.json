@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_104",
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:18:12+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "malformed",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "We conclude that, in the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+  "caveat_preserved": true,
+  "notes": "The claim accurately paraphrases the source text, preserving all key assertions and qualifications. The attribution to Brown v. Board of Education matches the resolved source.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": null,
+  "domain": "legal"
+}

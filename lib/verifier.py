@@ -83,15 +83,20 @@ def call_anthropic(model: str, system: str, user: str,
         "messages": [{"role": "user", "content": user}],
     }
 
-    for attempt in (1, 2):
+    # Up to 3 attempts. Transient network errors (read timeouts) retry with
+    # backoff so infra blips don't masquerade as cannot_verify; rate limits
+    # (429/529) wait 60s; other HTTP errors fail fast.
+    last_err = "unknown"
+    for attempt in (1, 2, 3):
         try:
             resp = requests.post(ANTHROPIC_URL, headers=headers,
-                                 json=body, timeout=120)
+                                 json=body, timeout=90)
         except requests.RequestException as e:
-            if attempt == 1:
-                time.sleep(2)
+            last_err = f"network error: {e}"
+            if attempt < 3:
+                time.sleep(2 * attempt)
                 continue
-            raise VerifierError(f"network error calling {model}: {e}")
+            break
 
         if resp.status_code == 200:
             data = resp.json()
@@ -100,17 +105,20 @@ def call_anthropic(model: str, system: str, user: str,
                 if b.get("type") == "text"
             ).strip()
 
-        # rate limited / overloaded -> wait 60s, retry once, then fail
-        if resp.status_code in (429, 529) and attempt == 1:
-            print(f"  rate-limited ({resp.status_code}) on {model}; waiting 60s",
-                  file=sys.stderr)
-            time.sleep(60)
-            continue
+        # rate limited / overloaded -> wait 60s and retry (up to the attempt cap)
+        if resp.status_code in (429, 529):
+            last_err = f"HTTP {resp.status_code}"
+            if attempt < 3:
+                print(f"  rate-limited ({resp.status_code}) on {model}; waiting 60s",
+                      file=sys.stderr)
+                time.sleep(60)
+                continue
+            break
 
         raise VerifierError(f"Anthropic {model} HTTP {resp.status_code}: "
                             f"{resp.text[:300]}")
 
-    raise VerifierError(f"Anthropic {model} failed after retry")
+    raise VerifierError(f"Anthropic {model} failed after 3 attempts ({last_err})")
 
 
 def _extract_json(text: str) -> dict:

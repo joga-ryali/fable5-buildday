@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_020",
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:15:53+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "scope_expansion",
+  "confidence": "medium",
+  "source_excerpt": "The increases were primarily due to strong positive comparable sales across our U.S. segments and international markets. In fiscal 2026, growth was primarily driven by increases in average ticket and transactions,",
+  "caveat_preserved": false,
+  "notes": "The source supports that growth was driven by increases in average ticket and transactions in fiscal 2026, but it refers to 'U.S. segments and international markets' in the context of comparable sales \u2014 it does not explicitly state that ALL reportable segments experienced net sales growth driven by both average ticket and transactions. The claim generalizes this to 'all reportable segments' without the source confirming this uniformly across every segment, representing a scope expansion.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "scope_expansion",
+  "domain": "corporate_filings"
+}

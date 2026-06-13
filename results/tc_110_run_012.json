@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_110",
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:21:08+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "The Court returns to the principle established in Buckley and Bellotti that the Government may not suppress political speech based on the speaker's corporate identity.",
+  "caveat_preserved": false,
+  "notes": "The source addresses only the suppression of political speech based on corporate identity \u2014 it does not establish an 'absolute, unqualified bar on all government regulation of corporate political spending.' Citizens United explicitly upheld disclosure requirements and did not address contribution limits in the same way; the claim's assertion that the ruling bars 'contributions and disclosure rules' is a significant overstatement and mischaracterization of the holding.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v6",
+  "hallucination_type": "overstatement",
+  "domain": "legal"
+}

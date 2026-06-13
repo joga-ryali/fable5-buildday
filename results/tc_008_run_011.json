@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_008",
+  "run_id": "run_011",
+  "timestamp": "2026-06-13T21:00:14+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "the Company estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million and $538 million as of September 27, 2025 and September 28, 2024, respectively.",
+  "caveat_preserved": false,
+  "notes": "The FY2025 figure of $590 million matches, but the FY2024 figure in the claim is $438 million while the source states $538 million \u2014 a material numeric mismatch of $100 million.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "quantitative_fabrication",
+  "domain": "corporate_filings"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_103",
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:18:07+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "malformed",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "scope_expansion",
+  "confidence": "high",
+  "source_excerpt": "We conclude that, in the field of public education, the doctrine of 'separate but equal' has no place. Separate educational facilities are inherently unequal.",
+  "caveat_preserved": false,
+  "notes": "The source explicitly limits its holding to 'the field of public education,' whereas the claim generalizes the ruling to 'all public facilities generally.' This is a direct scope expansion that contradicts the express limitation in the source text.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v6",
+  "hallucination_type": "scope_expansion",
+  "domain": "legal"
+}

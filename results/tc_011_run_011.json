@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_011",
+  "run_id": "run_011",
+  "timestamp": "2026-06-13T21:02:35+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_attribution",
+  "confidence": "high",
+  "source_excerpt": "During 2025, the Company s net sales through its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales.",
+  "caveat_preserved": false,
+  "notes": "The figures (40% direct, 60% indirect) match the source, but the source attributes them to fiscal 2025, whereas the claim attributes them to fiscal 2024. This is a clear attribution mismatch \u2014 the claim cites the wrong fiscal year.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "partial_citation_corruption",
+  "domain": "corporate_filings"
+}

@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_030",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:39:41+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "overstatement",
+  "confidence": "high",
+  "source_excerpt": "The Company believes that its operations comply in all material respects with applicable environmental laws and regulations.",
+  "caveat_preserved": false,
+  "notes": "The source hedges with 'The Company believes that,' indicating this is a belief/opinion rather than a stated fact. The claim drops this qualifier and asserts compliance as a definitive fact, overstating the confidence level expressed in the source.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "stripped_caveat",
+  "domain": "corporate_filings"
+}

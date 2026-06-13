@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_012",
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:15:05+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "Intelligent Cloud Revenue increased $18.8 billion or 21%.",
+  "caveat_preserved": false,
+  "notes": "The dollar amount ($18.8 billion) matches the source, but the claim states 31% growth while the source clearly states 21% growth. This numeric mismatch on a material figure renders the claim unsupported.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "quantitative_fabrication",
+  "domain": "corporate_filings"
+}

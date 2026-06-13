@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_111",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:43:34+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_directionality",
+  "confidence": "high",
+  "source_excerpt": "a federal rule that prohibits a public official from recovering damages for a defamatory falsehood relating to his official conduct unless he proves that the statement was made with 'actual malice'\u2014that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+  "caveat_preserved": false,
+  "notes": "The claim asserts 'absolute, unconditional immunity' barring any recovery, but the source establishes a conditional rule: recovery IS possible if the public official proves actual malice. The claim directly contradicts the source by eliminating the actual malice exception that is central to the holding.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "overstatement",
+  "domain": "legal"
+}

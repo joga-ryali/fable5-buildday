@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_002",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:31:08+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "Services net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business.",
+  "caveat_preserved": false,
+  "notes": "The claim states a 19% increase, but the source clearly states a 9% increase. Although the dollar figure of $7.1 billion matches, the percentage figure is materially wrong, making the claim unsupported per the numeric faithfulness rule.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "quantitative_fabrication",
+  "domain": "corporate_filings"
+}

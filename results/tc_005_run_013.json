@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_005",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:31:25+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "partially_supported",
+  "defect_type": "unsupported_addition",
+  "confidence": "high",
+  "source_excerpt": "The Company's total net sales decreased 3% or $11.0 billion during 2023 compared to 2022. The weakness in foreign currencies relative to the U.S. dollar accounted for more than the entire year-over-year decrease in total net sales.",
+  "caveat_preserved": true,
+  "notes": "The source fully supports the ~3% decline in total net sales for fiscal 2023. However, the claim that Apple 'completed a major acquisition during the year' is entirely absent from the source text and cannot be verified from it \u2014 this is an unsupported addition.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "distributed_evidence",
+  "domain": "corporate_filings"
+}

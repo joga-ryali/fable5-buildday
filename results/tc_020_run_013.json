@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_020",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:36:46+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "cannot_verify",
+  "defect_type": "none",
+  "confidence": "low",
+  "source_excerpt": "The increases were primarily due to strong positive comparable sales across our U.S. segments and international markets. In fiscal 2026, growth was primarily driven by increases in average ticket and transactions,",
+  "caveat_preserved": false,
+  "notes": "Prompt B error: network error calling claude-sonnet-4-6: HTTPSConnectionPool(host='api.anthropic.com', port=443): Read timed out. (read timeout=120)",
+  "ground_truth_verdict": "partially_supported",
+  "pass": false,
+  "prompt_version": "v6",
+  "hallucination_type": "scope_expansion",
+  "domain": "corporate_filings"
+}

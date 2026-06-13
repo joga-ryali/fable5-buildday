@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_108",
+  "run_id": "run_011",
+  "timestamp": "2026-06-13T21:09:32+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "defect_type": "unsupported_addition",
+  "confidence": "high",
+  "source_excerpt": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+  "caveat_preserved": true,
+  "notes": "The source excerpt supports the general principle that indigent defendants must have counsel provided, but it does not explicitly state the Sixth Amendment incorporation mechanism via the Fourteenth Amendment \u2014 the claim's core legal holding about constitutional incorporation is absent from the provided source text. The excerpt captures the rationale but not the doctrinal holding about obligatory application to states through the Fourteenth Amendment.",
+  "ground_truth_verdict": "supported",
+  "pass": false,
+  "prompt_version": "v6",
+  "hallucination_type": null,
+  "domain": "legal"
+}

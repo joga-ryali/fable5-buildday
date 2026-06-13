@@ -1,0 +1,92 @@
+{
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:21:42+00:00",
+  "app_version": "0.1.0",
+  "prompt_version": "v6",
+  "change_from_previous": "resolution non-blocking when source text present (fixes legal Justia/CL bot-blocking)",
+  "total": 53,
+  "passed": 47,
+  "failed": 6,
+  "pass_rate": 0.8868,
+  "by_hallucination_type": {
+    "wrong_directionality": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "quantitative_fabrication": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "stripped_caveat": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "distributed_evidence": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "overstated_confidence": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "partial_citation_corruption": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "scope_expansion": {
+      "total": 5,
+      "passed": 3,
+      "failed": 2
+    },
+    "total_citation_fabrication": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "control": {
+      "total": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "wrong_attribution": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "overstatement": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3
+    },
+    "fabricated_citation": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "failed_cases": [
+    "tc_103",
+    "tc_105",
+    "tc_107",
+    "tc_108",
+    "tc_110",
+    "tc_111"
+  ],
+  "regressions_from_best_run": [
+    "tc_103",
+    "tc_105",
+    "tc_107",
+    "tc_108",
+    "tc_110",
+    "tc_111"
+  ],
+  "best_run_id": "run_001",
+  "stage1_model": "claude-haiku-4-5-20251001",
+  "sonnet_model": "claude-sonnet-4-6"
+}

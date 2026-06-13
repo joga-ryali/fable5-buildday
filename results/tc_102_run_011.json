@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_102",
+  "run_id": "run_011",
+  "timestamp": "2026-06-13T21:05:01+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "paywalled",
+  "citation_match_verdict": "cannot_determine",
+  "verdict": "cannot_verify",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+  "caveat_preserved": false,
+  "notes": "Citation could not be resolved (status: paywalled); cannot verify faithfulness against a source that does not resolve.",
+  "ground_truth_verdict": "unsupported",
+  "pass": false,
+  "prompt_version": "v6",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}

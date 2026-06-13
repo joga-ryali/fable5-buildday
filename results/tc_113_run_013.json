@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_113",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:43:46+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "wrong_directionality",
+  "confidence": "high",
+  "source_excerpt": "We hold that all evidence obtained by searches and seizures in violation of the Constitution is, by that same authority, inadmissible in a state court.",
+  "caveat_preserved": false,
+  "notes": "The claim directly contradicts the source. The source states that unconstitutionally obtained evidence is inadmissible in state courts and that the exclusionary rule does bind the states, whereas the claim asserts the exact opposite \u2014 that such evidence is admissible and that the exclusionary rule does not bind the states.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "wrong_directionality",
+  "domain": "legal"
+}

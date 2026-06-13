@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_102",
+  "run_id": "run_012",
+  "timestamp": "2026-06-13T21:18:02+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "paywalled",
+  "citation_match_verdict": "mismatch",
+  "verdict": "unsupported",
+  "defect_type": "numeric_mismatch",
+  "confidence": "high",
+  "source_excerpt": "The Fourteenth Amendment requires a State to license a marriage between two people of the same sex and to recognize a marriage between two people of the same sex when their marriage was lawfully licensed and performed out-of-State.",
+  "caveat_preserved": false,
+  "notes": "The claim contains two material errors: (1) the case was decided in 2015, not 2013 \u2014 a direct numeric contradiction; (2) Chief Justice Roberts authored the dissent, not the majority opinion (Justice Kennedy wrote the majority). The holding on the Fourteenth Amendment is accurately reflected in the source, but the authorship and year errors are disqualifying.",
+  "ground_truth_verdict": "unsupported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}

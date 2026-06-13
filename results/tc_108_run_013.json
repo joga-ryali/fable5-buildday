@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_108",
+  "run_id": "run_013",
+  "timestamp": "2026-06-13T21:41:12+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "supported",
+  "defect_type": "none",
+  "confidence": "high",
+  "source_excerpt": "[I]n our adversary system of criminal justice, any person haled into court, who is too poor to hire a lawyer, cannot be assured a fair trial unless counsel is provided for him.",
+  "caveat_preserved": true,
+  "notes": "The claim accurately paraphrases the source text. The phrase 'indigent defendant who cannot afford a lawyer' maps directly to 'any person haled into court, who is too poor to hire a lawyer,' and the core holding about fair trial and provision of counsel is preserved. The claim's specification of 'criminal case' is implicit in the source's reference to 'our adversary system of criminal justice' and the broader context of Gideon v. Wainwright.",
+  "ground_truth_verdict": "supported",
+  "pass": true,
+  "prompt_version": "v6",
+  "hallucination_type": null,
+  "domain": "legal"
+}

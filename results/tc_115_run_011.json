@@ -1,0 +1,21 @@
+{
+  "test_case_id": "tc_115",
+  "run_id": "run_011",
+  "timestamp": "2026-06-13T21:10:16+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "malformed",
+  "citation_match_verdict": "cannot_determine",
+  "verdict": "cannot_verify",
+  "defect_type": "fabricated_citation",
+  "confidence": "high",
+  "source_excerpt": "It is emphatically the province and duty of the judicial department to say what the law is.",
+  "caveat_preserved": false,
+  "notes": "Citation could not be resolved (status: malformed); cannot verify faithfulness against a source that does not resolve.",
+  "ground_truth_verdict": "unsupported",
+  "pass": false,
+  "prompt_version": "v6",
+  "hallucination_type": "wrong_attribution",
+  "domain": "legal"
+}
