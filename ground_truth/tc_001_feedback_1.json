@@ -1,0 +1,10 @@
+{
+  "test_case_id": "tc_001",
+  "iteration_number": 1,
+  "review_status": "iterate",
+  "reviewer": "joga",
+  "timestamp": "2026-06-13T17:57:11.882Z",
+  "feedback_type": "too_obvious",
+  "subtlety_rating_override": null,
+  "comment": "When you change directionality, don't use a direct antonym. For example, instead of using \"increase\", you can say \"went by\" or something less obvious"
+}

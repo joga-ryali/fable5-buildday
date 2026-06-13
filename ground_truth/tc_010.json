@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_010",
+  "source_filing": "Apple Inc. FY2025 Form 10-K (filed 2025-11, fiscal year ended September 27, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "original_text": "Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone, partially offset by higher net sales of Mac.",
+  "modified_text": "The 10-K confirms that Greater China net sales fell in fiscal 2025 versus 2024 solely because of lower iPhone net sales, with Mac providing a partial offset.",
+  "claim": "Apple's Greater China net sales decline in FY2025 was caused solely by lower iPhone net sales, partially offset by higher Mac net sales.",
+  "citation_as_written": "Apple Inc. FY2025 Form 10-K, Management's Discussion and Analysis (Segment Operating Performance)",
+  "hallucination_type": "overstated_confidence",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source attributes the decline 'primarily due to' lower iPhone sales (a qualified, non-exhaustive cause); the claim escalates to certainty ('confirms', 'solely because of'), overstating the source's confidence and exclusivity."
+}

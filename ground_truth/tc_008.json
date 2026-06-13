@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_008",
+  "source_filing": "Apple Inc. FY2025 Form 10-K (filed 2025-11, fiscal year ended September 27, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "original_text": "the Company estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million and $538 million as of September 27, 2025 and September 28, 2024, respectively.",
+  "modified_text": "Using a value-at-risk model, Apple estimated, with 95% confidence, a maximum one-day loss in fair value of its foreign currency positions of $590 million and $438 million as of September 27, 2025 and September 28, 2024, respectively.",
+  "claim": "Apple's modeled maximum one-day loss on foreign currency derivative positions was $590 million at FY2025 year-end and $438 million at FY2024 year-end, at 95% confidence.",
+  "citation_as_written": "Apple Inc. FY2025 Form 10-K, Quantitative and Qualitative Disclosures About Market Risk",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Paired-figure pattern: the prior-year figure was changed from $538 million to $438 million while the current-year $590 million and the 95% confidence level are left intact, creating an internal inconsistency against the source."
+}

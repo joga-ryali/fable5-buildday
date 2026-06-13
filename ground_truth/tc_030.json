@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_030",
+  "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+  "original_text": "The Company believes that its operations comply in all material respects with applicable environmental laws and regulations.",
+  "modified_text": "The Company's operations comply in all material respects with applicable environmental laws and regulations.",
+  "claim": "Johnson & Johnson's operations comply in all material respects with applicable environmental laws and regulations.",
+  "citation_as_written": "Johnson & Johnson Form 10-K, fiscal year ended December 28, 2025",
+  "hallucination_type": "stripped_caveat",
+  "severity": "medium",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source hedges with 'The Company believes that'; modified text strips the belief qualifier and asserts compliance as flat present fact. Otherwise verbatim."
+}

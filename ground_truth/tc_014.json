@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_014",
+  "source_filing": "Microsoft Corporation Form 10-K (fiscal year ended June 30, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000000000099000099/fake-doc.htm",
+  "original_text": "",
+  "modified_text": "According to Microsoft's filing, management stated that the company expects fiscal year 2026 Azure revenue growth to accelerate to at least 40% on a constant-currency basis, supported by a $25 billion AI infrastructure commitment.",
+  "claim": "Microsoft formally guided that Azure revenue growth will reach at least 40% in fiscal year 2026, backed by a $25 billion AI infrastructure commitment.",
+  "citation_as_written": "Microsoft Corporation, Form 10-K for fiscal year ended June 30, 2025, Exhibit 99.2 'FY2026 Outlook Statement' (filed with the SEC).",
+  "hallucination_type": "total_citation_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "cannot_verify",
+  "notes": "Entirely fabricated source. The cited exhibit and the specific 40% Azure FY2026 guidance and $25 billion commitment do not exist in the filing; the source_url is a constructed EDGAR path for CIK 789019 that 404s. No verbatim original_text exists, so the claim cannot be verified against any real document."
+}

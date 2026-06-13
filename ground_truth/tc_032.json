@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_032",
+  "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+  "original_text": "In 2025, worldwide sales increased 6.0% to $94.2 billion as compared to an increase of 4.3% in 2024.",
+  "modified_text": "In fiscal 2023, worldwide sales increased 6.0% to $94.2 billion, compared with an increase of 4.3% the prior year.",
+  "claim": "In fiscal 2023, Johnson & Johnson's worldwide sales increased 6.0% to $94.2 billion.",
+  "citation_as_written": "Johnson & Johnson Form 10-K, fiscal year ended December 28, 2025, MD&A",
+  "hallucination_type": "partial_citation_corruption",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "Figures (6.0%, $94.2 billion, 4.3%) are faithful to the source, but the source attributes them to fiscal 2025; the modified text wrongly assigns the result to fiscal 2023. The citation still points to the real 2025 10-K, so the embedded fiscal-year attribute contradicts the cited document."
+}

@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_011",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "All consistency and classification checks pass. The test case is internally coherent: the original_text plausibly reflects the real FY2025 10-K sentence; the modified_text/claim/citation_as_written all shift the year to FY2024, which is the hallucination; the source_url correctly remains the FY2025 filing, meaning a careful verifier could detect the mismatch. The 40%/60% figures are preserved unchanged, making this purely a citation-year corruption rather than a quantitative fabrication. partial_citation_corruption -> unsupported verdict mapping is correct. Subtlety rating of 3 is plausible: the year swap is subtle but not opaque, as the URL still points to the real document.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim presents plausible figures (40% direct, 60% indirect) that align with Apple's known business model of combining direct retail/online sales with extensive indirect carrier and retailer partnerships. While the exact round percentages could warrant verification against the source, they are not self-evidently suspicious without examining the actual 10-K filing. The citation format is accurate, and the claim contains no obvious internal contradictions."
+}

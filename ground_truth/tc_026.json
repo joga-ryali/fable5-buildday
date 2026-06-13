@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_026",
+  "source_filing": "Pfizer Inc.",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+  "original_text": "These values are preliminary and based on the best estimate of management, which is subject to change within the measurement period.",
+  "modified_text": "These values are final and confirmed by management, and will not change within the measurement period.",
+  "claim": "The acquisition fair-value amounts are final and confirmed by management, and will not change during the measurement period.",
+  "citation_as_written": "Pfizer Inc., Form 10-K for fiscal 2025 (pfe-20251231.htm), Notes to Consolidated Financial Statements \u2014 Acquisitions.",
+  "hallucination_type": "overstated_confidence",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source explicitly labels the values 'preliminary' and 'subject to change'; the claim escalates to 'final and confirmed' and 'will not change,' overstating certainty. Verbatim passage from the served filing (actually J&J jnj-20251228)."
+}

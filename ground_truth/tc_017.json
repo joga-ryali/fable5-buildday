@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_017",
+  "source_filing": "Amazon.com, Inc. Form 10-K (fiscal year ended December 31, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+  "original_text": "North America sales increased 10% in 2025, compared to the prior year.",
+  "modified_text": "Amazon's North America segment sales eased 10% in 2025 relative to the prior year.",
+  "claim": "Amazon's North America segment net sales declined 10% in fiscal 2025 versus the prior year.",
+  "citation_as_written": "Amazon.com, Inc. Form 10-K for the fiscal year ended December 31, 2025 (MD&A, Results of Operations \u2014 Net Sales, North America)",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Directionality reversed using a soft verb ('eased') rather than a blunt antonym, while preserving the 10% magnitude and the period. The source states North America sales INCREASED 10%; the claim implies a decline of the same magnitude, which the filing contradicts."
+}

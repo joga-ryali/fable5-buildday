@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_033",
+  "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000000000099000099/fake-doc.htm",
+  "original_text": "",
+  "modified_text": "According to Johnson & Johnson's Q3 2025 earnings supplement, MedTech segment operating margin expanded 180 basis points to 24.6%, driven by Shockwave integration synergies.",
+  "claim": "Johnson & Johnson's MedTech segment operating margin expanded 180 basis points to 24.6% in Q3 2025 due to Shockwave integration synergies.",
+  "citation_as_written": "Johnson & Johnson Q3 2025 MedTech Segment Earnings Supplement, Exhibit 99.1",
+  "hallucination_type": "total_citation_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "cannot_verify",
+  "notes": "Cited source does not exist; the EDGAR URL is fabricated and returns a 404. The specific MedTech margin figures and 'earnings supplement' exhibit are invented and cannot be verified against any real filing."
+}

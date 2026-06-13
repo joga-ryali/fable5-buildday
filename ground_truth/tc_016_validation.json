@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_016",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source confirmed via Amazon Q4 2025 earnings release and last10k.com rendering of the 10-K (accession 0001018724-26-000004): International sales increased 13% in 2025 compared to the prior year. The original_text is verbatim-consistent with the filing. The modified_text swaps 13% to 3% \u2014 a single-digit fabrication \u2014 while preserving faithful qualitative driver language ('primarily reflecting increased unit sales'), which is consistent with the MD&A narrative. The citation is intact and correctly identifies the filing and section. hallucination_type quantitative_fabrication correctly maps to expected_verdict unsupported. subtlety_rating 3 is plausible: the digit change is easy to miss amid correct surrounding context, but the magnitude difference (13% vs 3%) is detectable on careful reading.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim references a specific, verifiable SEC Form 10-K with proper section citation (MD&A, Results of Operations). A 3% YoY growth rate for Amazon's International segment is plausible and not suspiciously high or low. There are no self-evident inconsistencies, contradictions, or logical impossibilities in the claim itself that would indicate misrepresentation without accessing the source document."
+}

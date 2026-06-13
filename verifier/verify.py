@@ -114,11 +114,13 @@ def run(only, include_unaccepted, prompt_version, change, stage1_model):
     results = []
     for tc in cases:
         tc_id = tc["test_case_id"]
-        # For resolvable citations, the faithfulness check reasons over the TRUE
-        # filing passage (original_text). Corrupt/fabricated citations are caught
-        # by independent URL resolution. (SCHEMA §5 / verify_claim docstring.)
-        citation_intact = tc.get("citation_intact", True)
-        source_excerpt = tc.get("original_text") if citation_intact else None
+        # The faithfulness check reasons over the TRUE filing passage when one
+        # exists (original_text). total_citation_fabrication has original_text=""
+        # and a fake URL -> resolution 404s -> cannot_verify (no Prompt B).
+        # partial_citation_corruption HAS a real passage + real URL -> we feed it
+        # so Prompt B catches the wrong-year/attribution contradiction (-> unsupported).
+        ot = tc.get("original_text")
+        source_excerpt = ot if ot else None
         r = verify_claim(
             claim=tc["claim"],
             citation=tc.get("citation_as_written"),

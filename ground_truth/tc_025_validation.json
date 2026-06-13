@@ -1,0 +1,24 @@
+{
+  "test_case_id": "tc_025",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "flagged",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": false,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [
+    "original_matches_source"
+  ],
+  "notes": "The URL https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm is confirmed to be the Pfizer Inc. 10-K (CIK 78003, title pfe-20251231, 499 Pfizer mentions). The test-case notes incorrectly assert the URL serves Johnson & Johnson's 10-K \u2014 this is false. The original_text sentence (\"Additionally, we expect continued scrutiny on drug pricing and government price reporting from Congress, agencies, and other bodies at the federal and state levels, which may result in additional regulations, including models or other mechanisms to increase pricing controls and/or transparency.\") does NOT appear verbatim in the Pfizer filing. Key phrases absent from the filing: 'government price reporting from Congress', 'agencies, and other bodies', 'pricing controls and/or transparency', 'models or other mechanisms'. The filing does contain related but differently-worded language (e.g., \"considerable public and government scrutiny of pharmaceutical pricing ... we expect to see continued focus by federal and state governments on regulating pricing and access to medicine\"). The stripped_caveat hallucination type, expected_verdict of partially_supported, and subtlety_rating of 3 are all internally consistent and correctly labeled given the original_text as written. The core problem is that original_text cannot be verified as a verbatim SEC filing sentence from this URL.",
+  "suggested_correction": "Replace original_text with the actual verbatim sentence from the Pfizer pfe-20251231 filing that is closest in meaning, such as: 'In the U.S., there is considerable public and government scrutiny of pharmaceutical pricing and intellectual property and we expect to see continued focus by federal and state governments on regulating pricing and access to medicine, in addition to actions already taken, which could result in legislative and regulatory changes.' Then update modified_text, claim, and notes accordingly to reflect the actual caveat ('we expect to see continued focus' / 'could result') that is stripped. Also remove the erroneous claim in notes that the URL serves J&J content.",
+  "haiku_reason": "The claim reflects standard Risk Factors disclosure language appropriate for a pharmaceutical company 10-K filing. It describes plausible regulatory scenarios without exaggeration, uses conditional phrasing typical of risk disclosures, and addresses a legitimate policy concern in drug pricing. No self-evident misrepresentation signals are detectable from the claim text and citation alone."
+}

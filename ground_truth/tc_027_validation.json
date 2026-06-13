@@ -1,0 +1,25 @@
+{
+  "test_case_id": "tc_027",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "fail",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": false,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": true
+  },
+  "failed_checks": [
+    "original_matches_source",
+    "haiku_spotted_without_source"
+  ],
+  "notes": "EDGAR full-text search (efts.sec.gov) confirms HLD-0915 and HLD-0117 appear in exactly one 10-K: Johnson & Johnson's filing jnj-20251228.htm (CIK 0000200406, accession 0000200406-26-000016, filed 2026-02-11), not in any Pfizer filing. The verbatim passage from that J&J filing reads: 'The acquired in-process research and development includes two assets, HLD-0915 and HLD-0117, that are being studied to treat prostate cancer and breast cancer, respectively.' \u2014 matching original_text exactly. However, source_filing is set to 'Pfizer Inc.' and source_url points to pfe-20251231.htm (Pfizer CIK 78003), which does not contain this text. The notes field acknowledges this error ('actually J&J jnj-20251228') but the structured fields are not corrected. original_matches_source fails because the stated source URL (Pfizer) does not contain the original_text. The hallucination type, expected verdict mapping (overstated_confidence -> partially_supported), and subtlety rating are all internally correct. The modification itself ('are being studied to treat' -> 'have been shown to treat') is a genuine overstated_confidence manipulation.",
+  "suggested_correction": "Set source_filing to 'Johnson & Johnson' and source_url to 'https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm'. Update citation_as_written to 'Johnson & Johnson, Form 10-K for fiscal 2025 (jnj-20251228.htm), Notes to Consolidated Financial Statements \u2014 Acquisitions / IPR&D.' and update the report string accordingly. The original_text, modified_text, hallucination_type, expected_verdict, and subtlety_rating are all correct and need no change.",
+  "haiku_reason": "The claim uses \"have been demonstrated to treat\" language regarding IPR&D (In-Process R&D) assets. By definition, IPR&D assets are pre-approval, development-stage compounds that have not been clinically demonstrated to treat diseases in the approved sense. The phrasing suggests therapeutic efficacy beyond what IPR&D status would warrant, making this a likely misrepresentation of development-stage assets as approved/demonstrated treatments."
+}

@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_027",
+  "source_filing": "Pfizer Inc.",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+  "original_text": "The acquired in-process research and development includes two assets, HLD-0915 and HLD-0117, that are being studied to treat prostate cancer and breast cancer, respectively.",
+  "modified_text": "The acquired in-process research and development includes two assets, HLD-0915 and HLD-0117, which have been shown to treat prostate cancer and breast cancer, respectively.",
+  "claim": "Acquired assets HLD-0915 and HLD-0117 have been demonstrated to treat prostate cancer and breast cancer, respectively.",
+  "citation_as_written": "Pfizer Inc., Form 10-K for fiscal 2025 (pfe-20251231.htm), Notes to Consolidated Financial Statements \u2014 Acquisitions / IPR&D.",
+  "hallucination_type": "overstated_confidence",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source says the assets 'are being studied to treat' the indicated cancers (investigational); the claim escalates to 'have been shown to treat,' asserting demonstrated efficacy. Verbatim passage from served filing (actually J&J jnj-20251228)."
+}

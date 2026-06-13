@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_029",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source confirmed via J&J investor relations Q4/Full-Year 2025 results page. The $36.3B U.S. and $24.1B international figures correspond to the Innovative Medicine segment (not total company, which was $53.8B U.S. and $40.4B international). Innovative Medicine International reported growth was +4.6% (2.9% operational + 1.7% currency) \u2014 an increase, not a decline. The original_text accurately reflects the source data. The modified_text reverses direction by substituting 'eased' for 'an increase of' and 'operational softness' for 'operational growth', making the false claim that international sales declined 4.6%. The claim correctly captures this fabricated decline. Citation matches source filing. verdict 'unsupported' is correct for wrong_directionality type. Subtlety rating of 4 is well-justified \u2014 dollar figures and percentages are preserved intact, only directional language changes, making the manipulation easy to miss on a quick read.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim contains appropriately specific financial metrics (4.6% decline, $24.1B figure) consistent with actual SEC filings, properly formatted citation to Form 10-K, and plausible numbers for J&J's international sales. While the December 28, 2025 fiscal year-end is unconventional, it is not impossible. No self-evident red flags of misrepresentation are apparent without reviewing the actual source document."
+}

@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_025",
+  "source_filing": "Pfizer Inc.",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+  "original_text": "Additionally, we expect continued scrutiny on drug pricing and government price reporting from Congress, agencies, and other bodies at the federal and state levels, which may result in additional regulations, including models or other mechanisms to increase pricing controls and/or transparency.",
+  "modified_text": "Continued scrutiny on drug pricing and government price reporting from Congress, agencies, and other bodies at the federal and state levels will result in additional regulations, including models or other mechanisms to increase pricing controls and/or transparency.",
+  "claim": "Drug-pricing scrutiny from federal and state bodies will result in additional regulations including new pricing-control mechanisms.",
+  "citation_as_written": "Pfizer Inc., Annual Report on Form 10-K for fiscal year ended December 2025 (pfe-20251231.htm), Risk Factors.",
+  "hallucination_type": "stripped_caveat",
+  "severity": "medium",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source hedges with 'we expect' and 'which may result in'; the claim converts both into the flat assertion 'will result in additional regulations,' dropping the conditional caveat. Note: the document served at this URL is actually Johnson & Johnson's 10-K (jnj-20251228); passage quoted verbatim from served content."
+}

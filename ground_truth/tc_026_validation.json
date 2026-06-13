@@ -1,0 +1,25 @@
+{
+  "test_case_id": "tc_026",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "fail",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": false,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": true
+  },
+  "failed_checks": [
+    "original_matches_source",
+    "haiku_spotted_without_source"
+  ],
+  "notes": "The original_text (\"These values are preliminary and based on the best estimate of management, which is subject to change within the measurement period.\") was confirmed verbatim in the J&J 10-K (jnj-20251228.htm, CIK 200406) but is entirely absent from the Pfizer 10-K (pfe-20251231.htm, CIK 78003). A grep of the full Pfizer filing found neither the target phrase nor even the token 'measurement period'. The test case notes acknowledge this mismatch (\"actually J&J jnj-20251228\") but the source_filing, source_url, and citation_as_written all point to Pfizer \u2014 making the stated source wrong. All other checks pass: the modified_text and claim are coherently paired, the citation appears verbatim in the report, the verdict (partially_supported) is correct for the overstated_confidence type, the type label accurately captures the preliminary-to-final reversal, and a subtlety rating of 4 is plausible.",
+  "suggested_correction": "Change source_filing to \"Johnson & Johnson\", source_url to \"https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm\", and citation_as_written to \"Johnson & Johnson, Form 10-K for fiscal 2025 (jnj-20251228.htm), Notes to Consolidated Financial Statements \u2014 Acquisitions.\" The report text shown to the verifier should be updated to reflect the corrected company name and filing reference accordingly.",
+  "haiku_reason": "The claim contradicts standard GAAP acquisition accounting principles. Under ASC 805, a \"measurement period\" (typically 12 months) exists precisely to allow adjustments to acquisition fair-value amounts as more information becomes available. Stating that amounts are \"final\" and \"will not change during the measurement period\" is self-evidently inconsistent with this accounting framework. Any legitimate 10-K disclosure would not make such an absolute assertion."
+}

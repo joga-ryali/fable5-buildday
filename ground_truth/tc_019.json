@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_019",
+  "source_filing": "Walmart Inc. Form 10-K (fiscal year ended January 31, 2026)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm",
+  "original_text": "Certain provisions decreased cash taxes paid in fiscal 2026 and may change the timing of cash tax payments in future periods.",
+  "modified_text": "Certain provisions decreased cash taxes paid in fiscal 2026 and will change the timing of cash tax payments in future periods.",
+  "claim": "These provisions decreased cash taxes paid in fiscal 2026 and will change the timing of cash tax payments in future periods.",
+  "citation_as_written": "Walmart Inc. Form 10-K (fiscal year ended January 31, 2026)",
+  "hallucination_type": "stripped_caveat",
+  "severity": "medium",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source hedges with 'may change the timing of cash tax payments in future periods.' The claim removes the hedge and asserts it as a definite future outcome ('will change'). The fiscal 2026 cash-tax decrease portion is accurate; only the forward-looking timing is overstated."
+}

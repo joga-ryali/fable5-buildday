@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_030",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source text verified verbatim from the JNJ 10-K (accession 0000200406-26-000016, filed 2026-02-11, period ending 2025-12-28). The filing's Environment section reads: \\\"The Company believes that its operations comply in all material respects with applicable environmental laws and regulations.\\\" The original_text matches exactly. The modified_text removes the epistemic hedge \\\"believes that its\\\" and substitutes the possessive \\\"Company's\\\", turning a stated belief into an asserted fact \u2014 a clean stripped_caveat manipulation. The report presents the modified (unhedged) version, the citation is intact, and expected_verdict=partially_supported correctly maps to hallucination_type=stripped_caveat. Subtlety rating of 3 is plausible: the dropped phrase is short and easy to miss in a long filing, but a careful side-by-side comparison reveals it immediately.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim uses standard regulatory disclosure language (\"in all material respects\") appropriate for a Form 10-K filing. Without access to the source, there are no self-evident linguistic red flags, suspicious qualifiers, or obvious logical inconsistencies that would indicate misrepresentation. A subtle misrepresentation would require knowledge of the company's actual compliance history or undisclosed violations, not just analysis of the claim text."
+}

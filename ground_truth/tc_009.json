@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_009",
+  "source_filing": "Apple Inc. FY2025 Form 10-K (filed 2025-11, fiscal year ended September 27, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "original_text": "As of September 27, 2025, the Company had two vendors that individually represented 10% or more of total vendor non-trade receivables, which accounted for 46 % and 23 %.",
+  "modified_text": "As of September 27, 2025, Apple had two vendors that each individually represented 10% or more of total vendor non-trade receivables, accounting for 56% and 23% of the total.",
+  "claim": "At FY2025 year-end, Apple's two largest vendors by non-trade receivables represented 56% and 23% of total vendor non-trade receivables.",
+  "citation_as_written": "Apple Inc. FY2025 Form 10-K, Notes to Consolidated Financial Statements (Other Financial Information)",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Paired-figure pattern: first vendor concentration changed from 46% to 56% while the adjacent 23% figure is left intact, producing an internal inconsistency relative to the source."
+}

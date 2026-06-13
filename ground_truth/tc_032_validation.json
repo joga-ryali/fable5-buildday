@@ -1,0 +1,26 @@
+{
+  "test_case_id": "tc_032",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "flagged",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": false,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": true
+  },
+  "failed_checks": [
+    "type_label_correct",
+    "citation_intact_field_contradicts_notes",
+    "haiku_spotted_without_source"
+  ],
+  "notes": "The hallucination substitutes the year \"2025\" with \"fiscal 2023\" in the report body text \u2014 the figures (6.0%, $94.2B, 4.3%) and the citation are both carried over intact. The citation \"Johnson & Johnson Form 10-K, fiscal year ended December 28, 2025, MD&A\" is the real, correct citation and has not been altered, which the test case notes explicitly confirm (\"The citation still points to the real 2025 10-K\"). Therefore the label `partial_citation_corruption` is a mislabel: the corruption is a temporal body-text substitution, not a citation corruption. The `citation_intact: false` field is also internally inconsistent with the notes \u2014 if the citation is unchanged and genuine, `citation_intact` should be `true`. The expected_verdict `unsupported` remains correct under any of the plausible alternative type labels (e.g., `quantitative_fabrication` also maps to `unsupported`), so the verdict is unaffected. Subtlety rating 4 is plausible given that all numeric figures are correct and only the fiscal year label differs from the cited document.",
+  "suggested_correction": "Change `hallucination_type` from `partial_citation_corruption` to `quantitative_fabrication` (the year \"2023\" is a fabricated/wrong value substituted for the correct \"2025\" in the body text). Change `citation_intact` from `false` to `true`, consistent with the notes which correctly observe the citation still points to the real 2025 10-K. The `expected_verdict` of `unsupported` requires no change.",
+  "haiku_reason": "The citation contains a self-evident inconsistency: Johnson & Johnson's fiscal year ends on December 31, not December 28. A Form 10-K dated \"fiscal year ended December 28, 2025\" is suspicious because it deviates from J&J's standard calendar-year fiscal year practice, suggesting a potentially fabricated or misattributed citation."
+}

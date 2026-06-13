@@ -1,0 +1,24 @@
+{
+  "test_case_id": "tc_024",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "flagged",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": false,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [
+    "subtlety_rating_plausible"
+  ],
+  "notes": "All consistency checks pass. The hallucination type (total_citation_fabrication) and expected verdict (cannot_verify) are correctly paired. However, the subtlety_rating of 3 is implausibly high for this case. The source URL contains the literal string 'fake-doc.htm' and the accession number '000000000099000099' \u2014 both are immediately obvious fabrication signals requiring no domain knowledge to spot. Additionally, the source_filing labels the document as a 10-K while the claim and citation both reference a Form 8-K, creating a second overt inconsistency. Combined, these make the fabrication very easy to detect, more consistent with a subtlety rating of 1 or 2. A rating of 3 implies moderate effort required to detect the hallucination, which does not match the evidence here.",
+  "suggested_correction": "Lower subtlety_rating from 3 to 1 or 2. The fabrication markers ('fake-doc.htm' in the URL, all-zeros-and-nines accession number, and 10-K vs 8-K document type mismatch) are obvious without any financial or SEC expertise. If a subtlety of 3 is intended, replace the URL with a plausible but incorrect real-looking EDGAR accession (e.g., a valid CIK with a slightly wrong accession number) and align the source_filing document type with the citation (both 8-K or both 10-K).",
+  "haiku_reason": "The claim is plausible for a major pharmaceutical product, and while Form 8-K is an unusual primary source for annual sales figures (Form 10-K would be standard), it's not self-evidently wrong without seeing the actual document. A well-crafted misrepresentation could cite a real Form 8-K that legitimately contains this data, making it undetectable without source verification."
+}

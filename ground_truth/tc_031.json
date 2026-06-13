@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_031",
+  "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+  "original_text": "Considering recent market conditions, the Company has re-evaluated its operating cash flows and liquidity profile and does not foresee any significant incremental risk.",
+  "modified_text": "Considering recent market conditions, the Company has re-evaluated its operating cash flows and liquidity profile, confirming there is no significant incremental risk.",
+  "claim": "Johnson & Johnson has confirmed that its operating cash flows and liquidity profile carry no significant incremental risk under recent market conditions.",
+  "citation_as_written": "Johnson & Johnson Form 10-K, fiscal year ended December 28, 2025, Liquidity discussion",
+  "hallucination_type": "overstated_confidence",
+  "severity": "medium",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source is tentative ('does not foresee any significant incremental risk'); modified text escalates to certainty ('confirming there is no significant incremental risk'). The forward-looking, judgment-based hedge is converted into a definitive confirmation."
+}

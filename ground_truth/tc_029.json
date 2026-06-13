@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_029",
+  "source_filing": "Johnson & Johnson Form 10-K (fiscal year ended December 28, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm",
+  "original_text": "U.S. sales were $36.3 billion, an increase of 7.0%. International sales were $24.1 billion, an increase of 4.6%, which included operational growth of 2.9% and a positive currency impact of 1.7%.",
+  "modified_text": "U.S. sales were $36.3 billion, an increase of 7.0%, while international sales of $24.1 billion eased 4.6%, reflecting operational softness of 2.9% partly offset by a positive currency impact of 1.7%.",
+  "claim": "Johnson & Johnson's international sales declined 4.6% to $24.1 billion in fiscal 2025.",
+  "citation_as_written": "Johnson & Johnson Form 10-K, fiscal year ended December 28, 2025, MD&A",
+  "hallucination_type": "wrong_directionality",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Source states international sales were an INCREASE of 4.6%; modified text reverses direction via softened verb 'eased' and recasts operational growth as 'softness'. Dollar figure and percentage left intact to make the reversal subtle."
+}

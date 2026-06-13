@@ -1,0 +1,24 @@
+{
+  "test_case_id": "tc_028",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "flagged",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": false,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [
+    "original_matches_source"
+  ],
+  "notes": "The source_url (pfe-20251231.htm, a Pfizer fiscal 2025 10-K) is self-contradictory: the test case's own notes disclose that the URL actually serves a J&J filing (jnj-20251228), not a Pfizer filing. This means original_text \u2014 presented as a verbatim Pfizer SEC sentence \u2014 cannot be matched against the cited source, breaking the provenance chain. All other checks pass: the claim and modified_text appear faithfully in the report, the citation_as_written matches the report's in-text citation exactly, partial_citation_corruption correctly labels a fiscal-year attribute error (2023 cited vs. 2025 actual), subtlety_rating of 3 is plausible for a number-only year swap with all substantive figures intact, and expected_verdict of unsupported correctly maps to partial_citation_corruption per the verdict rules.",
+  "suggested_correction": "Replace source_url with a valid Pfizer fiscal 2025 10-K URL (e.g., the actual SEC EDGAR permalink for pfe-20251231.htm once confirmed to serve Pfizer content). If no valid Pfizer URL exists for this passage, the original_text and source provenance must be reconstructed from a genuine Pfizer filing before this test case can be used.",
+  "haiku_reason": "The claim is specific, includes plausible figures ($0.9-1.0B restructuring cost), a reasonable timeline (3 years), and a properly formatted citation. Without accessing the source, there are no self-evident red flags that would indicate misrepresentation\u2014the details align with typical corporate restructuring disclosures. Verification would require checking the actual Form 10-K."
+}

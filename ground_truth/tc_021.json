@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_021",
+  "source_filing": "Johnson & Johnson 10-K (FY2025), filed under CIK 19617 at the JPMorgan-labeled accession 000162828026008131",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
+  "original_text": "The Company believes that its operations comply in all material respects with applicable environmental laws and regulations.",
+  "modified_text": "The Company's operations comply in all material respects with applicable environmental laws and regulations.",
+  "claim": "The company's operations are in compliance, in all material respects, with applicable environmental laws and regulations.",
+  "citation_as_written": "Johnson & Johnson 10-K (FY2025), Regulation/Environmental section",
+  "hallucination_type": "stripped_caveat",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source hedges with 'The Company believes that'; the modified report sentence drops the belief framing and asserts compliance as flat fact. The substance is otherwise faithful, so partially_supported."
+}

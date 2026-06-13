@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_010",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Web search confirmed the verbatim original_text against the Apple FY2025 10-K (SEC filing aapl-20250927.htm): \"Greater China net sales decreased during 2025 compared to 2024 primarily due to lower net sales of iPhone, partially offset by higher net sales of Mac.\" The modification correctly replaces the qualified \"primarily due to\" with the absolutist \"solely because of\" and adds \"confirms\" \u2014 a clear overstated_confidence hallucination. The expected_verdict of partially_supported correctly maps to the overstated_confidence type. The subtlety rating of 4 is appropriate: the swap from \"primarily\" to \"solely\" is easy to miss without side-by-side comparison but is semantically significant (the original leaves room for other contributing factors; the modified version forecloses them). All consistency and classification checks pass.",
+  "suggested_correction": null,
+  "haiku_reason": "While the claim uses the strong word \"solely,\" which is somewhat suspicious in corporate reporting, the logical structure is internally consistent. It's theoretically possible that iPhone decline was the primary driver of Greater China's overall decline, with Mac growth providing a partial offset. Without access to the actual 10-K data, this cannot be definitively identified as a misrepresentation based on face-value analysis alone. The claim is specific enough to be verifiable, but not self-evidently false."
+}

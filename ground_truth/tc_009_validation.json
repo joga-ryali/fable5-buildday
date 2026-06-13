@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_009",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source text confirmed verbatim from Apple FY2025 10-K Note 4, Vendor Non-Trade Receivables section (PDF page 42): \"As of September 27, 2025, the Company had two vendors that individually represented 10% or more of total vendor non-trade receivables, which accounted for 46% and 23%.\" The original_text in the case matches (the space before % is a trivial formatting artifact). The fabrication changes the first figure from 46% to 56% while preserving the second figure at 23%, a classic paired-figure quantitative substitution. The report correctly reflects the modified figures. Citation, claim, and verdict are all internally consistent. Subtlety rating of 3 is plausible: the change is a single numeric alteration that requires checking the source to detect, but the 10pp shift is not negligible.",
+  "suggested_correction": null,
+  "haiku_reason": "While the claim contains some unusual elements (specifically choosing \"non-trade receivables\" as the metric for vendor concentration), it is not self-evidently suspicious without the source. The percentages (56% and 23%) are plausible for a concentrated supplier base, the precision is typical of SEC filings, and non-trade receivables is a legitimate accounting category. The oddity is subtle enough that confirmation bias from the source would be needed to flag it as clearly misrepresentative."
+}

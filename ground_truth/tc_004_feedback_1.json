@@ -1,0 +1,10 @@
+{
+  "test_case_id": "tc_004",
+  "iteration_number": 1,
+  "review_status": "accepted",
+  "reviewer": "joga",
+  "timestamp": "2026-06-13T18:55:24.069Z",
+  "feedback_type": null,
+  "subtlety_rating_override": null,
+  "comment": "How far apart are the two supporting sentences in the source? The UI here shows [..]. In the test HHEM failed, they were apart by a few paragraphs in the source"
+}

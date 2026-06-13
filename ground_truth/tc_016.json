@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_016",
+  "source_filing": "Amazon.com, Inc. Form 10-K (fiscal year ended December 31, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+  "original_text": "International sales increased 13% in 2025, compared to the prior year.",
+  "modified_text": "Amazon's International segment sales increased 3% in 2025 compared to the prior year, with the sales growth primarily reflecting increased unit sales.",
+  "claim": "Amazon's International segment net sales rose 3% year over year in fiscal 2025.",
+  "citation_as_written": "Amazon.com, Inc. Form 10-K for the fiscal year ended December 31, 2025 (MD&A, Results of Operations \u2014 Net Sales, International)",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Single-figure fabrication: the International segment growth rate of 13% was changed to a plausible-but-wrong 3%. The surrounding qualitative driver language ('primarily reflecting increased unit sales') is faithful to the source, making the wrong number subtle. The source value is 13%."
+}

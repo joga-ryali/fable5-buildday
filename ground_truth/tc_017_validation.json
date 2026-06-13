@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_017",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source verified against the actual SEC filing (amzn-20251231.htm, accession 0001018724-26-000004, filed 2026-02-06). The filing's MD&A states verbatim: \"North America sales increased 10% in 2025, compared to the prior year.\" This exactly matches original_text. The modified_text substitutes \"eased\" (implying a decline) for \"increased\", reversing directionality while preserving the 10% magnitude \u2014 a textbook wrong_directionality hallucination. The report's phrasing \"eased 10%\" appears in modified_text and the verifier-facing report. The citation is intact and correctly points to the MD&A Net Sales, North America section. expected_verdict \"unsupported\" is correct for wrong_directionality per the rubric. Subtlety rating 4/5 is plausible: \"eased\" is a soft, non-obvious antonym that a casual reader could miss. All consistency and classification checks pass.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim is not self-evidently suspicious without the source. While Amazon typically reports growth, a 10% year-over-year decline in a segment is plausible. The citation format appears legitimate and specific enough to be verifiable. The claim requires actual source verification rather than being obviously false on its face."
+}

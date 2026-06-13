@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_011",
+  "source_filing": "Apple Inc. FY2025 Form 10-K (filed 2025-11, fiscal year ended September 27, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+  "original_text": "During 2025, the Company s net sales through its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales.",
+  "modified_text": "During fiscal 2024, Apple's net sales through its direct and indirect distribution channels accounted for 40% and 60%, respectively, of total net sales.",
+  "claim": "In fiscal 2024, Apple's direct distribution channels generated 40% of total net sales and indirect channels 60%.",
+  "citation_as_written": "Apple Inc. FY2024 Form 10-K, Business (Distribution), fiscal year ended September 28, 2024",
+  "hallucination_type": "partial_citation_corruption",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "unsupported",
+  "notes": "The 40%/60% split is faithful to the passage, but the source states this for 'During 2025' (FY2025), not FY2024. The claim and citation_as_written wrongly attribute it to fiscal 2024, a year the source contradicts; source_url remains the real FY2025 filing."
+}

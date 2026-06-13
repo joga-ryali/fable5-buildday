@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_024",
+  "source_filing": "Johnson & Johnson 10-K (FY2025), filed under CIK 19617 at the JPMorgan-labeled accession 000162828026008131",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000000000099000099/fake-doc.htm",
+  "original_text": "",
+  "modified_text": "In its FY2025 Form 8-K current report, the Company disclosed that DARZALEX worldwide net sales surpassed $13.5 billion, driven by continued subcutaneous formulation uptake across all major markets.",
+  "claim": "DARZALEX worldwide net sales surpassed $13.5 billion in fiscal 2025 according to the company's Form 8-K.",
+  "citation_as_written": "Johnson & Johnson Form 8-K, Current Report (FY2025), DARZALEX net sales exhibit",
+  "hallucination_type": "total_citation_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": false,
+  "expected_verdict": "cannot_verify",
+  "notes": "Cites a nonexistent EDGAR document at a fabricated accession URL that 404s. No such 8-K exhibit or figure can be verified; the cited source does not exist."
+}

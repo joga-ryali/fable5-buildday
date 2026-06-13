@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_015",
+  "source_filing": "Amazon.com, Inc. Form 10-K (fiscal year ended December 31, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+  "original_text": "Sales increased 12% in 2025, compared to the prior year. Changes in foreign exchange rates increased net sales by $4.4 billion in 2025.",
+  "modified_text": "Amazon reported that consolidated net sales increased 17% in 2025 compared to the prior year, while changes in foreign exchange rates increased net sales by $4.4 billion in 2025.",
+  "claim": "Amazon's consolidated net sales increased 17% in fiscal 2025 versus the prior year, with favorable foreign exchange rates contributing $4.4 billion to net sales.",
+  "citation_as_written": "Amazon.com, Inc. Form 10-K for the fiscal year ended December 31, 2025 (MD&A, Results of Operations \u2014 Net Sales)",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Sharp-pattern fabrication: the source pairs '12%' with '$4.4 billion'. Only the percentage was altered (12% -> 17%) while the adjacent FX dollar figure was left intact, creating an internal inconsistency between the consolidated growth rate and the stated FX contribution. The source value is 12%."
+}

@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_018",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Financial data confirmed via stockanalysis.com: Walmart FY2026 revenue $713,163M vs FY2025 $680,985M yields a delta of ~$32.2B and a growth rate of ~4.72%, matching the original_text's \"4.7%\". The modified_text substitutes 6.7% for 4.7% while leaving the $32.2B intact, creating an arithmetically inconsistent claim (6.7% on a ~$681B base would imply ~$45.6B, not $32.2B). The report faithfully echoes the modified figure. All five consistency checks and all three classification checks pass. subtlety_rating 4 is plausible: the one-digit change (4.7\u21926.7) in a percentage buried alongside a correct dollar figure requires knowing the prior-year base to catch, making it moderately subtle but not maximally so.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim is internally consistent mathematically (6.7% of ~$480B base \u2248 $32.2B), the citation type is appropriate for such statements (Form 10-K MD&A), and the magnitude is plausible for Walmart's revenue scale. Without access to the source, there are no self-evident red flags indicating misrepresentation."
+}

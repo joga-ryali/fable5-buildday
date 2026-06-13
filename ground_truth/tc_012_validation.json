@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_012",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "SEC filing data confirmed via Microsoft investor relations: Intelligent Cloud FY2025 revenue was $106,265M vs FY2024 $87,464M, yielding an increase of ~$18.8 billion at ~21.5% (rounds to 21%). The original_text \"increased $18.8 billion or 21%\" is faithful to the filing. The modified_text and report swap 21% for 31%, which is the fabricated value \u2014 a clean quantitative_fabrication. The dollar figure ($18.8B) is deliberately preserved to make the error harder to spot without knowing the actual percentage, justifying subtlety_rating 4. citation_intact=true is correct; the citation text in the report matches citation_as_written exactly. expected_verdict=unsupported correctly maps to hallucination_type=quantitative_fabrication. All checks pass.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim presents internally consistent numbers (31% growth with $18.8B increase suggests a ~$60B base, which is plausible for Intelligent Cloud). The citation is properly formatted as an SEC filing reference. Without seeing the source, no self-evident contradictions or suspicious elements are apparent."
+}

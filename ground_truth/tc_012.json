@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_012",
+  "source_filing": "Microsoft Corporation Form 10-K (fiscal year ended June 30, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+  "original_text": "Intelligent Cloud Revenue increased $18.8 billion or 21%.",
+  "modified_text": "In fiscal year 2025, Microsoft reported that Intelligent Cloud revenue increased $18.8 billion, or 31%, over the prior year.",
+  "claim": "Microsoft's Intelligent Cloud segment revenue increased $18.8 billion or 31% in fiscal year 2025.",
+  "citation_as_written": "Microsoft Corporation, Form 10-K for fiscal year ended June 30, 2025 (Management's Discussion and Analysis, Reportable Segments \u2014 Intelligent Cloud).",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Sharp pattern: source pairs '$18.8 billion or 21%'. The dollar figure ($18.8 billion) is left intact while the percentage is changed 21%->31%, creating an internal inconsistency (a $18.8B increase cannot be both 21% and 31% of the same base). The correct figure per the filing is 21%."
+}

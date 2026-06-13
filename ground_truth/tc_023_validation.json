@@ -1,0 +1,25 @@
+{
+  "test_case_id": "tc_023",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "flagged",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": true
+  },
+  "failed_checks": [
+    "source_filing_metadata_fabricated",
+    "haiku_spotted_without_source"
+  ],
+  "notes": "All five consistency checks pass on logical/textual grounds. The original_text is verbatim from the real J&J FY2025 10-K, confirmed via EDGAR full-text search and direct document fetch. The wrong_directionality hallucination is correctly constructed: royalties rose from $2.0B (FY2024) to $2.4B (FY2025), but modified_text uses 'eased to... from' to imply the $2.4B figure fell from $2.0B, and the claim compounds this with 'softened... down from'. Subtlety rating 4 is appropriate since both dollar figures are preserved verbatim and only the directional framing is inverted. However, the source metadata is fabricated: real filing is CIK 0000200406 (not 19617), accession 0000200406-26-000016 (not 000162828026008131), document jnj-20251228.htm (not jpm-20251231.htm). The source_url points to a JPMorgan-ticker-named file that does not exist for J&J. Despite the wrong metadata, the original_text content itself is authentic and verbatim from the real filing.\"",
+  "suggested_correction": "Correct source_filing to 'Johnson & Johnson 10-K (FY2025), filed under CIK 0000200406, accession 0000200406-26-000016'. Correct source_url to 'https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm'. The CIK 19617 and accession 000162828026008131 in the original case are fabricated; the jpm-20251231.htm filename is a JPMorgan artifact and does not exist in J&J's filing. All other fields (original_text, modified_text, claim, hallucination_type, verdict, subtlety) are correct and validated.",
+  "haiku_reason": "The claim uses \"softened to... down from\" language suggesting a decrease, but the numbers show an increase from $2.0B to $2.4B (+20%). The directional language directly contradicts the numerical data, making this a self-evident misrepresentation regardless of source verification."
+}

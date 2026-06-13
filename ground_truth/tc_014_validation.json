@@ -1,0 +1,24 @@
+{
+  "test_case_id": "tc_014",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "flagged",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": true
+  },
+  "failed_checks": [
+    "haiku_spotted_without_source"
+  ],
+  "notes": "All checks pass. The claim and modified_text appear verbatim in the report. The citation_as_written matches the report citation exactly. The hallucination_type total_citation_fabrication correctly maps to expected_verdict cannot_verify. The empty original_text is consistent with a fully fabricated source where no real document exists. The type label is correct: the source URL is a constructed fake path (fake-doc.htm), the exhibit Exhibit 99.2 'FY2026 Outlook Statement' does not exist as a standard 10-K exhibit, and the specific 40% Azure FY2026 guidance with a $25B commitment is not found in any real Microsoft 10-K. Subtlety rating 3 is plausible \u2014 Microsoft's real CIK (789019) and realistic filing metadata lend surface credibility, but the fake URL and invented exhibit name would fail even a cursory SEC EDGAR lookup.",
+  "suggested_correction": null,
+  "haiku_reason": "The citation format is self-evidently suspicious. The claim attributes specific revenue growth guidance (\"at least 40%\") to \"Exhibit 99.2 'FY2026 Outlook Statement'\" in a 10-K filing for a completed fiscal year. This is an unusual structure \u2014 Microsoft's forward-looking guidance typically appears in earnings call transcripts and investor presentations, not as exhibits in historical 10-K filings. The precise framing of a revenue growth target backed by a specific capex figure in a formal SEC exhibit is atypical and suggests the citation may be fabricated or misattributed."
+}

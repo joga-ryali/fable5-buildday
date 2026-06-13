@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_019",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source text confirmed verbatim from the Walmart 10-K (fiscal year ended January 31, 2026) via direct EDGAR fetch: \"Certain provisions decreased cash taxes paid in fiscal 2026 and may change the timing of cash tax payments in future periods.\" The original_text matches exactly. The modified_text correctly substitutes \"will\" for \"may\", and that modified version appears in the report. The hallucination type stripped_caveat is correct (hedging modal \"may\" is replaced by the definitive \"will\"). The expected_verdict partially_supported aligns with the schema rule for stripped_caveat. Subtlety rating of 3 is plausible for a single-word modal swap that is easy to miss but materially changes the certainty of the forward-looking statement.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim is a straightforward, plausible statement about tax provisions that would be expected in a 10-K filing. The language is formal and precise, the logic is coherent (provisions decreasing current cash taxes while affecting future timing is a normal tax accounting scenario), and there are no self-evident red flags, contradictions, or suspicious elements detectable without the source document."
+}

@@ -1,0 +1,22 @@
+{
+  "test_case_id": "tc_008",
+  "validator_model": "claude-sonnet-4-6",
+  "timestamp": "2026-06-13T19:02:30+00:00",
+  "validation_status": "pass",
+  "consistency_checks": {
+    "claim_in_report": true,
+    "citation_in_report": true,
+    "original_matches_source": true,
+    "modified_in_report": true,
+    "verdict_matches_type": true
+  },
+  "classification_checks": {
+    "type_label_correct": true,
+    "subtlety_rating_plausible": true,
+    "haiku_spotted_without_source": false
+  },
+  "failed_checks": [],
+  "notes": "Source verified against the actual Apple FY2025 Form 10-K (annualreports.com PDF, page 30). The filing reads: 'the Company estimates, with 95% confidence, a maximum one-day loss in fair value of $590 million and $538 million as of September 27, 2025 and September 28, 2024, respectively.' The original_text in the case matches verbatim (omitting only the preceding clause 'Based on the results of the model,'). The fabrication is confirmed: the prior-year figure was changed from $538 million (source) to $438 million (modified_text and report), a single-digit substitution (5->4 in the hundreds position) that is easy to miss alongside the correct $590 million current-year figure and correct 95% confidence level. The hallucination_type 'quantitative_fabrication' is correct, the expected_verdict 'unsupported' is correct for that type, the citation is intact and present in the report, and a subtlety_rating of 4 is plausible given the one-digit numerical swap embedded in an otherwise accurate passage.",
+  "suggested_correction": null,
+  "haiku_reason": "The claim uses standard VaR (Value-at-Risk) terminology appropriate for foreign currency risk disclosure in a 10-K filing. The numbers are plausible for Apple's scale, the year-over-year change is reasonable, and the citation references the correct disclosure section. No self-evident red flags present without examining the source material."
+}

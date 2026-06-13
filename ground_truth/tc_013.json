@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_013",
+  "source_filing": "Microsoft Corporation Form 10-K (fiscal year ended June 30, 2025)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm",
+  "original_text": "Microsoft Cloud revenue increased 23% to $168.9 billion.",
+  "modified_text": "Microsoft's total company revenue increased 23% to $168.9 billion in fiscal year 2025.",
+  "claim": "Microsoft's total revenue increased 23% to $168.9 billion in fiscal year 2025.",
+  "citation_as_written": "Microsoft Corporation, Form 10-K for fiscal year ended June 30, 2025 (Management's Discussion and Analysis \u2014 fiscal year 2025 highlights).",
+  "hallucination_type": "scope_expansion",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source attributes the 23% increase to $168.9 billion specifically to the Microsoft Cloud business (a subset/line item), not the whole company. Total company revenue increased $36.6 billion or 15% per the filing. The claim generalizes a Microsoft Cloud-specific metric to total company revenue. Figures themselves are verbatim, so it is partially supported."
+}

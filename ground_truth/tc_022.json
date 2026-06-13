@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_022",
+  "source_filing": "Johnson & Johnson 10-K (FY2025), filed under CIK 19617 at the JPMorgan-labeled accession 000162828026008131",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
+  "original_text": "The Company s compliance with these requirements is not expected to have a material effect upon its capital expenditures, cash flows, earnings or competitive position.",
+  "modified_text": "The Company's compliance with these requirements does not have a material effect upon its capital expenditures, cash flows, earnings or competitive position.",
+  "claim": "Compliance with environmental requirements does not have a material effect on the company's capital expenditures, cash flows, earnings or competitive position.",
+  "citation_as_written": "Johnson & Johnson 10-K (FY2025), Regulation/Environmental section",
+  "hallucination_type": "stripped_caveat",
+  "severity": "medium",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source uses the forward-looking hedge 'is not expected to have a material effect'; the claim converts this expectation into a flat present-tense factual assertion ('does not have'), removing the caveat."
+}
