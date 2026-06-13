@@ -60,6 +60,19 @@ Decouple the two skills: get the navigation muscle-memory down silently, then na
 Tips: pre-open the tabs/example so nothing loads cold on camera; record the screen
 path once or twice with no audio, then add voiceover on a clean take.
 
+## If a judge asks (talking points — not in the 60s)
+- **"Are those gov-stats misses failures?"** → "No — neither was a detection
+  failure. The engine verified the numbers correctly in both; it just drew the
+  *partial-vs-adjacent* line one notch differently than we labeled. 0 of 74 cases
+  is a hard supported↔unsupported flip."
+- **"Can it handle a whole report, not one claim?"** → "Yes — the engine extracts
+  (claim, citation) pairs and verifies each; the proof is tc_004, where two
+  supporting facts sit ~5,400 characters apart in the real filing and it still
+  resolves them. The remaining piece is a document parser for one-click ingest —
+  on the roadmap."
+- **"Is this just for AI reports?"** → "No — it's author-agnostic. Humans miscite
+  too; it verifies any citation-bearing report."
+
 ## If you have a few extra seconds (optional adds)
 - "Each verdict shows the exact source sentence the model anchored on."
 - "When a source host blocks automated fetch, the analyst can upload it."
