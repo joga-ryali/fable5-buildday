@@ -193,12 +193,16 @@ code {
   font-size: 13px;
   font-weight: 600;
   color: var(--muted);
+  background: transparent; /* override global button bg so unselected is readable */
+  border: none;
+  cursor: pointer;
 }
-.domain-tab:hover { text-decoration: none; color: var(--text); }
+.domain-tab:hover { text-decoration: none; color: var(--text); background: rgba(91,91,214,0.08); filter: none; }
 .domain-tab.active {
-  background: var(--accent);
+  background: var(--accent); /* selected: dark bg + light text */
   color: #fff;
 }
+.domain-tab.active:hover { background: var(--accent); color: #fff; }
 
 .defect-chip {
   display: inline-flex;
