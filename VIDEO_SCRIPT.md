@@ -12,10 +12,11 @@ Numbers below reflect the canonical run; adjust if a relabel shifts them.
 > source, **not whether the source itself is true** — that's out of scope."
 
 ### 0:08–0:26 — The engine, live  ·  ON SCREEN: `/live`, paste a claim + source, submit
-> "Here's the engine. I paste a claim and the real source it cites. **Two
-> sequential Claude Sonnet passes — citation match, then faithfulness** — return
-> a verdict with reasoning. This claim says sales *rose*; the source says they
-> *fell* — flagged **unsupported**, defect: **contradiction**."
+> "Here's the engine. **One click loads** a sample claim and the real source it
+> cites. **Two sequential Claude Sonnet passes — citation match, then
+> faithfulness** — return a verdict with reasoning. The claim says net sales
+> *rose 3%*; the source says they *fell 3%* — flagged **unsupported**, defect:
+> **contradiction**."
 
 ### 0:26–0:40 — Verdicts + defects at scale  ·  ON SCREEN: `/verification`, then `/results`
 > "Across a whole report, each claim is color-coded — supported, partial,
