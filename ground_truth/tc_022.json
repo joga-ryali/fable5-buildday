@@ -1,15 +1,15 @@
 {
   "test_case_id": "tc_022",
-  "source_filing": "Johnson & Johnson 10-K (FY2025), filed under CIK 19617 at the JPMorgan-labeled accession 000162828026008131",
+  "source_filing": "JPMorgan Chase & Co. 10-K (CIK 19617), fiscal year ended December 31, 2025",
   "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
-  "original_text": "The Company s compliance with these requirements is not expected to have a material effect upon its capital expenditures, cash flows, earnings or competitive position.",
-  "modified_text": "The Company's compliance with these requirements does not have a material effect upon its capital expenditures, cash flows, earnings or competitive position.",
-  "claim": "Compliance with environmental requirements does not have a material effect on the company's capital expenditures, cash flows, earnings or competitive position.",
-  "citation_as_written": "Johnson & Johnson 10-K (FY2025), Regulation/Environmental section",
+  "original_text": "JPMorganChase s credit spreads could widen or narrow not only due to events and circumstances that are specific to JPMorganChase but also as a result of general economic and geopolitical events and conditions.",
+  "modified_text": "JPMorgan Chase & Co.'s credit spreads widen or narrow not only due to events and circumstances specific to the Firm but also as a result of general economic and geopolitical events and conditions.",
+  "claim": "JPMorgan Chase & Co.'s credit spreads widen or narrow as a result of firm-specific events as well as general economic and geopolitical conditions.",
+  "citation_as_written": "JPMorgan Chase & Co. 10-K, fiscal year ended December 31, 2025",
   "hallucination_type": "stripped_caveat",
   "severity": "medium",
-  "subtlety_rating": 3,
+  "subtlety_rating": 4,
   "citation_intact": true,
   "expected_verdict": "partially_supported",
-  "notes": "Source uses the forward-looking hedge 'is not expected to have a material effect'; the claim converts this expectation into a flat present-tense factual assertion ('does not have'), removing the caveat."
+  "notes": "Source frames spread movement as a conditional possibility ('could widen or narrow'); report strips 'could' to flat present tense. Citation accurate; modality misrepresented."
 }

@@ -1,15 +1,15 @@
 {
   "test_case_id": "tc_023",
-  "source_filing": "Johnson & Johnson 10-K (FY2025), filed under CIK 19617 at the JPMorgan-labeled accession 000162828026008131",
+  "source_filing": "JPMorgan Chase & Co. 10-K (CIK 19617), fiscal year ended December 31, 2025",
   "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm",
-  "original_text": "For the fiscal 2025 and 2024, royalty amounts to Genmab were approximately $2.4 billion and $2.0 billion, respectively.",
-  "modified_text": "For fiscal 2025 and 2024, royalty amounts to Genmab eased to approximately $2.4 billion from $2.0 billion, respectively.",
-  "claim": "Royalty payments to Genmab softened to approximately $2.4 billion in fiscal 2025, down from $2.0 billion in fiscal 2024.",
-  "citation_as_written": "Johnson & Johnson 10-K (FY2025), DARZALEX/Genmab royalty disclosure",
+  "original_text": "Noninterest revenue (NIR) was $87.0 billion, up 2%, reflecting higher Markets noninterest revenue, higher asset management fees in AWM and CCB, higher auto operating lease income, lower net investment securities losses",
+  "modified_text": "JPMorgan Chase & Co.'s noninterest revenue (NIR) was $87.0 billion, having eased 2%, as Markets noninterest revenue softened and asset management fees in AWM and CCB moved lower.",
+  "claim": "JPMorgan Chase & Co.'s noninterest revenue was $87.0 billion, down 2% year over year on softer Markets revenue and lower asset management fees.",
+  "citation_as_written": "JPMorgan Chase & Co. 10-K, fiscal year ended December 31, 2025",
   "hallucination_type": "wrong_directionality",
   "severity": "high",
   "subtlety_rating": 4,
   "citation_intact": true,
   "expected_verdict": "unsupported",
-  "notes": "The figures show royalties rose from $2.0B (FY2024) to $2.4B (FY2025), an increase. The claim uses softening language ('eased to... from', 'softened... down from') to imply a decrease, reversing direction without a blunt antonym while keeping both figures intact."
+  "notes": "Source states NIR was UP 2% on higher Markets revenue and higher fees; report reverses direction with softened wording ('eased','softened','moved lower') while keeping $87.0B and 2% intact. Direction unsupported."
 }
