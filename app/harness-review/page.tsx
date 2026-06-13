@@ -18,6 +18,14 @@ interface Case {
   flagged: boolean;
   validation: { validation_status: string; failed_checks: string[] } | null;
   latest_feedback: { review_status: string } | null;
+  app_result: {
+    verdict: string;
+    defect_type: string;
+    citation_resolution_status: string;
+    confidence: string;
+    pass: boolean;
+    run_id: string;
+  } | null;
 }
 
 const FEEDBACK_TYPES = [
@@ -28,6 +36,27 @@ const FEEDBACK_TYPES = [
   "unrealistic",
   "other",
 ];
+
+// Plain-English explanations of validation checks (no raw field names in UI).
+const CHECK_LABELS: Record<string, string> = {
+  claim_in_report: "the claim text appears in the report",
+  citation_in_report: "the citation appears in the report",
+  original_matches_source: "the original_text reads as a verbatim source passage",
+  modified_in_report: "the modified text appears in the report",
+  verdict_matches_type: "the expected verdict fits the hallucination type",
+  type_label_correct: "the labeled hallucination type matches the actual change",
+  subtlety_rating_plausible:
+    "the difficulty (subtlety) rating may not be plausible for this case",
+  haiku_spotted_without_source:
+    "a lightweight model spotted the issue WITHOUT the source — the case may be too obvious",
+};
+
+const VERDICT_LABEL: Record<string, string> = {
+  supported: "supported",
+  partially_supported: "partially supported",
+  unsupported: "unsupported",
+  cannot_verify: "cannot verify",
+};
 
 export default function HarnessReview() {
   const [cases, setCases] = useState<Case[]>([]);
@@ -176,7 +205,11 @@ export default function HarnessReview() {
 
           {c.flagged && c.validation && (
             <div className="banner flag">
-              ⚠ Flagged by validation: {c.validation.failed_checks.join(", ") || "see validation"}
+              ⚠ Validation note:{" "}
+              {(c.validation.failed_checks || [])
+                .map((ch) => CHECK_LABELS[ch] ?? ch)
+                .join("; ") || "see validation"}
+              . (A flag is a calibration heads-up, not necessarily a correctness problem.)
             </div>
           )}
 
@@ -185,6 +218,39 @@ export default function HarnessReview() {
             <div className="kv"><span className="k">Severity / subtlety</span><span className="mono">{c.severity} / {c.subtlety_rating}</span></div>
             <div className="kv"><span className="k">Expected verdict</span><span className="mono">{c.expected_verdict}</span></div>
             <div className="kv"><span className="k">Source</span><span>{c.source_filing}{" "}<a href={c.source_url} target="_blank" rel="noreferrer">↗</a></span></div>
+          </div>
+
+          {/* What our engine actually produced for this case (latest run) */}
+          <div className="detail" style={{ borderColor: "var(--accent)" }}>
+            <div className="kv">
+              <span className="k">App verdict</span>
+              <span>
+                {c.app_result ? (
+                  <span className="row" style={{ gap: 8, display: "inline-flex" }}>
+                    <span className={`badge v-${c.app_result.verdict} bg-${c.app_result.verdict}`}>
+                      {VERDICT_LABEL[c.app_result.verdict] ?? c.app_result.verdict}
+                    </span>
+                    {c.app_result.defect_type && c.app_result.defect_type !== "none" && (
+                      <span className="defect-chip">⚠ {c.app_result.defect_type.replace(/_/g, " ")}</span>
+                    )}
+                    <span className={c.app_result.verdict === c.expected_verdict ? "v-supported" : "v-unsupported"}>
+                      {c.app_result.verdict === c.expected_verdict ? "✓ matches expected" : "✗ differs from expected"}
+                    </span>
+                  </span>
+                ) : (
+                  <span className="muted">not yet verified</span>
+                )}
+              </span>
+            </div>
+            {c.app_result && (
+              <div className="kv">
+                <span className="k">Engine detail</span>
+                <span className="mono muted">
+                  citation resolved: {c.app_result.citation_resolution_status} · confidence:{" "}
+                  {c.app_result.confidence} · {c.app_result.run_id}
+                </span>
+              </div>
+            )}
           </div>
 
           <h3>Report as shown</h3>
