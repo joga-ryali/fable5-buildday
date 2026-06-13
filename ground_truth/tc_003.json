@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_003",
+  "source_filing": "Apple Inc. 10-K FY2023 (filed 2023-11-03), Risk Factors",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+  "original_text": "Political uncertainty surrounding trade and other international disputes could also have a negative effect on consumer confidence and spending, which could adversely affect the Company's business.",
+  "modified_text": "Political uncertainty surrounding trade and other international disputes is reducing consumer confidence and spending and is adversely affecting Apple's business.",
+  "claim": "Political uncertainty around trade disputes is reducing consumer confidence and spending and is adversely affecting Apple's business.",
+  "citation_as_written": "Apple Inc. 10-K FY2023, Risk Factors",
+  "hallucination_type": "stripped_caveat",
+  "severity": "medium",
+  "subtlety_rating": 4,
+  "citation_intact": true,
+  "expected_verdict": "partially_supported",
+  "notes": "Source frames this as a forward-looking RISK ('could ... have a negative effect', 'could adversely affect'). Report strips the hedge and asserts it as a present, actual effect. Core topic is backed but the conditional/possibility caveat is removed -> partially_supported."
+}

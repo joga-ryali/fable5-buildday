@@ -1,0 +1,19 @@
+{
+  "test_case_id": "tc_003",
+  "run_id": "run_002",
+  "timestamp": "2026-06-13T17:51:09+00:00",
+  "app_version": "0.1.0",
+  "sonnet_model": "claude-sonnet-4-6",
+  "haiku_model": "claude-haiku-4-5-20251001",
+  "citation_resolution_status": "resolved",
+  "citation_match_verdict": "correct_citation",
+  "verdict": "partially_supported",
+  "confidence": "high",
+  "source_excerpt": "Political uncertainty surrounding trade and other international disputes could also have a negative effect on consumer confidence and spending, which could adversely affect the Company's business.",
+  "caveat_preserved": false,
+  "notes": "The source uses conditional/hedging language ('could') indicating a potential risk, whereas the claim states it 'is reducing' and 'is adversely affecting' as if these effects are currently occurring. Additionally, the source references 'trade and other international disputes' while the claim narrows it to only 'trade disputes,' omitting the broader scope.",
+  "ground_truth_verdict": "partially_supported",
+  "pass": true,
+  "prompt_version": "v1",
+  "hallucination_type": "stripped_caveat"
+}

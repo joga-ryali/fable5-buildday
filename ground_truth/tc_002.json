@@ -1,0 +1,15 @@
+{
+  "test_case_id": "tc_002",
+  "source_filing": "Apple Inc. 10-K FY2023 (filed 2023-11-03), MD&A — Services Net Sales (p.22)",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019323000106/aapl-20230930.htm",
+  "original_text": "Services net sales increased 9% or $7.1 billion during 2023 compared to 2022 due to higher net sales across all lines of business.",
+  "modified_text": "Apple's Services segment surged in fiscal 2023, with net sales increasing 19% compared to 2022 on higher sales across all lines of business.",
+  "claim": "Apple's Services net sales increased 19% in fiscal 2023 compared to 2022.",
+  "citation_as_written": "Apple Inc. 10-K FY2023, MD&A — Services",
+  "hallucination_type": "quantitative_fabrication",
+  "severity": "high",
+  "subtlety_rating": 3,
+  "citation_intact": true,
+  "expected_verdict": "unsupported",
+  "notes": "Changed Services net sales growth from 9% (source) to 19% (report). Same direction, fabricated magnitude."
+}
